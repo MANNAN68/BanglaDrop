@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+   <!-- set your title -->
+   <title> Inventory Management</title>
+
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- replace favicon path or source here -->
+   <link rel="icon" href="assets/images/brand/favicon.ico">
+
+   <!-- bootstrap and font-awesome cdn link -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+   <!-- end bootstrap and font-awesome cdn link -->
+
+   <link rel="stylesheet" href="assets/css/master.css">
+   <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="stylesheet" href="assets/plugin/css/mestimenu.css">
+</head>
+
+<body class="mm-active">
+   <div class="app">
+      <div class="layout-wrapper">
+         <div class="layout-left">
+            <div class="barnd-logo d-flex justify-content-center align-items-center ">
+               <a href="index.html" class="not-collpsed">
+                  <img src="assets/images/brand/logo_lg.svg" alt="">
+               </a><a href="index.html" class="with-collpsed">
+                  <img src="assets/images/brand/logo_md.svg" alt="">
+               </a>
+
+            </div>
+
+            <div class="vertical-menu mm-active">
+               <div data-simplebar="init" class="h-100 mm-show simplebar-scrollable-y">
+                  <div class="simplebar-wrapper" style="margin: 0px;">
+                     <div class="simplebar-height-auto-observer-wrapper">
+                        <div class="simplebar-height-auto-observer"></div>
+                     </div>
+                     <div class="simplebar-mask">
+                        <div class="simplebar-offset">
+                           <div class="simplebar-content-wrapper" tabindex="0" role="region"
+                              aria-label="scrollable content">
+                              <div class="simplebar-content">
+                                 <!--- Sidemenu -->
+                                 <div id="sidebar-menu" class="mm-active">
+                                    <!-- Left Menu Start -->
+                                    <ul class="d-flex flex-column gap-2 metismenu mm-show" id="side-menu">
+                                       <li>
+                                          <a href="index.html" class="waves-effect">
+                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path class="dashboard"
+                                                   d="M2 18C2 16.4596 2 15.6893 2.34673 15.1235C2.54074 14.8069 2.80693 14.5407 3.12353 14.3467C3.68934 14 4.45956 14 6 14C7.54044 14 8.31066 14 8.87647 14.3467C9.19307 14.5407 9.45926 14.8069 9.65327 15.1235C10 15.6893 10 16.4596 10 18C10 19.5404 10 20.3107 9.65327 20.8765C9.45926 21.1931 9.19307 21.4593 8.87647 21.6533C8.31066 22 7.54044 22 6 22C4.45956 22 3.68934 22 3.12353 21.6533C2.80693 21.4593 2.54074 21.1931 2.34673 20.8765C2 20.3107 2 19.5404 2 18Z"
+                                                   stroke="#475569" stroke-width="1.5" />
+                                                <path class="dashboard"
+                                                   d="M14 18C14 16.4596 14 15.6893 14.3467 15.1235C14.5407 14.8069 14.8069 14.5407 15.1235 14.3467C15.6893 14 16.4596 14 18 14C19.5404 14 20.3107 14 20.8765 14.3467C21.1931 14.5407 21.4593 14.8069 21.6533 15.1235C22 15.6893 22 16.4596 22 18C22 19.5404 22 20.3107 21.6533 20.8765C21.4593 21.1931 21.1931 21.4593 20.8765 21.6533C20.3107 22 19.5404 22 18 22C16.4596 22 15.6893 22 15.1235 21.6533C14.8069 21.4593 14.5407 21.1931 14.3467 20.8765C14 20.3107 14 19.5404 14 18Z"
+                                                   stroke="#475569" stroke-width="1.5" />
+                                                <path class="dashboard"
+                                                   d="M2 6C2 4.45956 2 3.68934 2.34673 3.12353C2.54074 2.80693 2.80693 2.54074 3.12353 2.34673C3.68934 2 4.45956 2 6 2C7.54044 2 8.31066 2 8.87647 2.34673C9.19307 2.54074 9.45926 2.80693 9.65327 3.12353C10 3.68934 10 4.45956 10 6C10 7.54044 10 8.31066 9.65327 8.87647C9.45926 9.19307 9.19307 9.45926 8.87647 9.65327C8.31066 10 7.54044 10 6 10C4.45956 10 3.68934 10 3.12353 9.65327C2.80693 9.45926 2.54074 9.19307 2.34673 8.87647C2 8.31066 2 7.54044 2 6Z"
+                                                   stroke="#475569" stroke-width="1.5" />
+                                                <path class="dashboard"
+                                                   d="M14 6C14 4.45956 14 3.68934 14.3467 3.12353C14.5407 2.80693 14.8069 2.54074 15.1235 2.34673C15.6893 2 16.4596 2 18 2C19.5404 2 20.3107 2 20.8765 2.34673C21.1931 2.54074 21.4593 2.80693 21.6533 3.12353C22 3.68934 22 4.45956 22 6C22 7.54044 22 8.31066 21.6533 8.87647C21.4593 9.19307 21.1931 9.45926 20.8765 9.65327C20.3107 10 19.5404 10 18 10C16.4596 10 15.6893 10 15.1235 9.65327C14.8069 9.45926 14.5407 9.19307 14.3467 8.87647C14 8.31066 14 7.54044 14 6Z"
+                                                   stroke="#475569" stroke-width="1.5" />
+                                             </svg>
+                                             <span>Dashboard</span>
+                                          </a>
+                                       </li>
+                                       <li>
+                                          <a href="javascript: void(0);" class="has-arrow waves-effect"
+                                             aria-expanded="false">
+                                             <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path class="products"
+                                                   d="M12 22.0703C11.1818 22.0703 10.4002 21.7401 8.83693 21.0798C4.94564 19.436 3 18.6141 3 17.2316C3 16.8445 3 10.1348 3 7.07031M12 22.0703C12.8182 22.0703 13.5998 21.7401 15.1631 21.0798C19.0544 19.436 21 18.6141 21 17.2316V7.07031M12 22.0703V11.4251"
+                                                   stroke="#475569" stroke-width="1.5" stroke-linecap="round"
+                                                   stroke-linejoin="round" />
+                                                <path class="products"
+                                                   d="M8.32592 9.76169L5.40472 8.34816C3.80157 7.57241 3 7.18454 3 6.57031C3 5.95608 3.80157 5.56821 5.40472 4.79246L8.32592 3.37893C10.1288 2.50652 11.0303 2.07031 12 2.07031C12.9697 2.07031 13.8712 2.50651 15.6741 3.37893L18.5953 4.79246C20.1984 5.56821 21 5.95608 21 6.57031C21 7.18454 20.1984 7.57241 18.5953 8.34816L15.6741 9.76169C13.8712 10.6341 12.9697 11.0703 12 11.0703C11.0303 11.0703 10.1288 10.6341 8.32592 9.76169Z"
+                                                   stroke="#475569" stroke-width="1.5" stroke-linecap="round"
+                                                   stroke-linejoin="round" />
+                                                <path class="products" d="M6 12.0703L8 13.0703" stroke="#475569"
+                                                   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path class="products" d="M17 4.07031L7 9.07031" stroke="#475569"
+                                                   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                             </svg>
+                                             <span>Product</span>
+                                          </a>
+                                          <ul class="sub-menu mm-collapse" aria-expanded="false" style="height: 0px;">
+                                             <li>
+                                                <a href="add_product.html" class=" waves-effect">
+                                                   <span>Add product</span>
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="product_list.html" class=" waves-effect">
+                                                   <span>Product list</span>
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="category.html" class=" waves-effect">
+                                                   <span>Category</span>
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="sub_category.html" class=" waves-effect">
+                                                   <span>Sub category</span>
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="unit.html" class=" waves-effect">
+                                                   <span>Unit</span>
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="variation.html" class=" waves-effect">
+                                                   <span>Variations</span>
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="brand.html" class=" waves-effect">
+                                                   <span>Brand</span>
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="import.html" class=" waves-effect">
+                                                   <span>Import product by CSV</span>
+                                                </a>
+
+                                          </ul>
+                                       </li>
+                                       <li>
+                                          <a href="javascript: void(0);" class="has-arrow waves-effect"
+                                             aria-expanded="false">
+                                             <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path class="purchase"
+                                                   d="M14 2.27035C13.3538 2.13917 12.6849 2.07031 12 2.07031C6.47715 2.07031 2 6.54746 2 12.0703C2 17.5931 6.47715 22.0703 12 22.0703C17.5228 22.0703 22 17.5931 22 12.0703C22 11.3854 21.9311 10.7165 21.8 10.0703"
+                                                   stroke="#475569" stroke-width="1.5" stroke-linecap="round" />
+                                                <path class="purchase"
+                                                   d="M12 9.07031C10.8954 9.07031 10 9.74188 10 10.5703C10 11.3987 10.8954 12.0703 12 12.0703C13.1046 12.0703 14 12.7419 14 13.5703C14 14.3987 13.1046 15.0703 12 15.0703M12 9.07031C12.8708 9.07031 13.6116 9.48771 13.8862 10.0703M12 9.07031V8.07031M12 15.0703C11.1292 15.0703 10.3884 14.6529 10.1138 14.0703M12 15.0703V16.0703"
+                                                   stroke="#475569" stroke-width="1.5" stroke-linecap="round" />
+                                                <path class="purchase"
+                                                   d="M16.998 7.07031L21.1739 2.89211M21.998 6.54855L21.8798 3.45706C21.8798 2.72842 21.4448 2.27443 20.6523 2.21717L17.5282 2.07031"
+                                                   stroke="#475569" stroke-width="1.5" stroke-linecap="round"
+                                                   stroke-linejoin="round" />
+                                             </svg>
+                                             <span>Purchase</span>
+                                          </a>
+                                          <ul class="sub-menu mm-collapse" aria-expanded="false" style="height: 0px;">
+                                             <li>
+                                                <a href="#" class=" waves-effect">
+                                                   <span>Demo</span>
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#" class=" waves-effect">
+                                                   <span>Demo1</span>
+                                                </a>
+                                             </li>
+                                          </ul>
+                                       </li>
+                                       <li>
+                                          <a href="javascript: void(0);" class="has-arrow waves-effect"
+                                             aria-expanded="false">
+                                             <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path class="sales"
+                                                   d="M14 2.29357C13.3538 2.16254 12.6849 2.09375 12 2.09375C6.47715 2.09375 2 6.56599 2 12.0828C2 17.5995 6.47715 22.0718 12 22.0718C17.5228 22.0718 22 17.5995 22 12.0828C22 11.3987 21.9311 10.7305 21.8 10.085"
+                                                   stroke="#475569" stroke-width="1.5" stroke-linecap="round" />
+                                                <path class="sales"
+                                                   d="M12 9.08484C10.8954 9.08484 10 9.75568 10 10.5832C10 11.4107 10.8954 12.0816 12 12.0816C13.1046 12.0816 14 12.7525 14 13.5799C14 14.4074 13.1046 15.0783 12 15.0783M12 9.08484C12.8708 9.08484 13.6116 9.50179 13.8862 10.0838M12 9.08484V8.08594M12 15.0783C11.1292 15.0783 10.3884 14.6614 10.1138 14.0794M12 15.0783V16.0772"
+                                                   stroke="#475569" stroke-width="1.5" stroke-linecap="round" />
+                                                <path class="sales"
+                                                   d="M21.9951 2.07031L17.8193 6.24393M16.9951 2.5915L17.1133 5.67959C17.1133 6.40744 17.5484 6.86093 18.3409 6.91813L21.465 7.06482"
+                                                   stroke="#475569" stroke-width="1.5" stroke-linecap="round"
+                                                   stroke-linejoin="round" />
+                                             </svg>
+                                             <span>Sales</span>
+                                          </a>
+                                          <ul class="sub-menu mm-collapse" aria-expanded="false" style="height: 0px;">
+                                             <li>
+                                                <a href="#" class=" waves-effect">
+                                                   <span>Demo</span>
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#" class=" waves-effect">
+                                                   <span>Demo1</span>
+                                                </a>
+                                             </li>
+                                          </ul>
+                                       </li>
+                                       <li>
+                                          <a href="supplier.html" class="waves-effect" aria-expanded="false">
+                                             <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path class="supplier"
+                                                   d="M13 7.07031C13 9.27945 11.2091 11.0703 9 11.0703C6.79086 11.0703 5 9.27945 5 7.07031C5 4.86117 6.79086 3.07031 9 3.07031C11.2091 3.07031 13 4.86117 13 7.07031Z"
+                                                   stroke="#475569" stroke-width="1.5" />
+                                                <path class="supplier"
+                                                   d="M15 11.0703C17.2091 11.0703 19 9.27945 19 7.07031C19 4.86117 17.2091 3.07031 15 3.07031"
+                                                   stroke="#475569" stroke-width="1.5" stroke-linecap="round"
+                                                   stroke-linejoin="round" />
+                                                <path class="supplier"
+                                                   d="M11 14.0703H7C4.23858 14.0703 2 16.3089 2 19.0703C2 20.1749 2.89543 21.0703 4 21.0703H14C15.1046 21.0703 16 20.1749 16 19.0703C16 16.3089 13.7614 14.0703 11 14.0703Z"
+                                                   stroke="#475569" stroke-width="1.5" stroke-linejoin="round" />
+                                                <path class="supplier"
+                                                   d="M17 14.0703C19.7614 14.0703 22 16.3089 22 19.0703C22 20.1749 21.1046 21.0703 20 21.0703H18.5"
+                                                   stroke="#475569" stroke-width="1.5" stroke-linecap="round"
+                                                   stroke-linejoin="round" />
+                                             </svg>
+                                             <span>Supplier</span>
+                                          </a>
+                                       </li>
+                                       <li>
+                                          <a href="customer.html" class="waves-effect" aria-expanded="false">
+                                             <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path class="customer"
+                                                   d="M13 22.0703H6.59087C5.04549 22.0703 3.81631 21.3183 2.71266 20.2669C0.453366 18.1144 4.1628 16.3943 5.57757 15.5519C7.53058 14.389 9.7927 13.9107 12 14.1169"
+                                                   stroke="#475569" stroke-width="1.5" stroke-linecap="round"
+                                                   stroke-linejoin="round" />
+                                                <path class="customer"
+                                                   d="M15.5 6.57031C15.5 9.05559 13.4853 11.0703 11 11.0703C8.51472 11.0703 6.5 9.05559 6.5 6.57031C6.5 4.08503 8.51472 2.07031 11 2.07031C13.4853 2.07031 15.5 4.08503 15.5 6.57031Z"
+                                                   stroke="#475569" stroke-width="1.5" />
+                                                <path class="customer"
+                                                   d="M15.015 15.4569C16.0876 14.8172 17.0238 15.075 17.5863 15.4856C17.8169 15.654 17.9322 15.7382 18 15.7382C18.0678 15.7382 18.1831 15.654 18.4137 15.4856C18.9762 15.075 19.9124 14.8172 20.985 15.4569C22.3928 16.2964 22.7113 19.0661 19.4642 21.4027C18.8457 21.8478 18.5365 22.0703 18 22.0703C17.4635 22.0703 17.1543 21.8478 16.5358 21.4027C13.2887 19.0661 13.6072 16.2964 15.015 15.4569Z"
+                                                   stroke="#475569" stroke-width="1.5" stroke-linecap="round" />
+                                             </svg>
+                                             <span>Customer</span>
+                                          </a>
+                                       </li>
+                                       <li>
+                                          <a href="javascript: void(0);" class="has-arrow waves-effect"
+                                             aria-expanded="false">
+                                             <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path class="stock" d="M7 17.0703V13.0703" stroke="#475569"
+                                                   stroke-width="1.5" stroke-linecap="round" />
+                                                <path class="stock" d="M12 17.0703V7.07031" stroke="#475569"
+                                                   stroke-width="1.5" stroke-linecap="round" />
+                                                <path class="stock" d="M17 17.0703V11.0703" stroke="#475569"
+                                                   stroke-width="1.5" stroke-linecap="round" />
+                                                <path class="stock"
+                                                   d="M2.5 12.0703C2.5 7.59197 2.5 5.3528 3.89124 3.96155C5.28249 2.57031 7.52166 2.57031 12 2.57031C16.4783 2.57031 18.7175 2.57031 20.1088 3.96155C21.5 5.3528 21.5 7.59197 21.5 12.0703C21.5 16.5486 21.5 18.7878 20.1088 20.1791C18.7175 21.5703 16.4783 21.5703 12 21.5703C7.52166 21.5703 5.28249 21.5703 3.89124 20.1791C2.5 18.7878 2.5 16.5486 2.5 12.0703Z"
+                                                   stroke="#475569" stroke-width="1.5" stroke-linejoin="round" />
+                                             </svg>
+                                             <span>Stock</span>
+                                          </a>
+                                          <ul class="sub-menu mm-collapse" aria-expanded="false" style="height: 0px;">
+                                             <li>
+                                                <a href="#" class=" waves-effect">
+                                                   <span>Demo</span>
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#" class=" waves-effect">
+                                                   <span>Demo1</span>
+                                                </a>
+                                             </li>
+                                          </ul>
+                                       </li>
+                                       <li>
+                                          <a href="javascript: void(0);" class="has-arrow waves-effect"
+                                             aria-expanded="false">
+                                             <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path class="expense"
+                                                   d="M12.002 9.07031C10.8974 9.07031 10.002 9.74188 10.002 10.5703C10.002 11.3987 10.8974 12.0703 12.002 12.0703C13.1065 12.0703 14.002 12.7419 14.002 13.5703C14.002 14.3987 13.1065 15.0703 12.002 15.0703M12.002 9.07031C12.8728 9.07031 13.6136 9.48771 13.8881 10.0703M12.002 9.07031V8.07031M12.002 15.0703C11.1311 15.0703 10.3903 14.6529 10.1158 14.0703M12.002 15.0703V16.0703"
+                                                   stroke="#475569" stroke-width="1.5" stroke-linecap="round" />
+                                                <path class="expense"
+                                                   d="M13.5 2.57031C13.5 2.57031 12.6839 2.57031 12 2.57031C7.52166 2.57031 5.28249 2.57031 3.89124 3.96156C2.5 5.3528 2.5 7.59197 2.5 12.0703C2.5 16.5486 2.5 18.7878 3.89124 20.1791C5.28249 21.5703 7.52166 21.5703 12 21.5703C16.4783 21.5703 18.7175 21.5703 20.1088 20.1791C21.5 18.7878 21.5 16.5486 21.5 12.0703C21.5 11.3864 21.5 10.5703 21.5 10.5703"
+                                                   stroke="#475569" stroke-width="1.5" stroke-linecap="round" />
+                                                <path class="expense"
+                                                   d="M16.5 7.57031L20.6758 3.39211M21.5 7.04855L21.3818 3.95706C21.3818 3.22842 20.9467 2.77443 20.1542 2.71717L17.0302 2.57031"
+                                                   stroke="#475569" stroke-width="1.5" stroke-linecap="round"
+                                                   stroke-linejoin="round" />
+                                             </svg>
+                                             <span>Expense</span>
+                                          </a>
+                                          <ul class="sub-menu mm-collapse" aria-expanded="false" style="height: 0px;">
+                                             <li>
+                                                <a href="#" class=" waves-effect">
+                                                   <span>Demo</span>
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#" class=" waves-effect">
+                                                   <span>Demo1</span>
+                                                </a>
+                                             </li>
+                                          </ul>
+                                       </li>
+                                       <li>
+                                          <a href="javascript: void(0);" class="has-arrow waves-effect"
+                                             aria-expanded="false">
+                                             <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path class="accounts"
+                                                   d="M21.5 13.0203V11.1203C21.5 7.0898 21.5 5.07455 20.1088 3.82243C18.7175 2.57031 16.4783 2.57031 12 2.57031C7.52166 2.57031 5.28249 2.57031 3.89124 3.82243C2.5 5.07455 2.5 7.0898 2.5 11.1203V13.0203C2.5 17.0508 2.5 19.0661 3.89124 20.3182C5.28249 21.5703 7.52166 21.5703 12 21.5703C16.4783 21.5703 18.7175 21.5703 20.1088 20.3182C21.5 19.0661 21.5 17.0508 21.5 13.0203Z"
+                                                   stroke="#475569" stroke-width="1.5" />
+                                                <path class="accounts" d="M18 8.07031H14M16 6.07031V10.0703"
+                                                   stroke="#475569" stroke-width="1.5" stroke-linecap="round"
+                                                   stroke-linejoin="round" />
+                                                <path class="accounts" d="M18 17.5703H14" stroke="#475569"
+                                                   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path class="accounts" d="M18 14.5703H14" stroke="#475569"
+                                                   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path class="accounts"
+                                                   d="M10 17.5703L8.25 15.8203M8.25 15.8203L6.5 14.0703M8.25 15.8203L10 14.0703M8.25 15.8203L6.5 17.5703"
+                                                   stroke="#475569" stroke-width="1.5" stroke-linecap="round"
+                                                   stroke-linejoin="round" />
+                                                <path class="accounts" d="M10 8.07031H6" stroke="#475569"
+                                                   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                             </svg>
+                                             <span>Accounts</span>
+                                          </a>
+                                          <ul class="sub-menu mm-collapse" aria-expanded="false" style="height: 0px;">
+                                             <li>
+                                                <a href="#" class=" waves-effect">
+                                                   <span>Demo</span>
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#" class=" waves-effect">
+                                                   <span>Demo1</span>
+                                                </a>
+                                             </li>
+                                          </ul>
+                                       </li>
+                                       <li>
+                                          <a href="javascript: void(0);" class="has-arrow waves-effect"
+                                             aria-expanded="false">
+                                             <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path class="sale-rtn" d="M17 18.0703V16.0703" stroke="#475569"
+                                                   stroke-width="1.5" stroke-linecap="round" />
+                                                <path class="sale-rtn" d="M12 18.0703V15.0703" stroke="#475569"
+                                                   stroke-width="1.5" stroke-linecap="round" />
+                                                <path class="sale-rtn" d="M7 18.0703V13.0703" stroke="#475569"
+                                                   stroke-width="1.5" stroke-linecap="round" />
+                                                <path class="sale-rtn"
+                                                   d="M6 7.07031C9.19706 10.3386 13.2338 11.1516 17.1413 10.0622M15.6881 8.54164L17.7617 9.5587C18.0076 9.67932 18.074 9.9586 17.91 10.1825L16.5269 12.0703"
+                                                   stroke="#475569" stroke-width="1.5" stroke-linecap="round"
+                                                   stroke-linejoin="round" />
+                                                <path class="sale-rtn"
+                                                   d="M2.5 12.0703C2.5 7.59197 2.5 5.3528 3.89124 3.96155C5.28249 2.57031 7.52166 2.57031 12 2.57031C16.4783 2.57031 18.7175 2.57031 20.1088 3.96155C21.5 5.3528 21.5 7.59197 21.5 12.0703C21.5 16.5486 21.5 18.7878 20.1088 20.1791C18.7175 21.5703 16.4783 21.5703 12 21.5703C7.52166 21.5703 5.28249 21.5703 3.89124 20.1791C2.5 18.7878 2.5 16.5486 2.5 12.0703Z"
+                                                   stroke="#475569" stroke-width="1.5" stroke-linejoin="round" />
+                                             </svg>
+                                             <span>Sales return</span>
+                                          </a>
+                                          <ul class="sub-menu mm-collapse" aria-expanded="false" style="height: 0px;">
+                                             <li>
+                                                <a href="#" class=" waves-effect">
+                                                   <span>Demo</span>
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#" class=" waves-effect">
+                                                   <span>Demo1</span>
+                                                </a>
+                                             </li>
+                                          </ul>
+                                       </li>
+                                       <li>
+                                          <a href="javascript: void(0);" class="has-arrow waves-effect"
+                                             aria-expanded="false">
+                                             <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path class="purchase-rtn"
+                                                   d="M17 18.0703V16.0703M12 18.0703V15.0703M7 18.0703V13.0703M21.5 12.0703C21.5 7.59197 21.5 5.3528 20.1088 3.96155C18.7175 2.57031 16.4783 2.57031 12 2.57031C7.5217 2.57031 5.2825 2.57031 3.8912 3.96155C2.5 5.3528 2.5 7.59197 2.5 12.0703C2.5 16.5486 2.5 18.7878 3.8912 20.1791C5.2825 21.5703 7.5217 21.5703 12 21.5703C16.4783 21.5703 18.7175 21.5703 20.1088 20.1791C21.5 18.7878 21.5 16.5486 21.5 12.0703Z"
+                                                   stroke="#475569" stroke-width="1.5" stroke-linecap="round"
+                                                   stroke-linejoin="round" />
+                                                <path class="purchase-rtn"
+                                                   d="M18.0078 11.5576C15.8527 11.6294 10.9659 11.3041 8.1863 6.89261M10.0077 6.35964L8.1322 6.05778C7.9036 6.02867 7.568 6.20914 7.4855 6.42427L6.9896 8.06271"
+                                                   stroke="#475569" stroke-width="1.5" stroke-linecap="round"
+                                                   stroke-linejoin="round" />
+                                             </svg>
+                                             <span>Purchase return</span>
+                                          </a>
+                                          <ul class="sub-menu mm-collapse" aria-expanded="false" style="height: 0px;">
+                                             <li>
+                                                <a href="#" class=" waves-effect">
+                                                   <span>Demo</span>
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#" class=" waves-effect">
+                                                   <span>Demo1</span>
+                                                </a>
+                                             </li>
+                                          </ul>
+                                       </li>
+                                       <li>
+                                          <a href="javascript: void(0);" class="has-arrow waves-effect"
+                                             aria-expanded="false">
+                                             <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path class="report"
+                                                   d="M6.5 17.5703V14.5703M11.5 17.5703V8.57031M16.5 17.5703V13.5703"
+                                                   stroke="#475569" stroke-width="1.5" stroke-linecap="round" />
+                                                <path class="report"
+                                                   d="M21.5 5.57031C21.5 7.22716 20.1569 8.57031 18.5 8.57031C16.8431 8.57031 15.5 7.22716 15.5 5.57031C15.5 3.91346 16.8431 2.57031 18.5 2.57031C20.1569 2.57031 21.5 3.91346 21.5 5.57031Z"
+                                                   stroke="#475569" stroke-width="1.5" />
+                                                <path class="report"
+                                                   d="M21.4955 11.0703C21.4955 11.0703 21.5 11.4098 21.5 12.0703C21.5 16.5487 21.5 18.7878 20.1088 20.1791C18.7175 21.5703 16.4783 21.5703 12 21.5703C7.52166 21.5703 5.28249 21.5703 3.89124 20.1791C2.5 18.7878 2.5 16.5487 2.5 12.0703C2.5 7.592 2.5 5.35283 3.89124 3.96158C5.28249 2.57034 7.52166 2.57034 12 2.57034L13 2.57031"
+                                                   stroke="#475569" stroke-width="1.5" stroke-linecap="round"
+                                                   stroke-linejoin="round" />
+                                             </svg>
+                                             <span>Report</span>
+                                          </a>
+                                          <ul class="sub-menu mm-collapse" aria-expanded="false" style="height: 0px;">
+                                             <li>
+                                                <a href="#" class=" waves-effect">
+                                                   <span>Demo</span>
+                                                </a>
+                                             </li>
+                                             <li>
+                                                <a href="#" class=" waves-effect">
+                                                   <span>Demo1</span>
+                                                </a>
+                                             </li>
+                                          </ul>
+                                       </li>
+
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="simplebar-placeholder"></div>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+         <div class="layout-right">
+            <div class="navbar-wrapper">
+               <nav class="navbar h-100">
+                  <div class="navbar-left d-flex align-items-center gap-3">
+                     <div class="navbar-brand d-flex align-items-center gap-5 m-0">
+                        <div class="mobile-nav-toggler">
+                           <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <div class="waves-effect vertical-menu-btn">
+                           <img src="assets/images/icon/hamburger.svg" alt="">
+                        </div>
+                        <div class="search-box">
+                           <input type="text" class="form-control" placeholder="Search Every Things" id="searchInput">
+                           <img src="../assets/images/master_icon/search_box_icon.svg" alt=""
+                              class="search_icon w-auto h-auto">
+                           <ul id="searchResults" class="search_result" style="display: none;">
+                              <div class="d-flex align-items-center justify-content-between recent_results">
+                                 <small>Recent</small> <a href="">Clear All</a>
+                              </div>
+                              <li> <a href="" class="d-flex align-items-center">
+                                    <img src="../assets/images/master_icon/search_result_icon.png" alt=""
+                                       class="search_item_img">
+                                    <p> ID: 51492220 Name: Israt Address:2/4 borobag, mirpur-2, dhaka-1216 COD:
+                                       485</p>
+                                 </a> <img src="../assets/images/master_icon/search_result_close_icon.png" alt=""
+                                    class="close_result">
+                              </li>
+                              <li> <a href="" class="d-flex align-items-center">
+                                    <img src="../assets/images/master_icon/search_result_icon.png" alt=""
+                                       class="search_item_img">
+                                    <p> ID: 51492220 Name: Israt Address:2/4 borobag, mirpur-2, dhaka-1216 COD:
+                                       485</p>
+                                 </a> <img src="../assets/images/master_icon/search_result_close_icon.png" alt=""
+                                    class="close_result">
+                              </li>
+                              <li> <a href="" class="d-flex align-items-center">
+                                    <img src="../assets/images/master_icon/search_result_icon.png" alt=""
+                                       class="search_item_img">
+                                    <p> ID: 51492220 Name: Israt Address:2/4 borobag, mirpur-2, dhaka-1216 COD:
+                                       485</p>
+                                 </a> <img src="../assets/images/master_icon/search_result_close_icon.png" alt=""
+                                    class="close_result">
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="navbar-right  d-flex align-items-center">
+                     <div class="navbar-action d-flex gap-3">
+                        <a href="#" class="action-link" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                           data-bs-title="News">
+                           <img src="assets/images/icon/nav_news_icon.svg" alt="">
+                        </a>
+                        <div class="notifications position-relative" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                           data-bs-title="Notification">
+                           <div class="action-link position-relative dropdown-toggle" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              <img src="assets/images/icon/nav_notification_icon.svg" alt="">
+                              <span class="badge text-bg-danger">4</span>
+                           </div>
+                           <div class="dropdown-menu" onclick="event.stopPropagation()">
+                              <div class="d-flex notify-head flex-column gap-3">
+                                 <div class="tab-menus">
+                                    <ul class="tab-menus-items d-flex gap-3">
+                                       <li class="tab-item">
+                                          <button class=" btn btn-ex-sm btn-primary">All</button>
+                                       </li>
+                                       <li class="tab-item">
+                                          <button class=" btn btn-ex-sm btn-secondary">Unread</button>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="profile position-relative" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                           data-bs-title="Profile">
+                           <div class="action-link  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                              <img src="assets/images/user/user.png" alt="" class="rounded-circle">
+                           </div>
+                           <span class="online active"> </span>
+                           <div class="dropdown-menu" onclick="event.stopPropagation()">
+                              <ul class="d-flex flex-column gap-3">
+                                 <li class="nav-item">
+                                    <a href="user_profile.html" class="nav-link">
+                                       <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <circle class="my_acc" cx="4" cy="4" r="4"
+                                             transform="matrix(-1 0 0 1 16.3652 3.95312)" stroke="#737373"
+                                             stroke-width="1.5"></circle>
+                                          <path class="my_acc"
+                                             d="M5.36523 17.8878C5.36523 17.0274 5.90609 16.26 6.71633 15.9706V15.9706C10.3693 14.666 14.3612 14.666 18.0141 15.9706V15.9706C18.8244 16.26 19.3652 17.0274 19.3652 17.8878V19.2033C19.3652 20.3907 18.3135 21.3029 17.138 21.135L16.1836 20.9986C13.6509 20.6368 11.0796 20.6368 8.54686 20.9986L7.59244 21.135C6.41694 21.3029 5.36523 20.3907 5.36523 19.2033V17.8878Z"
+                                             stroke="#737373" stroke-width="1.5"></path>
+                                       </svg>
+                                       <span class="title">Profile</span>
+                                    </a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a href="setting.html" class="nav-link">
+                                       <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <rect class="cng-pass" x="4" y="9.95312" width="16" height="12" rx="4"
+                                             stroke="#737373" stroke-width="1.5"></rect>
+                                          <path class="cng-pass" d="M12 16.9531L12 14.9531" stroke="#737373"
+                                             stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                          <path class="cng-pass"
+                                             d="M16 9.95313V7.95313C16 5.74399 14.2091 3.95312 12 3.95312V3.95312C9.79086 3.95312 8 5.74399 8 7.95312L8 9.95313"
+                                             stroke="#737373" stroke-width="1.5"></path>
+                                       </svg>
+                                       <span class="title">Reset Password</span>
+                                    </a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a href="setting.html" class="nav-link">
+                                       <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <mask id="mask0_3173_45343" style="mask-type:luminance"
+                                             maskUnits="userSpaceOnUse" x="2" y="2" width="20" height="22">
+                                             <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M2.36523 2.95312H21.6501V23.6741H2.36523V2.95312Z" fill="white">
+                                             </path>
+                                          </mask>
+                                          <g mask="url(#mask0_3173_45343)">
+                                             <path class="setting" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M7.56755 18.3931C7.79655 18.3931 8.02555 18.4221 8.24955 18.4821C8.92555 18.6641 9.51255 19.1161 9.86055 19.7231C10.0866 20.1041 10.2116 20.5491 10.2156 21.0031C10.2156 21.6531 10.7376 22.1741 11.3796 22.1741H12.6326C13.2716 22.1741 13.7936 21.6561 13.7966 21.0171C13.7926 20.3111 14.0686 19.6401 14.5736 19.1351C15.0716 18.6371 15.7676 18.3381 16.4636 18.3581C16.9196 18.3691 17.3586 18.4921 17.7456 18.7121C18.3026 19.0311 19.0136 18.8411 19.3356 18.2911L19.9996 17.1841C20.1476 16.9291 20.1906 16.6091 20.1116 16.3141C20.0336 16.0191 19.8376 15.7631 19.5736 15.6121C18.9556 15.2561 18.5146 14.6821 18.3316 13.9941C18.1506 13.3191 18.2496 12.5821 18.6026 11.9751C18.8326 11.5751 19.1696 11.2381 19.5736 11.0061C20.1156 10.6891 20.3056 9.98012 19.9906 9.42812C19.9776 9.40613 19.9656 9.38313 19.9556 9.35913L19.3696 8.34313C19.0506 7.78813 18.3406 7.59713 17.7836 7.91412C17.1816 8.27012 16.4656 8.37212 15.7776 8.19112C15.0906 8.01312 14.5146 7.57812 14.1556 6.96412C13.9256 6.58012 13.8006 6.13313 13.7966 5.67812C13.8056 5.33612 13.6856 5.02912 13.4676 4.80413C13.2506 4.58012 12.9456 4.45312 12.6326 4.45312H11.3796C11.0696 4.45312 10.7796 4.57413 10.5606 4.79212C10.3426 5.01113 10.2236 5.30212 10.2256 5.61212C10.2046 7.07413 9.00955 8.25113 7.56255 8.25113C7.09855 8.24613 6.65155 8.12113 6.26355 7.88912C5.71855 7.57912 5.00655 7.77012 4.68755 8.32512L4.01055 9.43813C3.70055 9.97613 3.89055 10.6871 4.44255 11.0081C5.26155 11.4821 5.77255 12.3661 5.77255 13.3141C5.77255 14.2621 5.26155 15.1451 4.44055 15.6201C3.89155 15.9381 3.70155 16.6451 4.01955 17.1951L4.65055 18.2831C4.80655 18.5641 5.06155 18.7671 5.35655 18.8501C5.65055 18.9321 5.97455 18.8971 6.24455 18.7471C6.64155 18.5141 7.10355 18.3931 7.56755 18.3931ZM12.6326 23.6741H11.3796C9.91055 23.6741 8.71555 22.4801 8.71555 21.0111C8.71355 20.8301 8.66155 20.6421 8.56455 20.4791C8.40755 20.2051 8.15355 20.0091 7.86055 19.9311C7.56955 19.8531 7.25055 19.8961 6.98855 20.0481C6.36055 20.3981 5.62155 20.4831 4.94555 20.2931C4.27055 20.1021 3.68755 19.6381 3.34555 19.0231L2.72055 17.9461C1.98955 16.6781 2.42455 15.0531 3.69055 14.3211C4.04955 14.1141 4.27255 13.7281 4.27255 13.3141C4.27255 12.9001 4.04955 12.5131 3.69055 12.3061C2.42355 11.5701 1.98955 9.94112 2.71955 8.67312L3.39755 7.56012C4.11855 6.30612 5.74855 5.86413 7.01955 6.59413C7.19255 6.69712 7.38055 6.74913 7.57155 6.75113C8.19455 6.75113 8.71555 6.23712 8.72555 5.60512C8.72155 4.90812 8.99655 4.23913 9.49755 3.73413C10.0006 3.23013 10.6686 2.95312 11.3796 2.95312H12.6326C13.3486 2.95312 14.0446 3.24713 14.5436 3.75813C15.0416 4.27213 15.3166 4.97713 15.2956 5.69213C15.2976 5.85313 15.3506 6.03912 15.4466 6.20213C15.6056 6.47213 15.8566 6.66212 16.1546 6.74012C16.4526 6.81413 16.7646 6.77413 17.0296 6.61713C18.3096 5.88613 19.9386 6.32412 20.6696 7.59412L21.2926 8.67312C21.3086 8.70212 21.3226 8.73013 21.3346 8.75913C21.9966 10.0101 21.5546 11.5851 20.3246 12.3041C20.1456 12.4071 20.0006 12.5511 19.9006 12.7251C19.7456 12.9941 19.7026 13.3141 19.7806 13.6081C19.8606 13.9081 20.0516 14.1571 20.3206 14.3111C20.9276 14.6601 21.3806 15.2481 21.5616 15.9271C21.7426 16.6051 21.6436 17.3411 21.2906 17.9481L20.6266 19.0541C19.8956 20.3101 18.2666 20.7451 16.9996 20.0131C16.8306 19.9161 16.6356 19.8631 16.4416 19.8581H16.4356C16.1466 19.8581 15.8496 19.9811 15.6336 20.1961C15.4146 20.4151 15.2946 20.7071 15.2966 21.0171C15.2896 22.4861 14.0946 23.6741 12.6326 23.6741Z"
+                                                fill="#737373"></path>
+                                          </g>
+                                          <path class="setting" fill-rule="evenodd" clip-rule="evenodd"
+                                             d="M12.011 11.4258C10.971 11.4258 10.125 12.2728 10.125 13.3128C10.125 14.3528 10.971 15.1978 12.011 15.1978C13.051 15.1978 13.897 14.3528 13.897 13.3128C13.897 12.2728 13.051 11.4258 12.011 11.4258ZM12.011 16.6978C10.144 16.6978 8.625 15.1798 8.625 13.3128C8.625 11.4458 10.144 9.92578 12.011 9.92578C13.878 9.92578 15.397 11.4458 15.397 13.3128C15.397 15.1798 13.878 16.6978 12.011 16.6978Z"
+                                             fill="#737373"></path>
+                                       </svg>
+                                       <span class="title">Setting</span>
+                                    </a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a href="setting.html" class="nav-link">
+                                       <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path class="logout"
+                                             d="M16.3652 16.9531V18.9531C16.3652 21.1623 14.5744 22.9531 12.3652 22.9531H7.36523C5.1561 22.9531 3.36523 21.1623 3.36523 18.9531V6.95313C3.36523 4.74399 5.1561 2.95312 7.36523 2.95312H12.3652C14.5744 2.95312 16.3652 4.74399 16.3652 6.95312V8.95312"
+                                             stroke="#737373" stroke-width="1.5" stroke-linecap="round"></path>
+                                          <path class="logout"
+                                             d="M19.3652 15.9531L21.6581 13.6602C22.0487 13.2697 22.0487 12.6365 21.6581 12.246L19.3652 9.95313"
+                                             stroke="#737373" stroke-width="1.5" stroke-linecap="round"></path>
+                                          <path class="logout" d="M21.3652 12.9531L9.36523 12.9531" stroke="#737373"
+                                             stroke-width="1.5" stroke-linecap="round"></path>
+                                       </svg>
+                                       <span class="title">Log Out</span>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </nav>
+            </div>
+            <div class="main-content">
+               <div class="container-fluid">
+                  <div class="page-content ">
+                     <div class="personal-info mt-3">
+                        <div class="customer">
+                           <div class="details d-flex">
+                              <div class="personal-img">
+                                 <img src="./assets/images/supplier.png" alt="">
+                              </div>
+                              <div class="personal-details d-flex flex-column gap-1 pt-2">
+                                 <div class="row">
+                                    <div class="col-lg-2 col-sm-4">
+                                       <p>Name</p>
+                                    </div>
+                                    <div class="col-lg-10 col-sm-8">
+                                       <p>Pixellax</p>
+                                    </div>
+                                 </div>
+                                 <div class="row">
+                                    <div class="col-lg-2 col-sm-4">
+                                       <p>Phone</p>
+                                    </div>
+                                    <div class="col-lg-10 col-sm-8">
+                                       <p>01315565037</p>
+                                    </div>
+                                 </div>
+                                 <div class="row">
+                                    <div class="col-lg-2 col-sm-4">
+                                       <p>Email</p>
+                                    </div>
+                                    <div class="col-lg-10 col-sm-8">
+                                       <p>mannan@gmail.com</p>
+                                    </div>
+                                 </div>
+                                 <div class="row">
+                                    <div class="col-lg-2 col-sm-4">
+                                       <p>Address</p>
+                                    </div>
+                                    <div class="col-lg-10 col-sm-8">
+                                       <p>jugatola bus stand, danmondi, dhaka 1207</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="summary cards">
+                              <div class="row">
+                                 <div class="col-lg-3 col-md-6">
+                                    <div class="card">
+                                       <div class="card-body">
+                                          <div class="card-icon">
+                                             <img src="./assets/images/icon/card_pursese.svg" alt="">
+                                          </div>
+                                          <h6 class="card-title">Total purchase</h6>
+                                          <h5 class="card-text">20 </h5>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-3 col-md-6">
+                                    <div class="card">
+                                       <div class="card-body">
+                                          <div class="card-icon">
+                                             <img src="./assets/images/icon/card_amount.svg" alt="">
+                                          </div>
+                                          <h6 class="card-title">Total amount</h6>
+                                          <h5 class="card-text">20000 </h5>
+                                       </div>
+                                    </div>
+
+                                 </div>
+                                 <div class="col-lg-3 col-md-6">
+                                    <div class="card">
+                                       <div class="card-body">
+                                          <div class="card-icon">
+                                             <img src="./assets/images/icon/card_paid.svg" alt="">
+                                          </div>
+                                          <h6 class="card-title">Total paid</h6>
+                                          <h5 class="card-text">15000 </h5>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-3 col-sm-6">
+                                    <div class="card">
+                                       <div class="card-body">
+                                          <div class="card-icon">
+                                             <img src="./assets/images/icon/card_due.svg" alt="">
+                                          </div>
+                                          <h6 class="card-title">Total due</h6>
+                                          <h5 class="card-text">2000 </h5>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="page-title mt-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                           <h5 class="fw-600 d-none d-sm-inline-block">Orders (05)</h5>
+                        </div>
+                     </div>
+                     <div class="page-wrapper mt-3">
+                        <div class="customer">
+                           <div class="data_table">
+                              <div class="table">
+                                 <div class="thead">
+                                    <div class="row">
+                                       <div class="cell sl">
+                                          SL
+                                       </div>
+                                       <div class="cell date">
+                                          Date
+                                       </div>
+                                       <div class="cell orderId">
+                                          Order id
+                                       </div>
+                                       <div class="cell note">
+                                          Note
+                                       </div>
+                                       <div class="cell totalprice">
+                                          Grand Total
+                                       </div>
+                                       <div class="cell totalprice">
+                                          Refund
+                                       </div>
+                                       <div class="cell totalprice">
+                                          Paid
+                                       </div>
+                                       <div class="cell totalprice">
+                                          Due
+                                       </div>
+
+                                       <div class="cell action">
+                                          View
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="tbody">
+                                    <div class="row">
+                                       <div class="cell sl">
+                                          101
+                                       </div>
+                                       <div class="cell date">
+                                          04-02-2024
+                                       </div>
+                                       <div class="cell orderId">
+                                          675490
+                                       </div>
+                                       <div class="cell note">
+                                          Poli bag 100 pice Poli bag 100 pice
+                                       </div>
+                                       <div class="cell totalprice">
+                                          450,000
+                                       </div>
+                                       <div class="cell totalprice">
+                                          0.00
+                                       </div>
+                                       <div class="cell totalprice">
+                                          <div class="alert alert-success-50 alert-sm d-flex align-items-center gap-1"
+                                             role="alert">1000000
+                                          </div>
+                                       </div>
+                                       <div class="cell totalprice">
+                                          <div class="alert alert-danger-50 alert-sm d-flex align-items-center gap-1"
+                                             role="alert">-1000000
+                                          </div>
+                                       </div>
+
+                                       <div class="cell action">
+                                          <a href="order.html" class="view_details"><img
+                                                src="./assets/images/icon/eye_20.svg" alt="">
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="cell sl">
+                                          101
+                                       </div>
+                                       <div class="cell date">
+                                          04-02-2024
+                                       </div>
+                                       <div class="cell orderId">
+                                          675490
+                                       </div>
+                                       <div class="cell note">
+                                          Poli bag 100 pice Poli bag 100 pice
+                                       </div>
+                                       <div class="cell totalprice">
+                                          450,000
+                                       </div>
+                                       <div class="cell totalprice">
+                                          0.00
+                                       </div>
+                                       <div class="cell totalprice">
+                                          <div class="alert alert-success-50 alert-sm d-flex align-items-center gap-1"
+                                             role="alert">1000000
+                                          </div>
+                                       </div>
+                                       <div class="cell totalprice">
+                                          <div class="alert alert-danger-50 alert-sm d-flex align-items-center gap-1"
+                                             role="alert">-1000000
+                                          </div>
+                                       </div>
+
+                                       <div class="cell action">
+                                          <a href="order.html" class="view_details"><img
+                                                src="./assets/images/icon/eye_20.svg" alt="">
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <nav class="navigation mt-5 mb-5 d-flex justify-content-between align-items-center">
+                              <div class="d-flex align-items-center gap-2">
+                                 <p>Showing</p>
+                                 <div class="custom-select">
+                                    <input type="text" class="form-control">
+                                    <span class="arrow-icon"></span>
+                                    <ul id="myOptions" class="options-list ">
+                                       <option>10</option>
+                                       <option>20</option>
+                                       <option>50</option>
+                                    </ul>
+                                 </div>
+                                 <p>of 50</p>
+                              </div>
+                              <ul class="pagination gap-2">
+                                 <li class="page-item"><a class="page-link" href="#"><i
+                                          class="fa-solid fa-chevron-left"></i></a></li>
+                                 <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                 <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                 <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                 <li class="page-item"><a class="page-link" href="#"><i
+                                          class="fa-solid fa-chevron-right"></i></a></li>
+                              </ul>
+                           </nav>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+            <div class="footer p-3 mt-3">
+               <div class="d-flex justify-content-center align-items-center">
+                  <p class="font-14 fw-500">© 2016 - 2023 SteadFast. All rights reserved</p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- modal section -->
+      <div class="modal" id="supplier_form">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  <h6 class="font-18 mb-4">Add Supplier</h6>
+                  <form action="">
+                     <div class="form-group position-relative mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Company Name">
+                     </div>
+                     <div class="form-group position-relative mb-3">
+                        <label for="phone" class="form-label">Phone</label>
+                        <input type="number" class="form-control" id="phone" placeholder="Cell No">
+                     </div>
+                     <div class="form-group position-relative mb-3">
+                        <label for="mail" class="form-label">Mail</label>
+                        <input type="email" class="form-control" id="mail" placeholder="mail@gmail.com">
+                     </div>
+                     <div class="form-group position-relative mb-3">
+                        <label for="address" class="form-label">Address</label>
+                        <textarea name="" class="form-control" id="address" placeholder="Address"></textarea>
+                     </div>
+                     <div class="form-group position-relative mb-3">
+                        <label class="form-label">Picture (115 X 115)</label>
+                        <div class="image-upload-container d-flex flex-column">
+                           <div class="productMain-image">
+                              <div class="dragDrop-area">
+                                 <input type="file" accept="image/*" name="image" class="form-control image-upload"
+                                    id="files">
+                                 <label
+                                    class="w-100 h-100 font-14 fw-500  d-flex flex-column gap-1 align-items-center justify-content-center"
+                                    for="files">
+                                    <img src="./assets/images/icon/img_upload.svg" alt="" class="w-auto h-auto">
+                                    <span class="d-flex gap-2">
+                                       <p class="font-14 fw-500 ">Upload image or drag and drop
+                                          here</p>
+                                    </span>
+                                    <small class=" font-14 fw-400">PNG/JPEG</small></label>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <button type="button" class="btn btn-primary btn-sm">Save</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- modal section -->
+
+      <!-- bootstrap and jquery cdn link -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/metisMenu/3.0.7/metisMenu.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/6.2.5/simplebar.min.js"></script>
+      <!-- end bootstrap and jquery cdn link -->
+      <!-- custom javascript -->
+      <script src="assets/plugin/js/sidebarmenu.js"></script>
+      <script src="assets/js/custom.js"></script>
+      <script src="assets/js/master.js"></script>
+      <!-- custom javascript -->
+
+</body>
+
+</html>

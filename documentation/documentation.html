@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+   <!-- set your title -->
+   <title> Admin Dashboard</title>
+
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- replace favicon path or source here -->
+   <!-- <link rel="icon" href="images/logo/favicon.ico"> -->
+
+   <!-- bootstrap and font-awesome cdn link -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+   <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/css/selectize.default.min.css" />
+   <!-- end bootstrap and font-awesome cdn link -->
+
+   <link rel="stylesheet" href="../assets/css/master.css">
+   <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+
+   <style>
+      .component-wrapper {
+         padding: 48px;
+         margin-bottom: 140px;
+      }
+
+      .component-box {
+         background: var(--bs-neutral-100);
+         padding: 20px;
+         border-radius: 4px;
+      }
+
+      .cards .row {
+         margin: 0 -12px;
+         row-gap: 24px;
+      }
+
+      .cards .row .col-lg-3 {
+         padding: 0 12px;
+      }
+   </style>
+</head>
+
+<body>
+   <div class="app">
+      <div class="component-wrapper  ">
+         <div class="container-fluid">
+            <h5>Components</h5>
+            <div class="Components">
+               <div class="btn-component component-box mt-3">
+                  <h6>Solid Buttons Component</h6>
+                  <div class="btns mt-2 d-flex gap-3">
+                     <button type="button" class="btn btn-primary btn-sm">Primary</button>
+                     <button type="button" class="btn btn-success btn-sm">Success</button>
+                     <button type="button" class="btn btn-danger btn-sm">Danger</button>
+                     <button type="button" class="btn btn-warning btn-sm">Warning</button>
+                     <button type="button" class="btn btn-info btn-sm">Info</button>
+                     <button type="button" class="btn btn-secondary btn-sm">Secondary</button>
+                     <button type="button" class="btn btn-link">Link</button>
+                  </div>
+               </div>
+
+               <div class="btn-component component-box mt-3">
+                  <h6>Outline Buttons Component</h6>
+                  <div class="btns mt-2 d-flex gap-3">
+                     <button type="button" class="btn btn-outline-primary btn-sm">Primary</button>
+                     <button type="button" class="btn btn-outline-success btn-sm">Success</button>
+                     <button type="button" class="btn btn-outline-danger btn-sm">Danger</button>
+                     <button type="button" class="btn btn-outline-warning btn-sm">Warning</button>
+                     <button type="button" class="btn btn-outline-info btn-sm">Info</button>
+                     <button type="button" class="btn btn-outline-secondary btn-sm">Secondary</button>
+                  </div>
+               </div>
+
+               <div class="badge-component component-box mt-3">
+                  <h6>Badge Component</h6>
+                  <div class="badges mt-2 d-flex gap-3">
+                     <span class="badge text-bg-primary">Primary</span>
+                     <span class="badge text-bg-secondary">Secondary</span>
+                     <span class="badge text-bg-success">Success</span>
+                     <span class="badge text-bg-danger">4</span>
+                     <span class="badge text-bg-warning">Warning</span>
+                     <span class="badge text-bg-info">Info</span>
+                     <span class="badge text-bg-orange">New</span>
+                  </div>
+               </div>
+
+               <div class="alert-component component-box mt-3">
+                  <h6>Alert Component</h6>
+                  <div class="alerts mt-2 d-flex gap-3">
+                     <div class="alert alert-primary alert-md" role="alert">
+                        Partially delivered
+                     </div>
+                     <div class="alert alert-success alert-md" role="alert">
+                        Deliverd
+                     </div>
+                     <div class="alert alert-danger alert-md" role="alert">
+                        Cancel
+                     </div>
+                     <div class="alert alert-warning alert-md" role="alert">
+                        Pending
+                     </div>
+                     <div class="alert alert-info alert-md" role="alert">
+                        Inreview
+                     </div>
+                     <div class="alert alert-cyan alert-md" role="alert">
+                        Processing
+                     </div>
+                     <div class="alert alert-orange alert-md" role="alert">
+                        Approval pending
+                     </div>
+                  </div>
+                  <div class="alerts mt-2 d-flex gap-3">
+                     <div class="alert alert-primary-50 alert-md" role="alert">
+                        Partially delivered
+                     </div>
+                     <div class="alert alert-success-50 alert-md" role="alert">
+                        Deliverd
+                     </div>
+                     <div class="alert alert-danger-50 alert-md" role="alert">
+                        Cancel
+                     </div>
+                     <div class="alert alert-warning-50 alert-md" role="alert">
+                        Pending
+                     </div>
+                     <div class="alert alert-info-50 alert-md" role="alert">
+                        Inreview
+                     </div>
+                     <div class="alert alert-cyan-50 alert-md" role="alert">
+                        Processing
+                     </div>
+                     <div class="alert alert-orange-50 alert-md" role="alert">
+                        Approval pending
+                     </div>
+                  </div>
+
+                  <div class="alerts mt-3 d-flex gap-3">
+                     <div class="alert alert-primary alert-ex-sm" role="alert">
+                        Partially delivered
+                     </div>
+                     <div class="alert alert-success alert-ex-sm" role="alert">
+                        Deliverd
+                     </div>
+                     <div class="alert alert-danger alert-ex-sm" role="alert">
+                        Cancel
+                     </div>
+                     <div class="alert alert-warning alert-ex-sm" role="alert">
+                        Pending
+                     </div>
+                     <div class="alert alert-info alert-ex-sm" role="alert">
+                        Inreview
+                     </div>
+                     <div class="alert alert-cyan alert-ex-sm" role="alert">
+                        Processing
+                     </div>
+                     <div class="alert alert-orange alert-ex-sm" role="alert">
+                        Approval pending
+                     </div>
+                  </div>
+               </div>
+
+               <div class="pages-component component-box mt-3">
+                  <h6>Pagination Component</h6>
+                  <div class="page-count mt-2 ">
+                     <nav aria-label="Page navigation example">
+                        <ul class="pagination gap-2">
+                           <li class="page-item"><a class="page-link" href="#"><i
+                                    class="fa-solid fa-chevron-left"></i></a></li>
+                           <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                           <li class="page-item"><a class="page-link" href="#">2</a></li>
+                           <li class="page-item"><a class="page-link" href="#">3</a></li>
+                           <li class="page-item"><a class="page-link" href="#"><i
+                                    class="fa-solid fa-chevron-right"></i></a></li>
+                        </ul>
+                     </nav>
+
+                  </div>
+               </div>
+               <div class="cards-component component-box mt-3">
+                  <h6> With link card </h6>
+                  <div class="cards mt-2 ">
+                     <div class="row">
+                        <div class="col-lg-3 col-sm-6">
+                           <a href="#">
+                              <div class="card">
+                                 <div class="card-body">
+                                    <h6 class="card-title">Card title</h6>
+                                    <p class="card-text">Some quick example text to build on </p>
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                           <a href="#">
+                              <div class="card">
+                                 <div class="card-body">
+                                    <h6 class="card-title">Card title</h6>
+                                    <p class="card-text">Some quick example text to build on </p>
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                           <a href="#">
+                              <div class="card">
+                                 <div class="card-body">
+                                    <h6 class="card-title">Card title</h6>
+                                    <p class="card-text">Some quick example text to build on </p>
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                           <a href="#">
+                              <div class="card">
+                                 <div class="card-body">
+                                    <h6 class="card-title">Card title</h6>
+                                    <p class="card-text">Some quick example text to build on </p>
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+
+               <div class="cards-component component-box mt-3">
+                  <h6>Without Link card </h6>
+                  <div class="cards mt-2 ">
+                     <div class="row">
+                        <div class="col-lg-3 col-sm-6">
+                           <div class="card">
+                              <div class="card-body">
+                                 <h6 class="card-title">Card title</h6>
+                                 <p class="card-text">Some quick example text to build on </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                           <div class="card">
+                              <div class="card-body">
+                                 <h6 class="card-title">Card title</h6>
+                                 <p class="card-text">Some quick example text to build on </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                           <div class="card">
+                              <div class="card-body">
+                                 <h6 class="card-title">Card title</h6>
+                                 <p class="card-text">Some quick example text to build on </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                           <div class="card">
+                              <div class="card-body">
+                                 <h6 class="card-title">Card title</h6>
+                                 <p class="card-text">Some quick example text to build on </p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+
+               <div class="form-component component-box mt-3">
+                  <h6 class="mb-3">Input form </h6>
+                  <div class="w-50">
+                     <form action="">
+                        <div class="form-group position-relative mb-3">
+                           <label for="name" class="form-label">Full Name</label>
+                           <input type="text" class="form-control" id="name" placeholder="Name">
+                        </div>
+
+                        <div class="form-group position-relative mb-3">
+                           <label for="email" class="form-label">Email address</label>
+                           <input type="email" class="form-control is_error" id="email" placeholder="Email Address">
+                           <label for="" class="form-error-text">Invalid Email</label>
+                           <img src="../assets/images/master_icon/error_icon.svg" alt="" class="form-error-icon">
+                        </div>
+                        <div class="form-group position-relative mb-3">
+                           <label for="email" class="form-label">Password</label>
+                           <input type="password" class="form-control" id="email" placeholder="Password">
+                        </div>
+                        <div class="form-group position-relative mb-3">
+                           <label for="address" class="form-label">Address</label>
+                           <textarea name="" id="address" cols="1" rows="2" class="form-control"></textarea>
+                        </div>
+
+                        <div class="form-group position-relative mb-3">
+                           <label for="" class="form-label">District</label>
+                           <div class="custom-select">
+                              <input type="text" class="form-control" placeholder="Select">
+                              <span class="arrow-icon"></span>
+                              <ul id="myOptions" class="options-list">
+                                 <option>Pabna</option>
+                                 <option>Dhaka</option>
+                                 <option>Rajshahi</option>
+                                 <option>Khulna</option>
+                                 <option>Rarishal</option>
+                                 <option>Pabna</option>
+                                 <option>Dhaka</option>
+                                 <option>Rajshahi</option>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="form-group position-relative mb-3">
+                           <label for="" class="form-label">City</label>
+                           <div class="custom-select">
+                              <input type="text" class="form-control" placeholder="Select">
+                              <span class="arrow-icon"></span>
+                              <ul id="myOptions" class="options-list ">
+                                 <option>Pabna</option>
+                                 <option>Dhaka</option>
+                                 <option>Rajshahi</option>
+                                 <option>Khulna</option>
+                                 <option>Rarishal</option>
+                                 <option>Pabna</option>
+                                 <option>Dhaka</option>
+                                 <option>Rajshahi</option>
+                              </ul>
+                           </div>
+                        </div>
+                        <button class="btn btn-primary btn-md">Save</button>
+                     </form>
+                  </div>
+               </div>
+               <div class="dropdown-component component-box mt-3">
+                  <h6>Dropdown </h6>
+                  <div class="w-50 mt-2">
+                     <div class="custom-select">
+                        <input type="text" class="form-control" placeholder="Select" readonly>
+                        <span class="arrow-icon"></span>
+                        <ul id="myOptions" class="options-list">
+                           <option>Pabna</option>
+                           <option>Dhaka</option>
+                           <option>Rajshahi</option>
+                           <option>Khulna</option>
+                           <option>Rarishal</option>
+                           <option>Pabna</option>
+                           <option>Dhaka</option>
+                           <option>Rajshahi</option>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="radio-component component-box mt-3">
+                  <h6>Radio Check and Switch Button </h6>
+                  <div class="d-flex gap-5 mt-2">
+                     <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="checkbox1">
+                        <label class="form-check-label" for="checkbox1">
+                           Remember Me
+                        </label>
+                     </div>
+                     <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="radio1">
+                        <label class="form-check-label" for="radio1">
+                           Radio Button
+                        </label>
+                     </div>
+                     <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="radio2" checked="">
+                        <label class="form-check-label" for="radio2">
+                           Radio Button
+                        </label>
+                     </div>
+
+                     <div class="form-check form-switch">
+                        <input class="form-check-input switch" type="checkbox" role="switch"
+                           id="flexSwitchCheckDefault">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">Switch</label>
+                     </div>
+
+                  </div>
+               </div>
+               <div class="tab-menu-component component-box mt-3">
+                  <h6 class="mb-3">Tab menu button </h6>
+                  <div class="tab-menus">
+                     <ul class="tab-menus-items d-flex gap-3">
+                        <li class="tab-item">
+                           <button class=" btn btn-sm btn-primary">All</button>
+                        </li>
+                        <li class="tab-item">
+                           <button class=" btn btn-sm btn-secondary">List by Date</button>
+                        </li>
+                        <li class="tab-item">
+                           <button class=" btn btn-sm btn-secondary">Pending</button>
+                        </li>
+                        <li class="tab-item">
+                           <button class=" btn btn-sm btn-secondary">Approval Pending</button>
+                        </li>
+                        <li class="tab-item">
+                           <button class=" btn btn-sm btn-secondary">Delivered</button>
+                        </li>
+                        <li class="tab-item">
+                           <button class=" btn btn-sm btn-secondary">Partly Delivered</button>
+                        </li>
+                        <li class="tab-item">
+                           <button class=" btn btn-sm btn-secondary">Cancelled</button>
+                        </li>
+                        <li class="tab-item">
+                           <button class=" btn btn-sm btn-secondary">In Review</button>
+                        </li>
+                        <li class="tab-item">
+                           <button class=" btn btn-sm btn-secondary">Pick-n-Drop</button>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+
+               <div class="tab-menu-component component-box mt-3">
+                  <h6 class="mb-3">Tab menu </h6>
+                  <div class="tab-menus">
+                     <ul class="nav" role="tablist">
+                        <li class="nav-item" role="presentation">
+                           <a class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" href="#"
+                              aria-selected="false" role="tab" tabindex="-1">ALL</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                           <a class="nav-link" id="pending-tab" data-bs-toggle="tab" data-bs-target="#pending" href="#"
+                              aria-selected="false" role="tab" tabindex="-1">Pending</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                           <a class="nav-link" id="delivered-tab" data-bs-toggle="tab" data-bs-target="#delivered"
+                              href="#" aria-selected="false" role="tab" tabindex="-1">Delivered</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                           <a class="nav-link" id="review-tab" data-bs-toggle="tab" data-bs-target="#review" href="#"
+                              aria-selected="false" role="tab" tabindex="-1">Inreview</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                           <a class="nav-link " id="cancel-tab" data-bs-toggle="tab" data-bs-target="#cancel" href="#"
+                              aria-selected="true" role="tab">Cancel</a>
+                        </li>
+                     </ul>
+                     <div class="tab-content mt-2" id="tabContent">
+                        <div class="tab-pane fade" id="all" role="tabpanel" aria-labelledby="all-tab">
+                           demo content
+                        </div>
+                        <div class="tab-pane fade" id="pending" role="tabpanel" aria-labelledby="pending-tab">
+                           pending
+                        </div>
+                        <div class="tab-pane fade" id="delivered" role="tabpanel" aria-labelledby="delivered-tab">
+                           delivered
+                        </div>
+                        <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
+                           Inreview
+                        </div>
+                        <div class="tab-pane fade" id="cancel" role="tabpanel" aria-labelledby="cancel-tab">
+                           Cancel
+                        </div>
+                     </div>
+
+                  </div>
+
+                  <div class="btn-type-tab mt-4">
+                     <div class="tab-menus btn-tap">
+                        <ul class="nav" role="tablist">
+                           <li class="nav-item" role="presentation">
+                              <a class="nav-link active" id="alls-tab" data-bs-toggle="tab" data-bs-target="#alls"
+                                 href="#" aria-selected="false" role="tab" tabindex="-1">ALLS</a>
+                           </li>
+                           <li class="nav-item" role="presentation">
+                              <a class="nav-link" id="pendings-tab" data-bs-toggle="tab" data-bs-target="#pendings"
+                                 href="#" aria-selected="false" role="tab" tabindex="-1">Pendings</a>
+                           </li>
+                           <li class="nav-item" role="presentation">
+                              <a class="nav-link" id="delivereds-tab" data-bs-toggle="tab" data-bs-target="#delivereds"
+                                 href="#" aria-selected="false" role="tab" tabindex="-1">Delivered</a>
+                           </li>
+                           <li class="nav-item" role="presentation">
+                              <a class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews"
+                                 href="#" aria-selected="false" role="tab" tabindex="-1">Inreview</a>
+                           </li>
+                           <li class="nav-item" role="presentation">
+                              <a class="nav-link " id="cancels-tab" data-bs-toggle="tab" data-bs-target="#cancels"
+                                 href="#" aria-selected="true" role="tab">Cancel</a>
+                           </li>
+                        </ul>
+                        <div class="tab-content mt-3" id="tabContent">
+                           <div class="tab-pane fade" id="alls" role="tabpanel" aria-labelledby="alls-tab">
+                              demo content
+                           </div>
+                           <div class="tab-pane fade" id="pendings" role="tabpanel" aria-labelledby="pendings-tab">
+                              pending
+                           </div>
+                           <div class="tab-pane fade" id="delivereds" role="tabpanel" aria-labelledby="delivereds-tab">
+                              delivered
+                           </div>
+                           <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                              Inreview
+                           </div>
+                           <div class="tab-pane fade" id="cancels" role="tabpanel" aria-labelledby="cancels-tab">
+                              Cancel
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="short-questions-component component-box mt-3">
+                  <h6>Accordion Button </h6>
+                  <div class="w-50 mt-2">
+                     <div class="question-list d-flex flex-column gap-5">
+
+                        <div class="accordion" id="accordionExample">
+                           <div class="accordion-item">
+                              <h1 class="accordion-header">
+                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseone" aria-expanded="false" aria-controls="collapseone">
+                                    Why SteadFast Courier?
+                                 </button>
+                              </h1>
+                              <div id="collapseone" class="accordion-collapse collapse"
+                                 data-bs-parent="#accordionExample">
+                                 <div class="accordion-body">
+                                    <p>SteadFast Courier stands out for its commitment to delivering parcels nationwide
+                                       on time and
+                                       without any hassle. We pride ourselves on offering fast payment, easy tracking, a
+                                       dedicated
+                                       customer service team, and ensuring the safe delivery of your parcels.
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="accordion-item">
+                              <h1 class="accordion-header">
+                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    What is the coverage area of steadfast Courier?
+                                 </button>
+                              </h1>
+                              <div id="collapseTwo" class="accordion-collapse collapse"
+                                 data-bs-parent="#accordionExample">
+                                 <div class="accordion-body">
+                                    <p>SteadFast Courier extends its services across 8 divisions, 495 Upazilas, and 330
+                                       Municipal
+                                       Corporations. Click here for a comprehensive list of detailed service locations.
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="accordion-item">
+                              <h1 class="accordion-header">
+                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    What services does Steadfast Courier provide?
+
+                                 </button>
+                              </h1>
+                              <div id="collapseThree" class="accordion-collapse collapse"
+                                 data-bs-parent="#accordionExample">
+                                 <div class="accordion-body">
+                                    <p>Revel in the excellence of E-commerce delivery, pick-and-drop , cutting-edge
+                                       warehousing, entrust
+                                       your goods to our state-of-the-art warehousing, and witness perfection in
+                                       packaging solutions.
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="accordion-item">
+                              <h1 class="accordion-header">
+                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Want to know about your delivery charges ?
+                                 </button>
+                              </h1>
+                              <div id="collapseFour" class="accordion-collapse collapse"
+                                 data-bs-parent="#accordionExample">
+                                 <div class="accordion-body">
+                                    <p>Discover our delivery charges, which are determined by the weight of a 1 kg
+                                       parcel:
+                                    </p><br>
+                                    <ul class="d-flex flex-column gap-1">
+                                       <li>
+                                          <p>Inside Dhaka: 70 </p>
+                                       </li>
+                                       <li>
+                                          <p>Dhaka Suburban: 100</p>
+                                       </li>
+                                       <li>
+                                          <p>Outside Dhaka: 130</p>
+                                       </li>
+                                    </ul><br>
+                                    <p>For a more detailed breakdown, utilize our Price Calculation Option by <a
+                                          href="pricing.html" class="txt-primary">Click here</a>
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+               <div class="searchbox-component component-box mt-3 mb-5">
+                  <h6 class="mb-3">Search Box </h6>
+                  <div class="search-box w-50">
+                     <input type="text" class="form-control" placeholder="Search Every Things" id="searchInput">
+                     <img src="../assets/images/master_icon/search_box_icon.svg" alt=""
+                        class="search_icon w-auto h-auto">
+                     <ul id="searchResults" class="search_result" style="display: none;">
+                        <div class="d-flex align-items-center justify-content-between recent_results">
+                           <small>Recent</small> <a href="">Clear All</a>
+                        </div>
+                        <li> <a href="" class="d-flex align-items-center">
+                              <img src="../assets/images/master_icon/search_result_icon.png" alt=""
+                                 class="search_item_img">
+                              <p> ID: 51492220 Name: Israt Address:2/4 borobag, mirpur-2, dhaka-1216 COD:
+                                 485</p>
+                           </a> <img src="../assets/images/master_icon/search_result_close_icon.png" alt=""
+                              class="close_result">
+                        </li>
+                        <li> <a href="" class="d-flex align-items-center">
+                              <img src="../assets/images/master_icon/search_result_icon.png" alt=""
+                                 class="search_item_img">
+                              <p> ID: 51492220 Name: Israt Address:2/4 borobag, mirpur-2, dhaka-1216 COD:
+                                 485</p>
+                           </a> <img src="../assets/images/master_icon/search_result_close_icon.png" alt=""
+                              class="close_result">
+                        </li>
+                        <li> <a href="" class="d-flex align-items-center">
+                              <img src="../assets/images/master_icon/search_result_icon.png" alt=""
+                                 class="search_item_img">
+                              <p> ID: 51492220 Name: Israt Address:2/4 borobag, mirpur-2, dhaka-1216 COD:
+                                 485</p>
+                           </a> <img src="../assets/images/master_icon/search_result_close_icon.png" alt=""
+                              class="close_result">
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="progressbar-component component-box mt-3 mb-5">
+                  <h6 class="mb-3">Progress Bar</h6>
+                  <div class="progressbar-items d-flex flex-column gap-3 w-50">
+                     <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" aria-label="Success example"
+                           style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                     </div>
+                     <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" aria-label="Info example"
+                           style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                     </div>
+                     <div class="progress">
+                        <div class="progress-bar bg-warning" role="progressbar" aria-label="Warning example"
+                           style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="progressbar-component component-box mt-3 mb-5">
+                  <h6 class="mb-3">Date</h6>
+                  <div class="custom-date w-50">
+                     <form action="">
+                        <div class="form-group position-relative mb-3">
+                           <label for="date" class="form-label">Password</label>
+                           <input type="date" class="form-control" id="date" placeholder="12/02/2023">
+                        </div>
+                     </form>
+                  </div>
+               </div>
+               <div class="tooltip-component component-box mt-3 mb-5">
+                  <h6 class="mb-3">Tooltip</h6>
+                  <div class="tooltip-box d-flex gap-2 align-items-center">
+                     <button type="button" class="btn btn-primary btn-d-w font-10" data-bs-toggle="tooltip"
+                        data-bs-placement="bottom" data-bs-title="Tooltip on bottom">
+                        Tooltip on bottom
+                     </button>
+                     <button type="button" class="btn btn-primary btn-d-w font-14" data-bs-toggle="tooltip"
+                        data-bs-placement="top" data-bs-title="Tooltip on bottom">
+                        Tooltip on top
+                     </button>
+                     <button type="button" class="btn btn-primary btn-d-w font-14" data-bs-toggle="tooltip"
+                        data-bs-placement="left" data-bs-title="Tooltip on bottom">
+                        Tooltip on left
+                     </button>
+                     <button type="button" class="btn btn-primary btn-d-w font-14" data-bs-toggle="tooltip"
+                        data-bs-placement="right" data-bs-title="Tooltip on bottom">
+                        Tooltip on right
+                     </button>
+                  </div>
+               </div>
+               <div class="select-options component-box mt-3 mb-5">
+                  <h6 class="mb-3">Select</h6>
+                  <div class="custom-select">
+                     <select id="normalize">
+                        <option value="">Select</option>
+                        <option value="1">Awesome</option>
+                        <option value="2">Beast</option>
+                        <option value="3">Compatible</option>
+                        <option value="7">Javascript</option>
+                     </select>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+
+   </div>
+
+   <!-- bootstrap and jquery cdn link -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/js/selectize.min.js"></script>
+
+
+   <!-- end bootstrap and jquery cdn link -->
+
+
+   <!-- custom javascript -->
+   <script src="../assets/plugin/js/sidebarmenu.js"></script>
+   <script src="../assets/js/custom.js"></script>
+   <script src="../assets/js/master.js"></script>
+   <!-- custom javascript -->
+   <script>
+      $("#normalize").selectize({ normalize: true });
+
+   </script>
+
+</body>
+
+</html>
