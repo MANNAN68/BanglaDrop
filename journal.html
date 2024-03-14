@@ -55,7 +55,7 @@
                                     <!-- Left Menu Start -->
                                     <ul class="d-flex flex-column gap-2 metismenu mm-show" id="side-menu">
                                        <li>
-                                          <a href="index.html" class="waves-effect active">
+                                          <a href="index.html" class="waves-effect ">
                                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path class="dashboard"
@@ -157,18 +157,13 @@
                                           </a>
                                           <ul class="sub-menu mm-collapse" aria-expanded="false" style="height: 0px;">
                                              <li>
-                                                <a href="addpurchase.html" class=" waves-effect">
-                                                   <span>Add purchase</span>
+                                                <a href="#" class=" waves-effect">
+                                                   <span>Demo</span>
                                                 </a>
                                              </li>
                                              <li>
-                                                <a href="purchaselist.html" class=" waves-effect">
-                                                   <span>Purchase list</span>
-                                                </a>
-                                             </li>
-                                             <li>
-                                                <a href="returnpurchase.html" class=" waves-effect">
-                                                   <span>Purchase Return</span>
+                                                <a href="#" class=" waves-effect">
+                                                   <span>Demo1</span>
                                                 </a>
                                              </li>
                                           </ul>
@@ -615,22 +610,124 @@
             <div class="main-content">
                <div class="container-fluid">
                   <div class="page-content ">
-                     <div class="page-title">
+                     <div class="page-title d-flex justify-content-between align-items-center">
                         <div>
-                           <h5 class="fw-600">Dashboard</h5>
-                        </div>
-                     </div>
-                     <div class="page-wrapper mt-3">
-                        <div class="custom-select">
-                           <select class="select3">
-                              <option value="">Select</option>
-                              <option value="1">Awesome</option>
-                              <option value="2">Beast</option>
-                              <option value="3">Compatible</option>
-                              <option value="7">Javascript</option>
-                           </select>
-                        </div>
 
+                           <h5 class="fw-600">Manual Journal</h5>
+                           <!-- <h5 class="fw-600">Journal list</h5> -->
+                        </div>
+                        <!-- <div class="d-flex gap-4 align-items-center">
+                           <a href="create_journal.html">
+                              <button class="btn btn-primary btn-ex-sm"><i class="fa-solid fa-plus me-1"></i>Add
+                                 new</button>
+                           </a>
+                        </div> -->
+                     </div>
+
+                     <div class="page-wrapper mt-3">
+                        <div class="accounts">
+                           <div class="journal_content">
+                              <div class="d-flex justify-content-center align-items-center flex-column">
+                                 <div class="video position-relative mt-2 " data-bs-toggle="modal"
+                                    data-bs-target="#videoModal">
+                                    <div class="overlay"></div>
+                                    <button type="button" class="btn-play">
+                                       <span></span>
+                                    </button>
+                                 </div>
+                                 <a href="create_journal.html"
+                                    class="btn btn-primary btn-sm d-flex align-items-center justify-content-center">Create
+                                    new journal</a>
+                                 <div class="journal-notes ">
+                                    <h6 class="fw-400">In the Manual Journals module, you can:</h6>
+                                    <ul class="d-flex flex-column gap-2">
+                                       <li>Create purchase transactions manually</li>
+                                       <li>Create sales transactions manually</li>
+                                       <li>Create money transfer transactions manually</li>
+                                       <li>Create all types of expense transactions manually</li>
+                                    </ul>
+                                 </div>
+
+                              </div>
+                              <!-- <div class="data_table">
+                                 <div class="table">
+                                    <div class="thead">
+                                       <div class="row">
+                                          <div class="cell sl">
+                                             SL
+                                          </div>
+                                          <div class="cell date">
+                                             Date
+                                          </div>
+                                          <div class="cell code">
+                                             Code
+                                          </div>
+                                          <div class="cell note">
+                                             Reference
+                                          </div>
+                                          <div class="cell note">
+                                             Note
+                                          </div>
+                                          <div class="cell price">
+                                             Amount
+                                          </div>
+                                          <div class="cell name">
+                                             Created by
+                                          </div>
+                                          <div class="cell action">
+                                             Action
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="tbody">
+                                       <div class="row">
+                                          <div class="cell sl">
+                                             SL
+                                          </div>
+                                          <div class="cell date">
+                                             02 feb 2024 6:50 PM
+                                          </div>
+                                          <div class="cell code">
+                                             101
+                                          </div>
+                                          <div class="cell note">
+                                             Reference here
+                                          </div>
+                                          <div class="cell note">
+                                             Note here
+                                          </div>
+                                          <div class="cell price">
+                                             500000
+                                          </div>
+                                          <div class="cell name">
+                                             Md Abdul Mannan
+                                          </div>
+                                          <div class="cell action">
+                                             <div class="dropdown">
+                                                <a class="dropdown-toggle" data-bs-toggle="dropdown"
+                                                   aria-expanded="false">
+                                                   <img src="./assets/images/icon/table_3_dot.svg" alt="">
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                   <li><a class="dropdown-item d-flex align-items-center gap-2"
+                                                         href="#"><img src="./assets/images/icon/edit_icon_20.svg"
+                                                            alt="" class="w-auto">
+                                                         Edit</a></li>
+                                                   <li><a class="dropdown-item d-flex align-items-center gap-2"
+                                                         href="#">
+                                                         <img src="./assets/images/icon/delete_icon_20.svg" alt=""
+                                                            class="w-auto"> Delete</a>
+                                                   </li>
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </div>
+
+                                    </div>
+                                 </div>
+                              </div> -->
+                           </div>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -641,6 +738,26 @@
                </div>
             </div>
          </div>
+
+         <!-- modal area -->
+         <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+            style="display: none;">
+            <div class="modal-dialog modal-lg">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                     <div class="embed-responsive embed-responsive-16by9">
+                        <iframe src="https://www.youtube.com/embed/IfilqyreuVM" allowscriptaccess="always"
+                           allow="autoplay"></iframe>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+
       </div>
       <!-- bootstrap and jquery cdn link -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

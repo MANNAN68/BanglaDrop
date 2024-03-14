@@ -55,7 +55,7 @@
                                     <!-- Left Menu Start -->
                                     <ul class="d-flex flex-column gap-2 metismenu mm-show" id="side-menu">
                                        <li>
-                                          <a href="index.html" class="waves-effect active">
+                                          <a href="index.html" class="waves-effect ">
                                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path class="dashboard"
@@ -157,18 +157,13 @@
                                           </a>
                                           <ul class="sub-menu mm-collapse" aria-expanded="false" style="height: 0px;">
                                              <li>
-                                                <a href="addpurchase.html" class=" waves-effect">
-                                                   <span>Add purchase</span>
+                                                <a href="#" class=" waves-effect">
+                                                   <span>Demo</span>
                                                 </a>
                                              </li>
                                              <li>
-                                                <a href="purchaselist.html" class=" waves-effect">
-                                                   <span>Purchase list</span>
-                                                </a>
-                                             </li>
-                                             <li>
-                                                <a href="returnpurchase.html" class=" waves-effect">
-                                                   <span>Purchase Return</span>
+                                                <a href="#" class=" waves-effect">
+                                                   <span>Demo1</span>
                                                 </a>
                                              </li>
                                           </ul>
@@ -336,7 +331,7 @@
                                                 </a>
                                              </li>
                                              <li>
-                                                <a href="journal.html" class=" waves-effect">
+                                                <a href="#" class=" waves-effect">
                                                    <span>Manual journal</span>
                                                 </a>
                                              </li>
@@ -615,47 +610,124 @@
             <div class="main-content">
                <div class="container-fluid">
                   <div class="page-content ">
-                     <div class="page-title">
+                     <div class="page-title d-flex justify-content-between align-items-center">
                         <div>
-                           <h5 class="fw-600">Dashboard</h5>
+                           <h5 class="fw-600">Chart of accounts</h5>
+                        </div>
+                        <div class="d-flex gap-4 align-items-center">
+                           <h6>How to add account ? <a href="#" class="text-primary ms-1">Watch Video</a></h6>
+                           <button class="btn btn-primary btn-ex-sm" data-bs-toggle="modal"
+                              data-bs-target="#chart_of_accounts"><i class="fa-solid fa-plus me-1"></i>Add
+                              new</button>
+                        </div>
+                     </div>
+                     <div class="chart_account_tab mt-4">
+                        <div class="tab-menus">
+                           <ul class="tab-menus-items d-flex gap-3">
+                              <li class="tab-item">
+                                 <button class=" btn btn-sm btn-primary">All</button>
+                              </li>
+                              <li class="tab-item">
+                                 <button class=" btn btn-sm btn-secondary">Asset</button>
+                              </li>
+                              <li class="tab-item">
+                                 <button class=" btn btn-sm btn-secondary">Bank/cash</button>
+                              </li>
+                              <li class="tab-item">
+                                 <button class=" btn btn-sm btn-secondary">Inventory</button>
+                              </li>
+                              <li class="tab-item">
+                                 <button class=" btn btn-sm btn-secondary">Supplier</button>
+                              </li>
+                              <li class="tab-item">
+                                 <button class=" btn btn-sm btn-secondary">Loan & liabilities</button>
+                              </li>
+                              <li class="tab-item">
+                                 <button class=" btn btn-sm btn-secondary">Income</button>
+                              </li>
+                              <li class="tab-item">
+                                 <button class=" btn btn-sm btn-secondary">Purchase</button>
+                              </li>
+                              <li class="tab-item">
+                                 <button class=" btn btn-sm btn-secondary">Expense</button>
+                              </li>
+                              <li class="tab-item">
+                                 <button class=" btn btn-sm btn-secondary">Equity</button>
+                              </li>
+                           </ul>
                         </div>
                      </div>
                      <div class="page-wrapper mt-3">
-                        <div class="custom-select">
-                           <select class="select3">
-                              <option value="">Select</option>
-                              <option value="1">Awesome</option>
-                              <option value="2">Beast</option>
-                              <option value="3">Compatible</option>
-                              <option value="7">Javascript</option>
-                           </select>
-                        </div>
+                        <div class="accounts">
+                           <div id="chart_div"></div>
 
+                        </div>
                      </div>
                   </div>
                </div>
             </div>
-            <div class="footer p-3 mt-3">
-               <div class="d-flex justify-content-center align-items-center">
-                  <p class="font-14 fw-500">© 2016 - 2023 SteadFast. All rights reserved</p>
-               </div>
+         </div>
+         <div class="footer p-3 mt-3">
+            <div class="d-flex justify-content-center align-items-center">
+               <p class="font-14 fw-500">© 2016 - 2023 SteadFast. All rights reserved</p>
             </div>
          </div>
       </div>
-      <!-- bootstrap and jquery cdn link -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/metisMenu/3.0.7/metisMenu.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/6.2.5/simplebar.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/js/selectize.min.js"></script>
+   </div>
+   <!-- bootstrap and jquery cdn link -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/metisMenu/3.0.7/metisMenu.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/6.2.5/simplebar.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/js/selectize.min.js"></script>
+   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
-      <!-- end bootstrap and jquery cdn link -->
-      <!-- custom javascript -->
-      <script src="assets/plugin/js/sidebarmenu.js"></script>
-      <script src="assets/js/custom.js"></script>
-      <script src="assets/js/master.js"></script>
-      <!-- custom javascript -->
 
+   <!-- end bootstrap and jquery cdn link -->
+   <!-- custom javascript -->
+   <script src="assets/plugin/js/sidebarmenu.js"></script>
+   <script src="assets/js/custom.js"></script>
+   <script src="assets/js/master.js"></script>
+   <!-- custom javascript -->
+   <script>
+      google.charts.load('current', { 'packages': ['bar'] });
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+         var data = google.visualization.arrayToDataTable([
+            ['Year', 'Sales', 'Expenses', 'Profit'],
+            ['2014', 1000, 400, 200],
+            ['2015', 1170, 460, 250],
+            ['2016', 660, 1120, 300],
+            ['2017', 1030, 540, 350]
+         ]);
+
+         var options = {
+            chart: {
+               title: 'Company Performance',
+               subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+            },
+            bars: 'vertical',
+            vAxis: { format: 'decimal' },
+            height: 400,
+            colors: ['#1b9e77', '#d95f02', '#7570b3']
+         };
+
+         var chart = new google.charts.Bar(document.getElementById('chart_div'));
+
+         chart.draw(data, google.charts.Bar.convertOptions(options));
+
+         var btns = document.getElementById('btn-group');
+
+         btns.onclick = function (e) {
+
+            if (e.target.tagName === 'BUTTON') {
+               options.vAxis.format = e.target.id === 'none' ? '' : e.target.id;
+               chart.draw(data, google.charts.Bar.convertOptions(options));
+            }
+         }
+      }
+   </script>
 </body>
 
 </html>

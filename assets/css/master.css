@@ -507,6 +507,9 @@
   line-height: 18px;
   margin-top: 8px;
 }
+.form-label {
+  font-size: 14px;
+}
 /* input form */
 
 /* custom select box */
@@ -516,7 +519,7 @@
 }
 .custom-select input {
   width: 100%;
-  padding: 7px 11px;
+  padding: 8px 11px;
   border: 1px solid var(--bs-neutral-300);
   border-radius: 4px;
   font-size: 14px;
@@ -770,7 +773,7 @@
 }
 .search-box > .search_icon {
   position: absolute;
-  top: 14px;
+  top: 12px;
   left: 16px;
 }
 .form-control:focus::-webkit-input-placeholder {

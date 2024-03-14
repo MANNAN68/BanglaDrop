@@ -19,6 +19,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
    <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/css/selectize.default.min.css" />
+   <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css'>
    <!-- end bootstrap and font-awesome cdn link -->
 
    <link rel="stylesheet" href="assets/css/master.css">
@@ -55,7 +56,7 @@
                                     <!-- Left Menu Start -->
                                     <ul class="d-flex flex-column gap-2 metismenu mm-show" id="side-menu">
                                        <li>
-                                          <a href="index.html" class="waves-effect active">
+                                          <a href="index.html" class="waves-effect ">
                                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path class="dashboard"
@@ -157,18 +158,13 @@
                                           </a>
                                           <ul class="sub-menu mm-collapse" aria-expanded="false" style="height: 0px;">
                                              <li>
-                                                <a href="addpurchase.html" class=" waves-effect">
-                                                   <span>Add purchase</span>
+                                                <a href="#" class=" waves-effect">
+                                                   <span>Demo</span>
                                                 </a>
                                              </li>
                                              <li>
-                                                <a href="purchaselist.html" class=" waves-effect">
-                                                   <span>Purchase list</span>
-                                                </a>
-                                             </li>
-                                             <li>
-                                                <a href="returnpurchase.html" class=" waves-effect">
-                                                   <span>Purchase Return</span>
+                                                <a href="#" class=" waves-effect">
+                                                   <span>Demo1</span>
                                                 </a>
                                              </li>
                                           </ul>
@@ -306,7 +302,7 @@
                                           </ul>
                                        </li>
                                        <li>
-                                          <a href="javascript: void(0);" class="has-arrow waves-effect"
+                                          <a href="javascript: void(0);" class="has-arrow waves-effect "
                                              aria-expanded="false">
                                              <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -615,22 +611,273 @@
             <div class="main-content">
                <div class="container-fluid">
                   <div class="page-content ">
-                     <div class="page-title">
+                     <div class="page-title d-flex justify-content-between align-items-center">
                         <div>
-                           <h5 class="fw-600">Dashboard</h5>
+                           <h5 class="fw-600">New journal</h5>
+                        </div>
+                        <div class="d-flex gap-4 align-items-center">
+                           <a href="journal.html">
+                              <button class="btn btn-outline-primary btn-ex-sm"><i
+                                    class="fa-solid fa-plus me-1"></i>Cancel</button>
+                           </a>
                         </div>
                      </div>
-                     <div class="page-wrapper mt-3">
-                        <div class="custom-select">
-                           <select class="select3">
-                              <option value="">Select</option>
-                              <option value="1">Awesome</option>
-                              <option value="2">Beast</option>
-                              <option value="3">Compatible</option>
-                              <option value="7">Javascript</option>
-                           </select>
-                        </div>
 
+                     <div class="page-wrapper mt-3">
+                        <div class="accounts">
+                           <div class="journal_content">
+                              <form action="" id="form-submit">
+                                 <div class="row">
+                                    <div class="col-6">
+                                       <div class="form-group position-relative mb-3">
+                                          <label class="form-label"> Date</label>
+                                          <input type="text"
+                                             class="datepicker_input form-control border-2 datepicker-input"
+                                             id="datepicker1" placeholder="dd-mm-yy">
+                                          <img src="assets/images/icon/small_calendar.svg" alt="" class="calender_img">
+                                       </div>
+                                       <div class="form-group position-relative mb-3">
+                                          <label for="journal-no"
+                                             class="form-label d-flex align-items-center gap-2">Journal number
+                                          </label>
+                                          <input type="text" class="form-control" id="journal-no"
+                                             placeholder="Journal number">
+                                       </div>
+                                       <div class="form-group position-relative mb-3">
+                                          <label for="ref" class="form-label d-flex align-items-center gap-2">Reference
+                                          </label>
+                                          <input type="text" class="form-control" id="ref" placeholder="Reference">
+                                       </div>
+                                       <div class="form-group position-relative mb-3">
+                                          <label for="description" class="form-label">Note</label>
+                                          <textarea name="" id="description" cols="1" rows="2" class="form-control"
+                                             placeholder="Note here"></textarea>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="row">
+                                    <div class="col-sm-12">
+                                       <div class="journal_table">
+                                          <div class="heading row justify-content-between align-items-center">
+                                             <div class="cell name">
+                                                Account
+                                             </div>
+                                             <div class="cell note">
+                                                Description
+                                             </div>
+                                             <div class="cell contact">
+                                                Contact
+                                             </div>
+                                             <div class="cell dr_cr">
+                                                Debit
+                                             </div>
+                                             <div class="cell dr_cr">
+                                                Credit
+                                             </div>
+                                          </div>
+                                          <div class="body row">
+                                             <div
+                                                class="journal-item d-flex flex-column gap-3 control-group after-add-more">
+                                                <div class="row">
+                                                   <div
+                                                      class="debit d-flex justify-content-between align-items-center pb-3">
+                                                      <div class="cell name">
+                                                         <div class="custom-select">
+                                                            <select class="select3">
+                                                               <option value="">Select an account</option>
+                                                               <option value="1">DBBL</option>
+                                                               <option value="2">Brack</option>
+                                                               <option value="3">SIBL</option>
+                                                               <option value="7">Mobile</option>
+                                                            </select>
+                                                         </div>
+                                                      </div>
+                                                      <div class="cell note">
+                                                         <div class="form-group position-relative ">
+                                                            <textarea name="" id="description" cols="1" rows="2"
+                                                               class="form-control" placeholder="Note here"></textarea>
+                                                         </div>
+                                                      </div>
+                                                      <div class="cell contact">
+                                                         <div class="custom-select">
+                                                            <select class="select3">
+                                                               <option value="">Select contact</option>
+                                                               <option value="1">DBBL</option>
+                                                               <option value="2">Brack</option>
+                                                               <option value="3">SIBL</option>
+                                                               <option value="7">Mobile</option>
+                                                            </select>
+                                                         </div>
+                                                      </div>
+                                                      <div class="cell dr_cr">
+                                                         <div class="form-group position-relative ">
+                                                            <input type="text" class="form-control"
+                                                               placeholder="Amount">
+                                                         </div>
+                                                      </div>
+                                                      <div class="cell dr_cr">
+
+                                                      </div>
+                                                   </div>
+                                                   <div
+                                                      class="credits d-flex justify-content-between align-items-center mt-3">
+                                                      <div class="cell name">
+                                                         <div class="custom-select">
+                                                            <select class="select3">
+                                                               <option value="">Select an account</option>
+                                                               <option value="1">DBBL</option>
+                                                               <option value="2">Brack</option>
+                                                               <option value="3">SIBL</option>
+                                                               <option value="7">Mobile</option>
+                                                            </select>
+                                                         </div>
+                                                      </div>
+                                                      <div class="cell note">
+                                                         <div class="form-group position-relative ">
+                                                            <textarea name="" id="description" cols="1" rows="2"
+                                                               class="form-control" placeholder="Note here"></textarea>
+                                                         </div>
+                                                      </div>
+                                                      <div class="cell contact">
+                                                         <div class="custom-select">
+                                                            <select class="select3">
+                                                               <option value="">Select contact</option>
+                                                               <option value="1">DBBL</option>
+                                                               <option value="2">Brack</option>
+                                                               <option value="3">SIBL</option>
+                                                               <option value="7">Mobile</option>
+                                                            </select>
+                                                         </div>
+                                                      </div>
+                                                      <div class="cell dr_cr">
+
+                                                      </div>
+                                                      <div class="cell dr_cr">
+                                                         <div class="form-group position-relative ">
+                                                            <input type="text" class="form-control"
+                                                               placeholder="Amount">
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <button class="btn btn-outline-primary btn-ex-sm add-more"><i
+                                                      class="fa-solid fa-plus me-1"></i>Add new row</button>
+
+                                             </div>
+                                             <div class="copy-fields" style="display: none;">
+                                                <div class=" journal-item d-flex flex-column gap-3 control-group ">
+                                                   <div class="row">
+                                                      <div
+                                                         class="debit d-flex justify-content-between align-items-center pb-3">
+                                                         <div class="cell name">
+                                                            <div class="custom-select">
+                                                               <select class="select3">
+                                                                  <option value="">Select an account</option>
+                                                                  <option value="1">DBBL</option>
+                                                                  <option value="2">Brack</option>
+                                                                  <option value="3">SIBL</option>
+                                                                  <option value="7">Mobile</option>
+                                                               </select>
+                                                            </div>
+                                                         </div>
+                                                         <div class="cell note">
+                                                            <div class="form-group position-relative ">
+                                                               <textarea name="" id="description" cols="1" rows="2"
+                                                                  class="form-control"
+                                                                  placeholder="Note here"></textarea>
+                                                            </div>
+                                                         </div>
+                                                         <div class="cell contact">
+                                                            <div class="custom-select">
+                                                               <select class="select3">
+                                                                  <option value="">Select contact</option>
+                                                                  <option value="1">DBBL</option>
+                                                                  <option value="2">Brack</option>
+                                                                  <option value="3">SIBL</option>
+                                                                  <option value="7">Mobile</option>
+                                                               </select>
+                                                            </div>
+                                                         </div>
+                                                         <div class="cell dr_cr">
+                                                            <div class="form-group position-relative ">
+                                                               <input type="text" class="form-control"
+                                                                  placeholder="Amount">
+                                                            </div>
+                                                         </div>
+                                                         <div class="cell dr_cr">
+
+                                                         </div>
+                                                      </div>
+                                                      <div
+                                                         class="credits d-flex justify-content-between align-items-center mt-3">
+                                                         <div class="cell name">
+                                                            <div class="custom-select">
+                                                               <select class="select3">
+                                                                  <option value="">Select an account</option>
+                                                                  <option value="1">DBBL</option>
+                                                                  <option value="2">Brack</option>
+                                                                  <option value="3">SIBL</option>
+                                                                  <option value="7">Mobile</option>
+                                                               </select>
+                                                            </div>
+                                                         </div>
+                                                         <div class="cell note">
+                                                            <div class="form-group position-relative ">
+                                                               <textarea name="" id="description" cols="1" rows="2"
+                                                                  class="form-control"
+                                                                  placeholder="Note here"></textarea>
+                                                            </div>
+                                                         </div>
+                                                         <div class="cell contact">
+                                                            <div class="custom-select">
+                                                               <select class="select3">
+                                                                  <option value="">Select contact</option>
+                                                                  <option value="1">DBBL</option>
+                                                                  <option value="2">Brack</option>
+                                                                  <option value="3">SIBL</option>
+                                                                  <option value="7">Mobile</option>
+                                                               </select>
+                                                            </div>
+                                                         </div>
+                                                         <div class="cell dr_cr">
+
+                                                         </div>
+                                                         <div class="cell dr_cr">
+                                                            <div class="form-group position-relative ">
+                                                               <input type="text" class="form-control"
+                                                                  placeholder="Amount">
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                   <button class="btn btn-outline-danger btn-ex-sm remove"><i
+                                                         class="fa-solid fa-plus me-1"></i>Remove row</button>
+
+                                                </div>
+                                             </div>
+                                          </div>
+
+
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="row justify-content-end">
+                                    <div class="journal-summary">
+                                       <div class="d-flex justify-content-between align-items-center">
+                                          <p class="text-black fw-500">Total (BDT)</p>
+                                          <p class="text-black fw-500">1500</p>
+                                          <p class="text-black fw-500">1000</p>
+                                       </div>
+                                       <div class="d-flex justify-content-between align-items-center mt-3">
+                                          <p class="text-danger fw-500">Difference</p>
+                                          <p class="text-danger fw-500">500</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <button class="btn btn-primary btn-sm float-end mt-4">Publish</button>
+                              </form>
+                           </div>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -641,6 +888,8 @@
                </div>
             </div>
          </div>
+
+
       </div>
       <!-- bootstrap and jquery cdn link -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -648,6 +897,7 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/metisMenu/3.0.7/metisMenu.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/6.2.5/simplebar.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/js/selectize.min.js"></script>
+      <script src='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js'></script>
 
       <!-- end bootstrap and jquery cdn link -->
       <!-- custom javascript -->
@@ -655,6 +905,25 @@
       <script src="assets/js/custom.js"></script>
       <script src="assets/js/master.js"></script>
       <!-- custom javascript -->
+      <script>
+         const form = document.getElementById("form-submit")
+         form.addEventListener("click", (e) => {
+            e.preventDefault()
+         })
+         $(document).ready(function () {
+            //here first get the contents of the div with name class copy-fields and add it to after "after-add-more" div class.
+            $(".add-more").click(function () {
+               var html = $(".copy-fields").html();
+               $(".after-add-more").before(html);
+            });
+            //here it will remove the current value of the remove button which has been pressed
+            $("body").on("click", ".remove", function () {
+               $(this)
+                  .parents(".control-group")
+                  .remove();
+            });
+         });
+      </script>
 
 </body>
 

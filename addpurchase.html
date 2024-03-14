@@ -19,6 +19,8 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
    <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/css/selectize.default.min.css" />
+   <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css'>
+
    <!-- end bootstrap and font-awesome cdn link -->
 
    <link rel="stylesheet" href="assets/css/master.css">
@@ -615,20 +617,327 @@
             <div class="main-content">
                <div class="container-fluid">
                   <div class="page-content ">
-                     <div class="page-title">
+                     <div class="page-title d-flex justify-content-between align-items-center">
                         <div>
-                           <h5 class="fw-600">Dashboard</h5>
+                           <h5 class="fw-600">Add Purchase</h5>
+                        </div>
+                        <div class="d-flex gap-4 align-items-center">
+                           <h6>How to add purchase ? <a href="#" class="text-primary ms-1">Watch Video</a></h6>
+
                         </div>
                      </div>
                      <div class="page-wrapper mt-3">
-                        <div class="custom-select">
-                           <select class="select3">
-                              <option value="">Select</option>
-                              <option value="1">Awesome</option>
-                              <option value="2">Beast</option>
-                              <option value="3">Compatible</option>
-                              <option value="7">Javascript</option>
-                           </select>
+                        <div class="purchase">
+                           <div class="add-purchase">
+                              <form action="">
+                                 <div class="row purchase-info">
+                                    <div class="col-md-4 col-sm-6">
+                                       <div class="form-group position-relative mb-3">
+                                          <label class="form-label"> Supplier*</label>
+                                          <div class="custom-select">
+                                             <select class="select3">
+                                                <option value="">Select supplier</option>
+                                                <option value="1">SFC</option>
+                                                <option value="2">Pixelas</option>
+                                                <option value="3">Fastpower</option>
+                                             </select>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                       <div class="form-group position-relative mb-3">
+                                          <label class="form-label"> Date*</label>
+                                          <input type="text"
+                                             class="datepicker_input form-control border-2 datepicker-input"
+                                             id="datepicker1" placeholder="dd-mm-yy">
+                                          <img src="assets/images/icon/small_calendar.svg" alt="" class="calender_img">
+                                       </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                       <div class="form-group position-relative mb-3">
+                                          <label class="form-label"> Purchase status*</label>
+                                          <div class="custom-select">
+                                             <select class="select3">
+                                                <option value="">Select status</option>
+                                                <option value="1">Order</option>
+                                                <option value="2">Return</option>
+                                             </select>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                       <div class="form-group position-relative mb-3">
+                                          <label class="form-label"> Wirehouse*</label>
+                                          <div class="custom-select">
+                                             <select class="select3">
+                                                <option value="">Select wirehouse</option>
+                                                <option value="1">Dhaka</option>
+                                                <option value="2">Barishal</option>
+                                             </select>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                       <div class="form-group position-relative mb-3">
+                                          <label for="ref" class="form-label d-flex align-items-center gap-2">Reference
+                                          </label>
+                                          <input type="text" class="form-control" id="ref" placeholder="Reference">
+                                       </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                       <div class="form-group position-relative mb-3">
+                                          <label for="ref" class="form-label d-flex align-items-center gap-2">Attached
+                                             document
+                                          </label>
+                                          <div class="dragDrop-area">
+                                             <input type="file" accept="image/*" name="image"
+                                                class="form-control image-upload" id="files" multiple="">
+                                             <label
+                                                class="w-100 h-100 font-14 fw-500  d-flex gap-1 align-items-center justify-content-center"
+                                                for="files">
+                                                <img src="./assets/images/icon/upload_file_20.svg" alt=""
+                                                   class="w-auto h-auto">
+                                                <span class="d-flex gap-2">
+                                                   <p class="font-14 fw-500 text-primary">Choose file</p>
+                                                </span>
+                                             </label>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="row search-item mt-4">
+                                    <div class="col-sm-12">
+                                       <div class="search-box w-100">
+                                          <input type="text" class="form-control" placeholder="Search Every Things"
+                                             id="searchInput">
+                                          <img src="assets/images/master_icon/search_box_icon.svg" alt=""
+                                             class="search_icon w-auto h-auto">
+                                          <ul id="searchResults" class="search_result" style="display: none;">
+                                             <div
+                                                class="d-flex align-items-center justify-content-between recent_results">
+                                                <small>Recent</small> <a href="">Clear All</a>
+                                             </div>
+                                             <li> <a href="" class="d-flex align-items-center">
+                                                   <img src="assets/images/master_icon/search_result_icon.png" alt=""
+                                                      class="search_item_img">
+                                                   <p> ID: 51492220 Name: Israt Address:2/4 borobag, mirpur-2,
+                                                      dhaka-1216 COD:
+                                                      485</p>
+                                                </a> <img src="assets/images/master_icon/search_result_close_icon.png"
+                                                   alt="" class="close_result">
+                                             </li>
+                                             <li> <a href="" class="d-flex align-items-center">
+                                                   <img src="assets/images/master_icon/search_result_icon.png" alt=""
+                                                      class="search_item_img">
+                                                   <p> ID: 51492220 Name: Israt Address:2/4 borobag, mirpur-2,
+                                                      dhaka-1216 COD:
+                                                      485</p>
+                                                </a> <img src="assets/images/master_icon/search_result_close_icon.png"
+                                                   alt="" class="close_result">
+                                             </li>
+                                             <li> <a href="" class="d-flex align-items-center">
+                                                   <img src="assets/images/master_icon/search_result_icon.png" alt=""
+                                                      class="search_item_img">
+                                                   <p> ID: 51492220 Name: Israt Address:2/4 borobag, mirpur-2,
+                                                      dhaka-1216 COD:
+                                                      485</p>
+                                                </a> <img src="assets/images/master_icon/search_result_close_icon.png"
+                                                   alt="" class="close_result">
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="row purchase-items ">
+                                    <div class="data_table">
+                                       <div class="table">
+                                          <div class="thead">
+                                             <div class="row">
+                                                <div class="cell sl">
+                                                   SL
+                                                </div>
+                                                <div class="cell name">
+                                                   Product name
+                                                </div>
+                                                <div class="cell quantity">
+                                                   QTY
+                                                </div>
+                                                <div class="cell totalprice">
+                                                   Unit cost
+                                                </div>
+                                                <div class="cell discount">
+                                                   Discount %
+                                                </div>
+                                                <div class="cell tax_vat">
+                                                   Product Vat
+                                                </div>
+                                                <div class="cell totalprice">
+                                                   Subtotal
+                                                </div>
+                                                <div class="cell action">
+                                                   Action
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="tbody">
+                                             <div class="row">
+                                                <div class="cell sl">
+                                                   012
+                                                </div>
+                                                <div class="cell name">
+                                                   Samsung mobile phone
+                                                </div>
+                                                <div class="cell quantity">
+                                                   <div class="form-group position-relative ">
+                                                      <input type="number" class="form-control" placeholder="qty">
+                                                   </div>
+                                                </div>
+                                                <div class="cell totalprice">
+                                                   <div class="form-group position-relative ">
+                                                      <input type="number" class="form-control" placeholder="unit cost">
+                                                   </div>
+                                                </div>
+                                                <div class="cell discount">
+                                                   <div class="form-group position-relative ">
+                                                      <input type="number" class="form-control" placeholder="15%">
+                                                   </div>
+                                                </div>
+                                                <div class="cell tax_vat">
+                                                   Product Vat
+                                                </div>
+                                                <div class="cell totalprice">
+                                                   33250
+                                                </div>
+                                                <div class="cell action">
+                                                   <div class="trash">
+                                                      <img src="assets/images/icon/delete_icon_20.svg" alt="">
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="cell sl">
+                                                   012
+                                                </div>
+                                                <div class="cell name">
+                                                   Samsung mobile phone
+                                                </div>
+                                                <div class="cell quantity">
+                                                   <div class="form-group position-relative ">
+                                                      <input type="number" class="form-control" placeholder="qty">
+                                                   </div>
+                                                </div>
+                                                <div class="cell totalprice">
+                                                   <div class="form-group position-relative ">
+                                                      <input type="number" class="form-control" placeholder="unit cost">
+                                                   </div>
+                                                </div>
+                                                <div class="cell discount">
+                                                   <div class="form-group position-relative ">
+                                                      <input type="number" class="form-control" placeholder="15%">
+                                                   </div>
+                                                </div>
+                                                <div class="cell tax_vat">
+                                                   <div class="btn-group" role="group" aria-label="Large button group">
+                                                      <div class="custom-select ">
+                                                         <select class="select3">
+                                                            <option value="">10%</option>
+                                                            <option value="1">15</option>
+                                                            <option value="2">20</option>
+                                                         </select>
+                                                      </div>
+                                                      <input type="number" class="form-control" placeholder="15%">
+                                                   </div>
+
+                                                   <!-- <div class="form-group position-relative ">
+                                                      <div class="input-group">
+                                                         <div class="custom-select ">
+                                                            <select class="select3">
+                                                               <option value="">Select an account</option>
+                                                               <option value="1">DBBL</option>
+                                                               <option value="2">Brack</option>
+                                                               <option value="3">SIBL</option>
+                                                               <option value="7">Mobile</option>
+                                                            </select>
+                                                         </div>
+                                                         <div class="input-group-text">350</div>
+
+                                                      </div>
+                                                   </div> -->
+
+
+                                                </div>
+                                                <div class="cell totalprice">
+                                                   33250
+                                                </div>
+                                                <div class="cell action">
+                                                   <div class="trash">
+                                                      <img src="assets/images/icon/delete_icon_20.svg" alt="">
+                                                   </div>
+                                                </div>
+                                             </div>
+
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="row purchase-summary justify-content-between">
+                                    <div class="others-cost">
+                                       <div class="form-group position-relative mb-3">
+                                          <label for="discount" class="form-label ">Discount %
+                                          </label>
+                                          <input type="text" class="form-control" id="discount" placeholder="15%">
+                                       </div>
+                                       <div class="form-group position-relative mb-3">
+                                          <label for="discount" class="form-label ">Purchase Vat
+                                          </label>
+                                          <div class="custom-select">
+                                             <select class="select3">
+                                                <option value="">Select an account</option>
+                                                <option value="1">DBBL</option>
+                                                <option value="2">Brack</option>
+                                                <option value="3">SIBL</option>
+                                                <option value="7">Mobile</option>
+                                             </select>
+                                          </div>
+                                       </div>
+                                       <div class="form-group position-relative mb-3">
+                                          <label for="shiping" class="form-label ">Shipping cost
+                                          </label>
+                                          <input type="text" class="form-control" id="shiping" placeholder="Shipping cost
+                                       ">
+                                       </div>
+                                    </div>
+                                    <div class="summary d-flex flex-column gap-3">
+                                       <div class="row justify-content-between align-items-center">
+                                          <h6>Total Item</h6>
+                                          <h6>5</h6>
+                                       </div>
+                                       <div class="row justify-content-between align-items-center">
+                                          <h6>Total amount</h6>
+                                          <h6>5000</h6>
+                                       </div>
+                                       <div class="row justify-content-between align-items-center">
+                                          <h6>Discount</h6>
+                                          <h6>50</h6>
+                                       </div>
+                                       <div class="row justify-content-between align-items-center">
+                                          <h6>Purchase Vat</h6>
+                                          <h6>25</h6>
+                                       </div>
+                                       <div class="row justify-content-between align-items-center">
+                                          <h6>Shipping cost</h6>
+                                          <h6>250</h6>
+                                       </div>
+
+                                       <div class="grand-total d-flex justify-content-between align-items-center">
+                                          <h5 class="font-16">Grant Total</h5>
+                                          <h5 class="font-16">71300</h5>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <button class="btn btn-primary btn-sm float-end mt-4">Save</button>
+                              </form>
+                           </div>
                         </div>
 
                      </div>
@@ -648,6 +957,8 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/metisMenu/3.0.7/metisMenu.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/6.2.5/simplebar.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/js/selectize.min.js"></script>
+      <script src='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js'></script>
+
 
       <!-- end bootstrap and jquery cdn link -->
       <!-- custom javascript -->
