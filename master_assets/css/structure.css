@@ -1,0 +1,406 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Source+Sans+3:wght@400;500;600;700;800&display=swap");
+
+/* pre-define css code */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  --bs-gutter-x: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.row {
+  --bs-gutter-x: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+.row > * {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* body scroolbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px !important;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* end body scroolbar */
+
+/* remove scrollbar when open modal */
+body.modal-open {
+  overflow: auto;
+}
+body.modal-open[style] {
+  padding-right: 0px !important;
+}
+body.modal-open {
+  overflow-y: scroll;
+}
+.modal::-webkit-scrollbar {
+  width: 0 !important;
+}
+/* remove scrollbar when open modal */
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  text-decoration: none;
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-out 0s;
+}
+button:focus {
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+button:focus:not(:focus-visible) {
+  outline: 0;
+}
+button:disabled {
+  background: var(--bs-primary-500);
+  opacity: 40%;
+  cursor: not-allowed;
+  border: 1px transparent !important;
+  color: var(--bs-white) !important;
+  border-color: none;
+}
+.btn.disabled,
+.btn:disabled,
+fieldset:disabled .btn {
+  border: 0;
+  color: var(--bs-white);
+}
+.form-check-input:checked {
+  border: none !important;
+  outline: none;
+}
+.form-select:focus {
+  box-shadow: inherit;
+  border: none;
+  outline: none;
+}
+input.form-control:focus {
+  box-shadow: inherit;
+}
+.form-control:focus {
+  box-shadow: inherit;
+}
+textarea.form-control:focus {
+  box-shadow: inherit;
+}
+.form-check-input:focus {
+  box-shadow: inherit;
+  border: none;
+}
+[type="search"] {
+  outline-offset: inherit;
+  border: none !important;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input.form-control::placeholder {
+  color: var(--bs-neutral-500);
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+textarea.form-control::placeholder {
+  color: var(--bs-neutral-500);
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+/* head text format */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  color: var(--bs-neutral-900);
+  font-family: "Poppins", sans-serif;
+}
+
+/* head text format */
+
+p {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  color: var(--bs-neutral-600);
+  font-size: 14px;
+  line-height: 20px;
+}
+a {
+  margin: 0;
+  padding: 0;
+  color: unset;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
+}
+a:hover {
+  color: unset;
+}
+
+label {
+  font-weight: 400;
+}
+small {
+  font-weight: 400;
+}
+address {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* root color variable */
+:root {
+  /* brand color */
+  --bs-primary-950: #00120e;
+  --bs-primary-900: #00362c;
+  --bs-primary-800: #005b4a;
+  --bs-primary-700: #008068;
+  --bs-primary-600: #00a486;
+  --bs-primary-500: #00b795;
+  --bs-primary-400: #32c5aa;
+  --bs-primary-300: #66d3bf;
+  --bs-primary-200: #99e2d4;
+  --bs-primary-100: #ccf0e9;
+  --bs-primary-50: #e5f7f4;
+  /* brand color */
+
+  /* universal color */
+  --bs-white: #ffffff;
+  --bs-black: #0a0a0a;
+  /* universal color */
+
+  /* neutral color */
+  --bs-neutral-950: #020617;
+  --bs-neutral-900: #0f172a;
+  --bs-neutral-800: #1e293b;
+  --bs-neutral-700: #334155;
+  --bs-neutral-600: #475569;
+  --bs-neutral-500: #64748b;
+  --bs-neutral-400: #94a3b8;
+  --bs-neutral-300: #cbd5e1;
+  --bs-neutral-200: #e2e8f0;
+  --bs-neutral-100: #f1f5f9;
+  --bs-neutral-50: #f8fafc;
+  /* end neutral color */
+
+  /* success color */
+  --bs-success-950: #052e16;
+  --bs-success-900: #14532d;
+  --bs-success-800: #166534;
+  --bs-success-700: #15803d;
+  --bs-success-600: #16a34a;
+  --bs-success-500: #22c55e;
+  --bs-success-400: #4ade80;
+  --bs-success-300: #86efac;
+  --bs-success-200: #bbf7d0;
+  --bs-success-100: #dcfce7;
+  --bs-success-50: #f0fdf4;
+
+  /* end success color */
+
+  /* info color */
+  --bs-info-950: #172554;
+  --bs-info-900: #1e3a8a;
+  --bs-info-800: #1e40af;
+  --bs-info-700: #1d4ed8;
+  --bs-info-600: #2563eb;
+  --bs-info-500: #3b82f6;
+  --bs-info-400: #60a5fa;
+  --bs-info-300: #93c5fd;
+  --bs-info-200: #bfdbfe;
+  --bs-info-100: #dbeafe;
+  --bs-info-50: #eff6ff;
+
+  /* end info color */
+
+  /* warning color */
+  --bs-warning-950: #422006;
+  --bs-warning-900: #713f12;
+  --bs-warning-800: #854d0e;
+  --bs-warning-700: #a16207;
+  --bs-warning-600: #ca8a04;
+  --bs-warning-500: #eab308;
+  --bs-warning-400: #facc15;
+  --bs-warning-300: #fde047;
+  --bs-warning-200: #fef08a;
+  --bs-warning-100: #fef9c3;
+  --bs-warning-50: #fefce8;
+  /* end warning color */
+
+  /* danger color */
+  --bs-danger-950: #450a0a;
+  --bs-danger-900: #7f1d1d;
+  --bs-danger-800: #991b1b;
+  --bs-danger-700: #b91c1c;
+  --bs-danger-600: #dc2626;
+  --bs-danger-500: #ef4444;
+  --bs-danger-400: #f87171;
+  --bs-danger-300: #fca5a5;
+  --bs-danger-200: #fecaca;
+  --bs-danger-100: #fee2e2;
+  --bs-danger-50: #fef2f2;
+  /* end danger color */
+
+  /* orange color */
+  --bs-orange-950: #431407;
+  --bs-orange-900: #7c2d12;
+  --bs-orange-800: #9a3412;
+  --bs-orange-700: #c2410c;
+  --bs-orange-600: #ea580c;
+  --bs-orange-500: #f97316;
+  --bs-orange-400: #fb923c;
+  --bs-orange-300: #fdba74;
+  --bs-orange-200: #fed7aa;
+  --bs-orange-100: #ffedd5;
+  --bs-orange-50: #fff7ed;
+  /* end orange color */
+}
+/* end root color variable */
+
+/* custom class */
+.fw-400 {
+  font-weight: 400;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.fw-700 {
+  font-weight: 700;
+}
+.font-56 {
+  font-size: 3.5rem;
+}
+.font-48 {
+  font-size: 3rem;
+}
+
+.font-18 {
+  font-size: 1.125rem;
+}
+.font-16 {
+  font-size: 1rem;
+}
+
+.font-14 {
+  font-size: 0.875rem;
+}
+.font-12 {
+  font-size: 0.75rem;
+}
+.font-10 {
+  font-size: 0.625rem;
+}
+
+.btn-d-w {
+  padding: 0 4px !important;
+}
+
+.text-primary {
+  color: var(--bs-primary-500) !important;
+}
+.bg-primary {
+  background: var(--bs-primary-500) !important;
+}
+.text-success {
+  color: var(--bs-success-500) !important;
+}
+.bg-success {
+  background: var(--bs-success-500) !important;
+}
+.text-danger {
+  color: var(--bs-danger-500) !important;
+}
+.bg-danger {
+  background: var(--bs-danger-500) !important;
+}
+.text-warning {
+  color: var(--bs-warning-500) !important;
+}
+.bg-warning {
+  background: var(--bs-warning-500) !important;
+}
+.text-info {
+  color: var(--bs-info-500) !important;
+}
+.bg-info {
+  background: var(--bs-info-500) !important;
+}
+.text-black {
+  color: var(--bs-neutral-900) !important;
+}
+.bg-black {
+  background: var(--bs-black) !important;
+}
+.text-white {
+  color: var(--bs-white) !important;
+}
+.bg-white {
+  background: var(--bs-white) !important;
+}

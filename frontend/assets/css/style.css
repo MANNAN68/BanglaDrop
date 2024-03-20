@@ -1,0 +1,9 @@
+@import "structure.css";
+
+html,
+body {
+  background: var(--bs-neutral-100);
+}
+.mobile-nav-toggler {
+  display: none;
+}
