@@ -215,17 +215,30 @@ address {
 /* root color variable */
 :root {
   /* brand color */
-  --bs-primary-950: #00120e;
-  --bs-primary-900: #00362c;
-  --bs-primary-800: #005b4a;
-  --bs-primary-700: #008068;
-  --bs-primary-600: #00a486;
-  --bs-primary-500: #00b795;
-  --bs-primary-400: #32c5aa;
-  --bs-primary-300: #66d3bf;
-  --bs-primary-200: #99e2d4;
-  --bs-primary-100: #ccf0e9;
-  --bs-primary-50: #e5f7f4;
+  --bs-primary-950: #481809;
+  --bs-primary-900: #6c240f;
+  --bs-primary-800: #882e13;
+  --bs-primary-700: #aa3917;
+  --bs-primary-600: #cb441c;
+  --bs-primary-500: #ef5021;
+  --bs-primary-400: #f27049;
+  --bs-primary-300: #f59173;
+  --bs-primary-200: #f8b4a0;
+  --bs-primary-100: #fbd5ca;
+  --bs-primary-50: #fdeee9;
+
+  --bs-secondary-950: #060517;
+  --bs-secondary-900: #0e0c31;
+  --bs-secondary-800: #120f3e;
+  --bs-secondary-700: #17134d;
+  --bs-secondary-600: #1b175d;
+  --bs-secondary-500: #201b6d;
+  --bs-secondary-400: #484487;
+  --bs-secondary-300: #736fa3;
+  --bs-secondary-200: #9f9dc0;
+  --bs-secondary-100: #c9c8dc;
+  --bs-secondary-50: #e9e8f0;
+
   /* brand color */
 
   /* universal color */

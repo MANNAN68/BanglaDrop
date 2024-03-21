@@ -58,7 +58,7 @@
                                     <!-- Left Menu Start -->
                                     <ul class="d-flex flex-column gap-2 metismenu mm-show" id="side-menu">
                                        <li>
-                                          <a href="index.html" class="waves-effect active">
+                                          <a href="index.html" class="waves-effect">
                                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path class="dashboard"
@@ -121,7 +121,7 @@
                                           </a>
                                        </li>
                                        <li>
-                                          <a href="customer.html" class="waves-effect" aria-expanded="false">
+                                          <a href="customer.html" class="waves-effect active" aria-expanded="false">
                                              <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path class="customer"
@@ -443,29 +443,70 @@
             <div class="main-content">
                <div class="container-fluid">
                   <div class="page-content ">
-                     <div class="page-title">
+                     <div class="page-title ">
                         <div>
-                           <h5 class="fw-600">Dashboard</h5>
+                           <h5 class="fw-600">Add New User</h5>
                         </div>
+
                      </div>
                      <div class="page-wrapper mt-3">
-                        <div class="custom-select">
-                           <select class="select3">
-                              <option value="">Select</option>
-                              <option value="1">Awesome</option>
-                              <option value="2">Beast</option>
-                              <option value="3">Compatible</option>
-                              <option value="7">Javascript</option>
-                           </select>
-                        </div>
+                        <div class="customer">
+                           <div class="user-form">
+                              <form action="">
+                                 <div class="form-group position-relative mb-3">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Name">
+                                 </div>
 
-                        <div class="form-group position-relative mb-3">
-                           <label class="form-label">Sale Date*</label>
-                           <input type="text" class="datepicker_input form-control border-2 datepicker-input"
-                              id="datepicker1" placeholder="dd-mm-yy">
-                           <img src="assets/images/icon/small_calendar.svg" alt="" class="calender_img">
-                        </div>
+                                 <div class="form-group position-relative mb-3">
+                                    <label for="email" class="form-label">Email address</label>
+                                    <input type="email" class="form-control is_error" id="email"
+                                       placeholder="Email Address">
+                                    <label for="" class="form-error-text">Invalid Email</label>
+                                    <img src="../master_assets/images/master_icon/invalid_icon.svg" alt=""
+                                       class="form-error-icon">
+                                 </div>
+                                 <div class="form-group position-relative mb-3">
+                                    <label for="email" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="email" placeholder="Password">
+                                 </div>
+                                 <div class="form-group position-relative mb-3">
+                                    <label for="address" class="form-label">Address</label>
+                                    <textarea name="" id="address" cols="1" rows="2" class="form-control"></textarea>
+                                 </div>
 
+                                 <div class="form-group position-relative mb-3">
+                                    <label for="" class="form-label">District</label>
+                                    <select class="select3">
+                                       <option value="">Select</option>
+                                       <option>Pabna</option>
+                                       <option>Dhaka</option>
+                                       <option>Rajshahi</option>
+                                       <option>Khulna</option>
+                                       <option>Rarishal</option>
+                                       <option>Pabna</option>
+                                       <option>Dhaka</option>
+                                       <option>Rajshahi</option>
+                                    </select>
+                                 </div>
+                                 <div class="form-group position-relative mb-3">
+                                    <label for="" class="form-label">City</label>
+                                    <select class="select3">
+                                       <option value="">Select</option>
+                                       <option>Pabna</option>
+                                       <option>Dhaka</option>
+                                       <option>Rajshahi</option>
+                                       <option>Khulna</option>
+                                       <option>Rarishal</option>
+                                       <option>Pabna</option>
+                                       <option>Dhaka</option>
+                                       <option>Rajshahi</option>
+                                    </select>
+                                 </div>
+                                 <button class="btn btn-primary btn-md w-100 mt-4">Save</button>
+                              </form>
+                           </div>
+                        </div>
                      </div>
                   </div>
                </div>

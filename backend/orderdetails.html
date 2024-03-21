@@ -58,7 +58,7 @@
                                     <!-- Left Menu Start -->
                                     <ul class="d-flex flex-column gap-2 metismenu mm-show" id="side-menu">
                                        <li>
-                                          <a href="index.html" class="waves-effect active">
+                                          <a href="index.html" class="waves-effect">
                                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path class="dashboard"
@@ -78,7 +78,7 @@
                                           </a>
                                        </li>
                                        <li>
-                                          <a href="orders.html" class="waves-effect" aria-expanded="false">
+                                          <a href="orders.html" class="waves-effect active" aria-expanded="false">
                                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <rect class="order" x="2.5" y="2.5" width="19" height="19" rx="5"
@@ -329,7 +329,6 @@
                         <div class="search-box">
                            <input type="text" class="form-control" placeholder="Search Every Things" id="searchInput">
                            <img src="assets/images/icon/search_box_icon.svg" alt="" class="search_icon w-auto h-auto">
-
                         </div>
                      </div>
 
@@ -445,27 +444,147 @@
                   <div class="page-content ">
                      <div class="page-title">
                         <div>
-                           <h5 class="fw-600">Dashboard</h5>
+                           <h5 class="fw-600">Orders Details</h5>
                         </div>
                      </div>
+                     <div class="order tab-menus mt-4">
+                        <ul class="tab-menus-items d-flex gap-3">
+                           <li class="tab-item">
+                              <button class=" btn btn-sm btn-primary">All</button>
+                           </li>
+
+                           <li class="tab-item">
+                              <button class=" btn btn-sm btn-secondary">Pending</button>
+                           </li>
+                           <li class="tab-item">
+                              <button class=" btn btn-sm btn-secondary">Approval</button>
+                           </li>
+                           <li class="tab-item">
+                              <button class=" btn btn-sm btn-secondary">Processing </button>
+                           </li>
+                           <li class="tab-item">
+                              <button class=" btn btn-sm btn-secondary"> Shiped</button>
+                           </li>
+                           <li class="tab-item">
+                              <button class=" btn btn-sm btn-secondary">Delivery</button>
+                           </li>
+                           <li class="tab-item">
+                              <button class=" btn btn-sm btn-secondary">Cancel</button>
+                           </li>
+                           <li class="tab-item">
+                              <button class=" btn btn-sm btn-secondary">Declined</button>
+                           </li>
+                        </ul>
+                     </div>
+
                      <div class="page-wrapper mt-3">
-                        <div class="custom-select">
-                           <select class="select3">
-                              <option value="">Select</option>
-                              <option value="1">Awesome</option>
-                              <option value="2">Beast</option>
-                              <option value="3">Compatible</option>
-                              <option value="7">Javascript</option>
-                           </select>
-                        </div>
+                        <div class="orders">
+                           <div class="data_table">
+                              <div class="table">
+                                 <div class="thead">
+                                    <div class="row">
+                                       <div class="cell orderId">
+                                          Order id
+                                       </div>
+                                       <div class="cell date">
+                                          Order Date
+                                       </div>
+                                       <div class="cell name">
+                                          Customer
+                                       </div>
+                                       <div class="cell totalprice">
+                                          Amount
+                                       </div>
+                                       <div class="cell totalprice">
+                                          Payment Method
+                                       </div>
+                                       <div class="cell status">
+                                          Status
+                                       </div>
+                                       <div class="cell action">
+                                          View
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="tbody">
+                                    <div class="row">
+                                       <div class="cell orderId">
+                                          675490
+                                       </div>
+                                       <div class="cell date">
+                                          04-02-2024
+                                       </div>
+                                       <div class="cell name">
+                                          Md Abdul Mannan
+                                       </div>
+                                       <div class="cell totalprice">
+                                          450,000
+                                       </div>
+                                       <div class="cell totalprice">
+                                          Bank
+                                       </div>
+                                       <div class="cell status">
+                                          <div class="custom-select">
+                                             <input type="text" class="form-control" placeholder="Select" readonly="">
+                                             <span class="arrow-icon"></span>
+                                             <ul id="myOptions" class="options-list">
+                                                <li>Pending</li>
+                                                <li>Delivery</li>
+                                                <li>Cancel</li>
+                                                <li>Decline</li>
+                                                <li>Ship</li>
+                                                <li>Processing</li>
+                                             </ul>
+                                          </div>
+                                       </div>
 
-                        <div class="form-group position-relative mb-3">
-                           <label class="form-label">Sale Date*</label>
-                           <input type="text" class="datepicker_input form-control border-2 datepicker-input"
-                              id="datepicker1" placeholder="dd-mm-yy">
-                           <img src="assets/images/icon/small_calendar.svg" alt="" class="calender_img">
-                        </div>
+                                       <div class="cell action">
+                                          <a href="order.html" class="view_details"><img
+                                                src="./assets/images/icon/eye_20.svg" alt="">
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="cell orderId">
+                                          675490
+                                       </div>
+                                       <div class="cell date">
+                                          04-02-2024
+                                       </div>
+                                       <div class="cell name">
+                                          Md Abdul Mannan
+                                       </div>
+                                       <div class="cell totalprice">
+                                          450,000
+                                       </div>
+                                       <div class="cell totalprice">
+                                          Bank
+                                       </div>
+                                       <div class="cell status">
+                                          <div class="custom-select">
+                                             <input type="text" class="form-control" placeholder="Select" readonly="">
+                                             <span class="arrow-icon"></span>
+                                             <ul id="myOptions" class="options-list">
+                                                <li>Pending</li>
+                                                <li>Delivery</li>
+                                                <li>Cancel</li>
+                                                <li>Decline</li>
+                                                <li>Ship</li>
+                                                <li>Processing</li>
+                                             </ul>
+                                          </div>
+                                       </div>
 
+                                       <div class="cell action">
+                                          <a href="order.html" class="view_details"><img
+                                                src="./assets/images/icon/eye_20.svg" alt="">
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
                      </div>
                   </div>
                </div>

@@ -146,7 +146,6 @@ body {
   width: 356px;
 }
 .search-box .form-control {
-  border-radius: 24px;
   padding: 0.688rem 0.75rem;
   padding-left: 48px;
 }
@@ -298,6 +297,10 @@ body {
 .table .thead .row .code {
   width: 54px;
 }
+.table .tbody .row .category,
+.table .thead .row .category {
+  width: 140px;
+}
 
 .table .tbody .row .companyName,
 .table .thead .row .companyName {
@@ -388,6 +391,105 @@ body {
 
 .modal-body {
   padding: 0 30px 30px 30px;
+}
+
+/* order */
+
+.orders .table .tbody .row .status,
+.orders .table .thead .row .status {
+  width: 150px;
+}
+.orders .table .custom-select input {
+  padding: 5px 11px;
+}
+
+/* products */
+.products .table .tbody .row .name .product-img {
+  width: 48px;
+  height: 48px;
+}
+.table .tbody .row .action .view_details {
+  padding: 2px;
+}
+.table .tbody .row .action .view_details .edit,
+.table .tbody .row .action .view_details .trash {
+  width: 19px;
+  height: 19px;
+}
+.products .table .tbody .row .action,
+.products .table .thead .row .action,
+.category .table .tbody .row .action,
+.category .table .thead .row .action {
+  width: 94px;
+}
+.product-form .row .col-6 {
+  padding: 0 22px;
+}
+.product-form .row {
+  margin: 0 -22px;
+}
+
+.productMain-image .dragDrop-area {
+  height: 640px;
+}
+.create-order .searches-user .btn {
+  width: 78px;
+  font-size: 12px;
+}
+.create-order .searches-user .user-info label {
+  width: 70px;
+  font-weight: 500;
+}
+.cart-list-items .item-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+}
+.create-order .order-items {
+  width: 60%;
+}
+.cart-list-items .item-info {
+  width: 45%;
+}
+.cart-list-items .item-details {
+  width: calc(100% - 50%);
+}
+.decrement-btn,
+.increment-btn {
+  height: 40px;
+  background: #f6f6f6;
+  padding: 5px 10px;
+}
+.form-control.counter-input {
+  height: 40px;
+  border: none;
+  background: #f6f6f6;
+  padding: 8px;
+  text-align: center;
+  font-size: 16px;
+}
+.order-items .cart-list-items li {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--bs-neutral-300);
+}
+.order-summary {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--bs-neutral-300);
+}
+.search-item .options-list li img {
+  width: 32px !important;
+  height: 32px !important;
+  margin-right: 10px;
+}
+.customer .user-form {
+  width: 50%;
+}
+
+.form-error-icon {
+  bottom: 37px;
+}
+.category-form .productMain-image .dragDrop-area {
+  height: 140px;
 }
 
 @media only screen and (max-width: 1366px) {

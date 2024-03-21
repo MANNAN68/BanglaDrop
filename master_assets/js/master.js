@@ -76,5 +76,24 @@ for (const elem of elems) {
 
 // ---Date Picker
 // ---Date Picker
+//------ Custom increment and decrement buttons
+const incrementBtns = document.querySelectorAll(".increment-btn");
+const decrementBtns = document.querySelectorAll(".decrement-btn");
+incrementBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const input = btn.parentElement.querySelector(".counter-input");
+    input.value = parseInt(input.value) + 1;
+  });
+});
+
+decrementBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const input = btn.parentElement.querySelector(".counter-input");
+    if (parseInt(input.value) > 0) {
+      input.value = parseInt(input.value) - 1;
+    }
+  });
+});
+//------End custom increment and decrement buttons
 
 $(".select3").selectize({ normalize: true });

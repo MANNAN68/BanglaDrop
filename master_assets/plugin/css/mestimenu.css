@@ -406,13 +406,7 @@
 .mm-active .active svg .dashboard {
   stroke: var(--bs-primary-500) !important;
 }
-#sidebar-menu ul li a:hover svg .supplier {
-  stroke: var(--bs-primary-500);
-}
 
-.mm-active .active svg .supplier {
-  stroke: var(--bs-primary-500) !important;
-}
 #sidebar-menu ul li a:hover svg .customer {
   stroke: var(--bs-primary-500);
 }
@@ -423,118 +417,63 @@
 #sidebar-menu ul li a:hover svg .products {
   stroke: var(--bs-primary-500);
 }
-#sidebar-menu ul .mm-active a svg .products {
+.mm-active .active svg .products {
   stroke: var(--bs-primary-500);
 }
-.vertical-collpsed #sidebar-menu > ul > li:hover > a svg .products {
+
+#sidebar-menu ul li a:hover svg .order {
   stroke: var(--bs-primary-500);
 }
-#sidebar-menu ul li a:hover svg .purchase {
+.mm-active .active svg .order {
   stroke: var(--bs-primary-500);
 }
-#sidebar-menu ul .mm-active a svg .purchase {
-  stroke: var(--bs-primary-500);
+
+#sidebar-menu ul li a:hover svg .category {
+  fill: var(--bs-primary-500);
 }
-.vertical-collpsed #sidebar-menu > ul > li:hover > a svg .purchase {
-  stroke: var(--bs-primary-500);
+.mm-active .active svg .category {
+  fill: var(--bs-primary-500);
 }
-#sidebar-menu ul li a:hover svg .sales {
-  stroke: var(--bs-primary-500);
+
+#sidebar-menu ul li a:hover svg .attributes {
+  fill: var(--bs-primary-500);
 }
-#sidebar-menu ul .mm-active a svg .sales {
-  stroke: var(--bs-primary-500);
+.mm-active .active svg .attributes {
+  fill: var(--bs-primary-500);
 }
-.vertical-collpsed #sidebar-menu > ul > li:hover > a svg .sales {
-  stroke: var(--bs-primary-500);
+#sidebar-menu ul li a:hover svg .campaign {
+  fill: var(--bs-primary-500);
 }
-#sidebar-menu ul li a:hover svg .supplier {
-  stroke: var(--bs-primary-500);
+.mm-active .active svg .campaign {
+  fill: var(--bs-primary-500);
 }
-#sidebar-menu ul .mm-active a svg .supplier {
-  stroke: var(--bs-primary-500);
-}
-.vertical-collpsed #sidebar-menu > ul > li:hover > a svg .supplier {
-  stroke: var(--bs-primary-500);
-}
-#sidebar-menu ul li a:hover svg .customer {
-  stroke: var(--bs-primary-500);
-}
-#sidebar-menu ul .mm-active a svg .customer {
-  stroke: var(--bs-primary-500);
-}
-.vertical-collpsed #sidebar-menu > ul > li:hover > a svg .customer {
-  stroke: var(--bs-primary-500);
-}
+
 #sidebar-menu ul li a:hover svg .stock {
-  stroke: var(--bs-primary-500);
+  fill: var(--bs-primary-500);
 }
-#sidebar-menu ul .mm-active a svg .stock {
-  stroke: var(--bs-primary-500);
-}
-.vertical-collpsed #sidebar-menu > ul > li:hover > a svg .stock {
-  stroke: var(--bs-primary-500);
-}
-#sidebar-menu ul li a:hover svg .expense {
-  stroke: var(--bs-primary-500);
-}
-#sidebar-menu ul .mm-active a svg .expense {
-  stroke: var(--bs-primary-500);
-}
-.vertical-collpsed #sidebar-menu > ul > li:hover > a svg .expense {
-  stroke: var(--bs-primary-500);
-}
-#sidebar-menu ul li a:hover svg .accounts {
-  stroke: var(--bs-primary-500);
-}
-#sidebar-menu ul .mm-active a svg .accounts {
-  stroke: var(--bs-primary-500);
-}
-.vertical-collpsed #sidebar-menu > ul > li:hover > a svg .accounts {
-  stroke: var(--bs-primary-500);
-}
-#sidebar-menu ul li a:hover svg .sale-rtn {
-  stroke: var(--bs-primary-500);
-}
-#sidebar-menu ul .mm-active a svg .sale-rtn {
-  stroke: var(--bs-primary-500);
-}
-.vertical-collpsed #sidebar-menu > ul > li:hover > a svg .sale-rtn {
-  stroke: var(--bs-primary-500);
-}
-#sidebar-menu ul li a:hover svg .purchase-rtn {
-  stroke: var(--bs-primary-500);
-}
-#sidebar-menu ul .mm-active a svg .purchase-rtn {
-  stroke: var(--bs-primary-500);
-}
-.vertical-collpsed #sidebar-menu > ul > li:hover > a svg .purchase-rtn {
-  stroke: var(--bs-primary-500);
-}
-#sidebar-menu ul li a:hover svg .report {
-  stroke: var(--bs-primary-500);
-}
-#sidebar-menu ul .mm-active a svg .report {
-  stroke: var(--bs-primary-500);
-}
-.vertical-collpsed #sidebar-menu > ul > li:hover > a svg .report {
-  stroke: var(--bs-primary-500);
+.mm-active .active svg .stock {
+  fill: var(--bs-primary-500);
 }
 
-#sidebar-menu ul li a:hover svg .bank {
-  stroke: var(--bs-primary-500);
+#sidebar-menu ul li a:hover svg .setting {
+  fill: var(--bs-primary-500);
 }
-#sidebar-menu ul .mm-active a svg .bank {
-  stroke: var(--bs-primary-500);
-}
-.vertical-collpsed #sidebar-menu > ul > li:hover > a svg .bank {
-  stroke: var(--bs-primary-500);
-}
-#sidebar-menu ul li a:hover svg .bank {
-  stroke: var(--bs-primary-500);
+.mm-active .active svg .setting {
+  fill: var(--bs-primary-500);
 }
 
-.mm-active .active svg .bank {
-  stroke: var(--bs-primary-500) !important;
+#sidebar-menu ul li a:hover svg .admin {
+  fill: var(--bs-primary-500);
+}
+.mm-active .active svg .admin {
+  fill: var(--bs-primary-500);
+}
+
+#sidebar-menu ul li a:hover svg .logout {
+  stroke: var(--bs-primary-500);
+}
+.mm-active .active svg .logout {
+  stroke: var(--bs-primary-500);
 }
 
 /* side bar menu icon css */
