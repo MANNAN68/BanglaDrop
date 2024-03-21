@@ -775,7 +775,7 @@
 }
 .search-box > .search_icon {
   position: absolute;
-  top: 12px;
+  top: 14px;
   left: 16px;
 }
 .form-control:focus::-webkit-input-placeholder {

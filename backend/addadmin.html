@@ -156,7 +156,7 @@
                                           </a>
                                        </li>
                                        <li>
-                                          <a href="subcategory.html" class="waves-effect active" aria-expanded="false">
+                                          <a href="subcategory.html" class="waves-effect" aria-expanded="false">
                                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path class="category"
@@ -260,7 +260,7 @@
                                           </a>
                                        </li>
                                        <li>
-                                          <a href="adminrole.html" class="waves-effect" aria-expanded="false">
+                                          <a href="adminrole.html" class="waves-effect active" aria-expanded="false">
                                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path class="admin" fill-rule="evenodd" clip-rule="evenodd"
@@ -445,55 +445,55 @@
             <div class="main-content">
                <div class="container-fluid">
                   <div class="page-content ">
-                     <div class="page-title ">
+                     <div class="page-title">
                         <div>
-                           <h5 class="fw-600">Add Sub-category</h5>
+                           <h5 class="fw-600">Add Admin</h5>
                         </div>
 
                      </div>
                      <div class="page-wrapper mt-3">
-                        <div class="category">
-                           <div class="category-form w-50">
+                        <div class="admin">
+                           <div class="admin-form w-50">
                               <form action="">
                                  <div class="form-group position-relative mb-3">
-                                    <label for="name" class="form-label">Category Name</label>
+                                    <label for="name" class="form-label">Full Name</label>
                                     <input type="text" class="form-control" id="name" placeholder="Name">
                                  </div>
                                  <div class="form-group position-relative mb-3">
-                                    <div class="image-upload-container d-flex flex-column">
-                                       <div class="productMain-image">
-                                          <div class="dragDrop-area">
-                                             <input type="file" accept="image/*" name="image"
-                                                class="form-control image-upload" id="files" multiple="">
-                                             <label
-                                                class="w-100 h-100 font-14 fw-500  d-flex flex-column gap-1 align-items-center justify-content-center"
-                                                for="files">
-                                                <img src="./assets/images/icon/img_upload.svg" alt=""
-                                                   class="w-auto h-auto">
-                                                <span class="d-flex gap-2">
-                                                   <p class="font-14 fw-500 ">Upload gallery or drag and drop
-                                                      here</p>
-                                                </span>
-                                                <small class=" font-14 fw-400">PNG/JPEG</small></label>
-                                          </div>
-                                       </div>
-                                       <div class="gallery_images d-flex gap-4">
-                                          <div class="dragDrop-area position-relative">
-                                             <input type="file" class="image-upload" accept="image/*">
-                                             <label for="image-upload" class="upload-label">
-                                                <img src="../images/img_upload.png" alt="" class="w-auto h-auto">
-                                             </label>
-                                             <div class="image-preview-container">
-                                                <img class="image-preview" src="./assets/images/product.png"
-                                                   alt="Image Preview">
-                                                <img src="./assets/images/icon/close_icon_upload_img.svg" alt=""
-                                                   class="close-icon">
-                                             </div>
-                                          </div>
-
-                                       </div>
-
-                                    </div>
+                                    <label for="email" class="form-label">Email address</label>
+                                    <input type="email" class="form-control is_error" id="email"
+                                       placeholder="Email Address">
+                                    <label for="" class="form-error-text">Invalid Email</label>
+                                    <img src="../master_assets/images/master_icon/invalid_icon.svg" alt=""
+                                       class="form-error-icon">
+                                 </div>
+                                 <div class="form-group position-relative mb-3">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="number" class="form-control" id="phone" placeholder="Phone Number">
+                                 </div>
+                                 <div class="form-group position-relative mb-3">
+                                    <label for="address" class="form-label">Address</label>
+                                    <textarea name="" id="address" cols="1" rows="2" class="form-control"></textarea>
+                                 </div>
+                                 <div class="form-group position-relative mb-3">
+                                    <label for="" class="form-label">Role</label>
+                                    <select class="select3">
+                                       <option value="">Select</option>
+                                       <option>Manager</option>
+                                       <option>Oparation Manager</option>
+                                       <option>CEO</option>
+                                    </select>
+                                 </div>
+                                 <div class="form-group position-relative mb-3">
+                                    <label for="phone" class="form-label">Password</label>
+                                    <input type="password" class="pass form-control" id="pass" placeholder="Password">
+                                    <img src="assets/images/icon/form_lock.svg" alt="" class="w-auto h-auto form-icon">
+                                 </div>
+                                 <div class="form-group position-relative mb-3">
+                                    <label for="confirm-password" class="form-label">Confirm-password</label>
+                                    <input type="password" class="pass form-control" id="confirm-password"
+                                       placeholder="Confirm-password">
+                                    <img src="assets/images/icon/form_lock.svg" alt="" class="w-auto h-auto form-icon">
                                  </div>
 
                                  <button class="btn btn-primary btn-md w-100 mt-4">Save</button>
