@@ -39,7 +39,9 @@
                <a href="index.html" class="with-collpsed">
                   <img src="../master_assets/images/brand/logo.svg" alt="">
                </a>
+
             </div>
+
             <div class="vertical-menu mm-active">
                <div data-simplebar="init" class="h-100 mm-show simplebar-scrollable-y">
                   <div class="simplebar-wrapper" style="margin: 0px;">
@@ -56,7 +58,7 @@
                                     <!-- Left Menu Start -->
                                     <ul class="d-flex flex-column gap-2 metismenu mm-show" id="side-menu">
                                        <li>
-                                          <a href="index.html" class="waves-effect ">
+                                          <a href="index.html" class="waves-effect">
                                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path class="dashboard"
@@ -119,7 +121,7 @@
                                           </a>
                                        </li>
                                        <li>
-                                          <a href="customer.html" class="waves-effect" aria-expanded="false">
+                                          <a href="customer.html" class="waves-effect active" aria-expanded="false">
                                              <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path class="customer"
@@ -309,6 +311,7 @@
                      </div>
                      <div class="simplebar-placeholder"></div>
                   </div>
+
                </div>
             </div>
             <div class="sidebar-backdrop"></div>
@@ -328,28 +331,13 @@
                         <div class="search-box">
                            <input type="text" class="form-control" placeholder="Search Every Things" id="searchInput">
                            <img src="assets/images/icon/search_box_icon.svg" alt="" class="search_icon w-auto h-auto">
+
                         </div>
                      </div>
 
                   </div>
                   <div class="navbar-right  d-flex align-items-center">
                      <div class="navbar-action d-flex gap-3">
-                        <div class="search-icon">
-                           <img src="assets/images/icon/nav_sm_search.svg" alt="">
-                        </div>
-                        <div class="app-search-box">
-                           <form class="app-search-form d-flex justify-content-center align-items-center">
-                              <div class="search-box">
-                                 <input type="text" class="form-control" placeholder="Search Every Things"
-                                    id="searchInput">
-                                 <img src="assets/images/icon/search_box_icon.svg" alt=""
-                                    class="search_icon w-auto h-auto">
-                              </div>
-                           </form>
-                           <div class="search-backdrop">
-                           </div>
-                        </div>
-
                         <div class="notifications position-relative" data-bs-toggle="tooltip" data-bs-placement="bottom"
                            data-bs-title="Notification">
                            <div class="action-link position-relative dropdown-toggle" data-bs-toggle="dropdown"
@@ -457,9 +445,100 @@
             <div class="main-content">
                <div class="container-fluid">
                   <div class="page-content ">
-                     <div class="page-title d-flex align-items-center justify-content-between">
+                     <div class="page-title ">
                         <div>
-                           <h5 class="fw-600">Stock</h5>
+                           <h5 class="fw-600">Customer details</h5>
+                        </div>
+                     </div>
+
+                     <div class="customer-basic-info mt-3">
+                        <div class="row">
+                           <div class="col-4">
+                              <div class="customer-image d-flex gap-2 align-items-center  pe-5">
+                                 <img src="assets/images/user/user.png" alt="">
+                                 <div class="d-flex  flex-column">
+                                    <h6>Md Abdul Mannan</h6>
+                                    <small>mizanur@gmail.com</small>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-4">
+                              <div class="personal-info d-flex flex-column gap-3 ">
+                                 <h6>Personal Information</h6>
+                                 <div class=" info-details d-flex flex-column gap-2">
+                                    <div class="d-flex">
+                                       <span>Contact No.</span>
+                                       <p class="text-black fw-500">01315565037</p>
+                                    </div>
+                                    <div class="d-flex">
+                                       <span>Gender</span>
+                                       <p class="text-black fw-500">Male</p>
+                                    </div>
+                                    <div class="d-flex">
+                                       <span>DOB</span>
+                                       <p class="text-black fw-500">01-10-1996</p>
+                                    </div>
+                                    <div class="d-flex">
+                                       <span>Member</span>
+                                       <p class="text-black fw-500">3 March, 2023</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-4">
+                              <div class="order-status d-flex flex-column gap-3 ps-5">
+                                 <h6>Shiping Address</h6>
+                                 <p class="address">Shekertake, Adabor, Mohammadpur</p>
+                                 <div class="order-status-info d-flex justify-content-between">
+                                    <div class="d-flex flex-column gap-1">
+                                       <h5>70</h5>
+                                       <p>Total Order</p>
+
+                                    </div>
+                                    <div class="d-flex flex-column gap-1">
+                                       <h5>50</h5>
+                                       <p>Complete </p>
+
+                                    </div>
+                                    <div class="d-flex flex-column gap-1">
+                                       <h5>20</h5>
+                                       <p>Cancel</p>
+
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="page-title d-flex align-items-center justify-content-between mt-5">
+                        <div class=" tab-menus ">
+                           <ul class="tab-menus-items d-flex gap-3">
+                              <li class="tab-item">
+                                 <button class=" btn btn-sm btn-primary">All</button>
+                              </li>
+
+                              <li class="tab-item">
+                                 <button class=" btn btn-sm btn-secondary">Pending</button>
+                              </li>
+                              <li class="tab-item">
+                                 <button class=" btn btn-sm btn-secondary">Approval</button>
+                              </li>
+                              <li class="tab-item">
+                                 <button class=" btn btn-sm btn-secondary">Processing </button>
+                              </li>
+                              <li class="tab-item">
+                                 <button class=" btn btn-sm btn-secondary"> Shiped</button>
+                              </li>
+                              <li class="tab-item">
+                                 <button class=" btn btn-sm btn-secondary">Delivery</button>
+                              </li>
+                              <li class="tab-item">
+                                 <button class=" btn btn-sm btn-secondary">Cancel</button>
+                              </li>
+                              <li class="tab-item">
+                                 <button class=" btn btn-sm btn-secondary">Declined</button>
+                              </li>
+                           </ul>
                         </div>
                         <div class="d-flex gap-4 sfbtn">
                            <div class="search-box">
@@ -468,137 +547,97 @@
                               <img src="assets/images/icon/search_box_icon.svg" alt=""
                                  class="search_icon w-auto h-auto">
                            </div>
-                           <div class="filter">
-                              <div class="custom-select">
-                                 <select class="select3">
-                                    <option value="">Category</option>
-                                    <option value="1">Awesome</option>
-                                    <option value="2">Beast</option>
-                                    <option value="3">Compatible</option>
-                                    <option value="7">Javascript</option>
-                                 </select>
-                              </div>
-                           </div>
-                           <div class="filter">
-                              <div class="custom-select">
-                                 <select class="select3">
-                                    <option value="">Sub-category</option>
-                                    <option value="1">Awesome</option>
-                                    <option value="2">Beast</option>
-                                    <option value="3">Compatible</option>
-                                    <option value="7">Javascript</option>
-                                 </select>
-                              </div>
-                           </div>
-                           <div class="filter">
-                              <div class="custom-select">
-                                 <select class="select3">
-                                    <option value="">Stock</option>
-                                    <option value="1">Awesome</option>
-                                    <option value="2">Beast</option>
-                                    <option value="3">Compatible</option>
-                                    <option value="7">Javascript</option>
-                                 </select>
-                              </div>
-                           </div>
-
-
                         </div>
                      </div>
                      <div class="page-wrapper mt-3">
-                        <div class="stock">
+                        <div class="customer">
                            <div class="data_table">
                               <div class="table">
                                  <div class="thead">
                                     <div class="row">
-                                       <div class="cell name">
-                                          Name
+                                       <div class="cell orderId">
+                                          Order Id
                                        </div>
-                                       <div class="cell category">
-                                          Category
+                                       <div class="cell date">
+                                          Order Date
                                        </div>
-                                       <div class="cell category">
-                                          Sub-category
+                                       <div class="cell price">
+                                          Amount
                                        </div>
 
-                                       <div class="cell totalprice">
-                                          Price
+                                       <div class="cell paymentMethod">
+                                          Payment Method
                                        </div>
-                                       <div class="cell stock">
-                                          Stock
+                                       <div class="cell status">
+                                          Status
                                        </div>
 
                                        <div class="cell action">
-                                          View
+                                          Action
                                        </div>
                                     </div>
                                  </div>
                                  <div class="tbody">
                                     <div class="row">
-                                       <div class="cell name">
-                                          <div class="d-flex gap-2">
-                                             <img src="assets/images/p1.png" alt="" class="product-img">
-                                             <p>FastPower - Easy Bike Battery 12V</p>
-                                          </div>
+                                       <div class="cell orderId">
+                                          101
                                        </div>
-                                       <div class="cell category">
-                                          Battery
+                                       <div class="cell date">
+                                          29 Mar 2023
                                        </div>
-                                       <div class="cell category">
-                                          mobile
+                                       <div class="cell price">
+                                          1200
                                        </div>
 
-                                       <div class="cell price">
-                                          1011
+                                       <div class="cell paymentMethod">
+                                          Bank
                                        </div>
-                                       <div class="cell stock ">
-                                          <p class="text-success">Stock (520)</p>
+                                       <div class="cell status">
+                                          <div class="alert alert-success alert-sm" role="alert">
+                                             Delivered
+                                          </div>
                                        </div>
                                        <div class="cell action">
-                                          <div class="cell action">
-                                             <div class="d-flex gap-2">
-                                                <a href="stockdetails.html" class="view_details">
-                                                   <img src="assets/images/icon/eye_24.svg" alt="">
-                                                </a>
-                                             </div>
+                                          <div class="d-flex gap-2">
+                                             <a href="orderdetails.html" class="view_details">
+                                                <img src="assets/images/icon/eye_24.svg" alt="">
+                                             </a>
                                           </div>
                                        </div>
                                     </div>
                                     <div class="row">
-                                       <div class="cell name">
-                                          <div class="d-flex gap-2">
-                                             <img src="assets/images/p1.png" alt="" class="product-img">
-                                             <p>FastPower - Easy Bike Battery 12V</p>
-                                          </div>
+                                       <div class="cell orderId">
+                                          101
                                        </div>
-                                       <div class="cell category">
-                                          Battery
+                                       <div class="cell date">
+                                          29 Mar 2023
                                        </div>
-                                       <div class="cell category">
-                                          mobile
+                                       <div class="cell price">
+                                          1200
                                        </div>
 
-                                       <div class="cell price">
-                                          1011
+                                       <div class="cell paymentMethod">
+                                          COD
                                        </div>
-                                       <div class="cell stock ">
-                                          <p class="text-success">Stock (520)</p>
+                                       <div class="cell status">
+                                          <div class="alert alert-danger alert-sm" role="alert">
+                                             Cancel
+                                          </div>
                                        </div>
                                        <div class="cell action">
-                                          <div class="cell action">
-                                             <div class="d-flex gap-2">
-                                                <a href="stockdetails.html" class="view_details">
-                                                   <img src="assets/images/icon/eye_24.svg" alt="">
-                                                </a>
-                                             </div>
+                                          <div class="d-flex gap-2">
+                                             <a href="orderdetails.html" class="view_details">
+                                                <img src="assets/images/icon/eye_24.svg" alt="">
+                                             </a>
                                           </div>
                                        </div>
                                     </div>
+
+
                                  </div>
                               </div>
                            </div>
                         </div>
-
                      </div>
                   </div>
                </div>
@@ -623,6 +662,7 @@
       <script src="../master_assets/plugin/js/sidebarmenu.js"></script>
       <script src="../master_assets/js/master.js"></script>
       <script src="assets/js/custom.js"></script>
+
       <!-- custom javascript -->
 
 </body>
