@@ -444,11 +444,11 @@
             <div class="main-content">
                <div class="container-fluid">
                   <div class="page-content ">
-                     <div class="page-title">
+                     <div class="page-title d-flex align-items-center justify-content-between">
                         <div>
-
                            <h6 class="fw-600">Orders Details</h5>
                         </div>
+                        <button class="btn btn-info btn-sm print-btn" onclick="window.print();">Invoice</button>
                      </div>
                      <div class="order-status mt-3 mb-4">
                         <div class="page-title d-flex align-items-center justify-content-between">
@@ -501,7 +501,7 @@
                               </ul>
                            </div>
                         </div>
-                        <div class="shipping-address ">
+                        <div class="shipping-address">
                            <h6>Shipping address</h6>
                            <div class="d-flex flex-column gap-1 mt-2">
                               <p>Md Abdul Mannan</p>
@@ -519,24 +519,37 @@
                      <div class="page-wrapper mt-3">
                         <div class="orders">
                            <div class="invoice-wrapper">
-                              <div class="invoice-head">
+                              <div class="invoice-head d-flex justify-content-between d-none">
                                  <div class="left">
-                                    <div class="shipping-address ">
-                                       <h6>Shipping address</h6>
-                                       <div class="d-flex flex-column gap-1 mt-2">
-                                          <p>Md Abdul Mannan</p>
-                                          <p>01315565037</p>
-                                          <p>mannan.steadfast@gmail.com</p>
-                                          <p>h-44/2 2A dhanmondi zigatola 1209 dhaka</p>
-                                       </div>
+                                    <div class="logo">
+                                       <img src="assets/images/brand/logo1.svg" alt="">
+                                    </div>
+                                    <div class="d-flex flex-column gap-1 mt-2">
+                                       <p>Cell: 01315565037</p>
+                                       <p>h-44/2 2A dhanmondi zigatola 1209 dhaka</p>
+                                    </div>
+                                 </div>
+                                 <div class="right">
+                                    <h5>Invoice</h5>
+                                    <div class="d-flex flex-column gap-1 mt-2">
+                                       <p>Invoice No : #737373</p>
+                                       <p>COD : 5400 BDT</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shipping-info mt-4 d-none">
+                                 <div class="shipping-address ">
+                                    <h6>Shipping address</h6>
+                                    <div class="d-flex flex-column gap-1 mt-2">
+                                       <p>Md Abdul Mannan</p>
+                                       <p>01315565037</p>
+                                       <p>mannan.steadfast@gmail.com</p>
+                                       <p>h-44/2 2A dhanmondi zigatola 1209 dhaka</p>
                                     </div>
                                  </div>
                               </div>
                               <div class="invoice-body">
                                  <div class="purchase-item">
-                                    <div class="page-title mb-3 d-flex justify-content-end align-items-end">
-                                       <button class="btn btn-info btn-sm" onclick="window.print();">Invoice</button>
-                                    </div>
                                     <div class="data_table">
                                        <div class="table">
                                           <div class="thead">
@@ -622,6 +635,8 @@
                                              <p class="text-black fw-500">150 Tk</p>
                                           </div>
                                        </div>
+                                       <hr>
+
                                        <div class="row text-end">
                                           <div class="col-8 pe-3">
                                              <p class="text-black fw-600">Total :</p>
@@ -630,7 +645,6 @@
                                              <p class="text-black fw-600">15000 Tk</p>
                                           </div>
                                        </div>
-                                       <hr>
                                     </div>
                                  </div>
                               </div>

@@ -778,6 +778,17 @@ body {
   border: 1px solid var(--bs-neutral-300);
   border-radius: 4px;
   margin-top: 60px;
+  width: 450px;
+}
+
+.invoice-wrapper .shipping-info .shipping-address {
+  border: 0px;
+  border-radius: 4px;
+  margin-top: 0px;
+  padding: 0;
+}
+.invoice-head .logo {
+  width: 168px;
 }
 
 @media only screen and (max-width: 1440px) {
@@ -1104,3 +1115,61 @@ body {
     gap: 14px !important;
   }
 }
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+    background: var(--bs-white);
+  }
+  @page {
+    margin: 0.25in !important;
+  }
+  @page label-printing {
+    margin: 0 !important;
+  }
+
+  .layout-left {
+    display: none;
+  }
+  .navbar-wrapper {
+    display: none;
+  }
+  .layout-right {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    left: 0px;
+    background: var(--bs-white);
+  }
+  .main-content {
+    padding: 0 !important;
+    background: var(--bs-white);
+    height: 100%;
+    margin: 0 !important;
+  }
+  .order-status {
+    display: none;
+  }
+  .page-title {
+    display: none;
+  }
+  .page-wrapper {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .footer {
+    display: none;
+  }
+  .print-btn {
+    display: none;
+  }
+  .invoice-head {
+    display: flex !important;
+  }
+  .shipping-info {
+    display: block !important;
+  }
+}
+/* Print Area */
+/* Print Area */
