@@ -68,15 +68,15 @@
 /* secondary button */
 
 .btn-secondary {
-  background: var(--bs-white);
-  color: var(--bs-neutral-900);
+  background: var(--bs-secondary-500);
+  color: var(--bs-white);
 }
 .btn-secondary:hover {
-  background: var(--bs-primary-600);
+  background: var(--bs-secondary-600);
   color: var(--bs-white);
 }
 .btn-secondary:focus {
-  background: var(--bs-primary-600) !important;
+  background: var(--bs-secondary-600) !important;
   color: var(--bs-white) !important;
 }
 /* secondary button */
@@ -255,6 +255,16 @@
   color: var(--bs-white) !important;
 }
 /* info button */
+
+.anchorBtn-primary {
+  color: var(--bs-primary-500);
+  background: transparent;
+  border: 1px solid var(--bs-primary-500);
+  border-radius: 4px;
+}
+.anchorBtn-primary:hover {
+  color: var(--bs-primary-500);
+}
 
 /* badge */
 
