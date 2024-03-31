@@ -60,20 +60,20 @@
                </div>
                <div class="profileContainer d-flex align-items-center justify-content-between gap-3">
                   <div class="cart-icon">
-                     <a href="#" class="position-relative">
+                     <a href="wishlist.html" class="position-relative">
                         <img src="assets/images/icon/wishlist.svg" alt="" class="w-auto h-auto">
                         <span class="badge text-bg-danger">4</span>
                      </a>
                   </div>
                   <div class="cart-icon">
-                     <a href="#" class="position-relative">
+                     <a href="cart.html" class="position-relative">
                         <img src="assets/images/icon/bag.svg" alt="" class="w-auto h-auto">
                         <span class="badge text-bg-danger">4</span>
                      </a>
                   </div>
                   <div class="profile">
-                     <a href="#" class="loginBtn btn-md d-flex justify-content-center align-items-center"
-                        data-bs-toggle="modal" data-bs-target="#login">login</a>
+                     <a href="#" data-bs-toggle="modal" data-bs-target="#login"
+                        class="loginBtn btn-md d-flex justify-content-center align-items-center">login</a>
                   </div>
                   <div class="lan">
                      <button class="btn-md btn-outline-primary btn">EN</button>
@@ -256,264 +256,290 @@
       <main>
          <div class="main-content">
             <div class="container-fluid">
-               <div class="cartPage ">
-                  <h4 class="fw-600">My Cart</h4>
-                  <div class="checkAll mt-4">
-                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="allItem">
-                        <label class="form-check-label" for="allItem">
-                           Select All
-                        </label>
+
+               <div class="productContainer">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                     <h5 class="fw-600"> <span class="me-1" style="color: var(--bs-neutral-500);">Showing result
+                           for</span>Shoulder
+                        Bag</h5>
+                     <div class="d-flex align-items-center gap-2 filter priceFilter">
+                        <div class="form-group position-relative">
+                           <input type="number" class="form-control" placeholder="Min price">
+                        </div>
+                        <div class="form-group position-relative">
+                           <input type="number" class="form-control" placeholder="Max price">
+                        </div>
+                        <button class="btn btn-primary btn-sm">Filter</button>
                      </div>
                   </div>
-                  <div class="d-flex gap-4 mt-3">
-                     <div class="cartItems d-flex flex-column gap-3">
-                        <div class="cartItem">
-                           <div class="item d-flex gap-2 align-items-center">
-                              <div class="selectItem">
-                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="item1">
-                                 </div>
+                  <div class="productList">
+                     <div class="product">
+                        <a href="productdetails.html">
+                           <div class="card">
+                              <div class="products-img">
+                                 <img src="assets/images/product/shoe_1.png" class="productImage" alt="">
                               </div>
-                              <div class="d-flex justify-content-between w-100 align-items-center">
-                                 <div class="item-details d-flex gap-2 align-items-center">
-                                    <div class="item-image">
-                                       <img src="assets/images/product/sub_img_1.png" alt="">
+                              <div class="card-body ">
+                                 <p class="productName">2024 Women's Spring Shirt 2024 Women's Spring </p>
+                                 <div class="d-flex gap-2 align-items-center mt-2 mb-2">
+                                    <h6 class="fw-600">1500</h6>
+                                    <del class="font-14 fw-400">1400</del>
+                                 </div>
+                                 <div class="d-flex justify-content-between">
+                                    <div class="productReview d-flex gap-1 align-items-center">
+                                       <img src="assets/images/icon/review_fill.svg" alt="" class="w-auto h-auto">
+                                       <p class="font-12">2.5k review</p>
                                     </div>
-                                    <div class="item-name">
-                                       <h6>Demi-season fashionable trend shirt, classic suit jacket, Korean style</h6>
+                                    <div class="productOrder">
+                                       <p class="font-12">1.5k+ Orders</p>
                                     </div>
-                                 </div>
-                                 <div class="actionBtn d-flex align-items-center justify-content-center">
-                                    <img src="assets/images/icon/trash_24.svg" alt="" class="w-auto h-auto">
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="attributeItems d-flex flex-column">
-                              <div class="attributeItem d-flex justify-content-between">
-                                 <div class="d-flex justify-content-between align-items-center w-75">
-                                    <div class="item-details d-flex gap-2 align-items-center">
-                                       <div class="item-image">
-                                          <img src="assets/images/product/sub_img_1.png" alt="">
-                                       </div>
-                                       <div class="attribute">
-                                          <p>Color: white</p>
-                                          <p>Size: M</p>
-                                       </div>
-                                    </div>
-                                    <p>10 X ৳250</p>
-                                    <p>৳2550</p>
-                                 </div>
-                                 <div class=" d-flex align-items-center gap-3">
-                                    <button type="button" class="btn btn-link font-14 h-auto" data-bs-toggle="modal"
-                                       data-bs-target="#editQty">Edit</button>
-                                    <button type="button" class="btn btn-link font-14 h-auto">Delete</button>
-                                 </div>
-                              </div>
-                              <div class="attributeItem d-flex justify-content-between">
-                                 <div class="d-flex justify-content-between align-items-center w-75">
-                                    <div class="item-details d-flex gap-2 align-items-center">
-                                       <div class="item-image">
-                                          <img src="assets/images/product/sub_img_1.png" alt="">
-                                       </div>
-                                       <div class="attribute">
-                                          <p>Color: white</p>
-                                          <p>Size: M</p>
-                                       </div>
-                                    </div>
-                                    <p>10 X ৳250</p>
-                                    <p>৳2550</p>
-                                 </div>
-                                 <div class=" d-flex align-items-center gap-3">
-                                    <a href="#" class="text-primary font-14 fw-500">Edit</a>
-                                    <button type="button" class="btn btn-link font-14 h-auto">Delete</button>
-                                 </div>
-                              </div>
-                              <div class="attributeItem d-flex justify-content-between">
-                                 <div class="d-flex justify-content-between align-items-center w-75">
-                                    <div class="item-details d-flex gap-2 align-items-center">
-                                       <div class="item-image">
-                                          <img src="assets/images/product/sub_img_1.png" alt="">
-                                       </div>
-                                       <div class="attribute">
-                                          <p>Color: white</p>
-                                          <p>Size: M</p>
-                                       </div>
-                                    </div>
-                                    <p>10 X ৳250</p>
-                                    <p>৳2550</p>
-                                 </div>
-                                 <div class=" d-flex align-items-center gap-3">
-                                    <a href="#" class="text-primary font-14 fw-500">Edit</a>
-                                    <button type="button" class="btn btn-link font-14 h-auto">Delete</button>
-                                 </div>
-                              </div>
-                              <div class="attributeItem d-flex justify-content-between">
-                                 <div class="d-flex justify-content-between align-items-center w-75">
-                                    <div class="item-details d-flex gap-2 align-items-center">
-                                       <div class="item-image">
-                                          <img src="assets/images/product/sub_img_1.png" alt="">
-                                       </div>
-                                       <div class="attribute">
-                                          <p>Color: white</p>
-                                          <p>Size: M</p>
-                                       </div>
-                                    </div>
-                                    <p>10 X ৳250</p>
-                                    <p>৳2550</p>
-                                 </div>
-                                 <div class=" d-flex align-items-center gap-3">
-                                    <button type="button" class="btn btn-link font-14 h-auto" data-bs-toggle="modal"
-                                       data-bs-target="#editQty">Edit</button>
-                                    <button type="button" class="btn btn-link font-14 h-auto">Delete</button>
                                  </div>
                               </div>
                            </div>
-                           <div class="cartItem_summary w-75 d-flex justify-content-end align-items-center gap-5">
-                              <p class="text-black fw-500">65 Item</p>
-                              <p class="text-black fw-500">৳ 124,500</p>
-                           </div>
-                        </div>
-                        <div class="cartItem">
-                           <div class="item d-flex gap-2 align-items-center">
-                              <div class="selectItem">
-                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="item1">
-                                 </div>
-                              </div>
-                              <div class="d-flex justify-content-between w-100 align-items-center">
-                                 <div class="item-details d-flex gap-2 align-items-center">
-                                    <div class="item-image">
-                                       <img src="assets/images/product/sub_img_1.png" alt="">
-                                    </div>
-                                    <div class="item-name">
-                                       <h6>Demi-season fashionable trend shirt, classic suit jacket, Korean style</h6>
-                                    </div>
-                                 </div>
-                                 <div class="actionBtn d-flex align-items-center justify-content-center">
-                                    <img src="assets/images/icon/trash_24.svg" alt="" class="w-auto h-auto">
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="attributeItems d-flex flex-column">
-                              <div class="attributeItem d-flex justify-content-between">
-                                 <div class="d-flex justify-content-between align-items-center w-75">
-                                    <div class="item-details d-flex gap-2 align-items-center">
-                                       <div class="item-image">
-                                          <img src="assets/images/product/sub_img_1.png" alt="">
-                                       </div>
-                                       <div class="attribute">
-                                          <p>Color: white</p>
-                                          <p>Size: M</p>
-                                       </div>
-                                    </div>
-                                    <p>10 X ৳250</p>
-                                    <p>৳2550</p>
-                                 </div>
-                                 <div class=" d-flex align-items-center gap-3">
-                                    <a href="#" class="text-primary font-14 fw-500">Edit</a>
-                                    <button type="button" class="btn btn-link font-14 h-auto">Delete</button>
-                                 </div>
-                              </div>
-                              <div class="attributeItem d-flex justify-content-between">
-                                 <div class="d-flex justify-content-between align-items-center w-75">
-                                    <div class="item-details d-flex gap-2 align-items-center">
-                                       <div class="item-image">
-                                          <img src="assets/images/product/sub_img_1.png" alt="">
-                                       </div>
-                                       <div class="attribute">
-                                          <p>Color: white</p>
-                                          <p>Size: M</p>
-                                       </div>
-                                    </div>
-                                    <p>10 X ৳250</p>
-                                    <p>৳2550</p>
-                                 </div>
-                                 <div class=" d-flex align-items-center gap-3">
-                                    <a href="#" class="text-primary font-14 fw-500">Edit</a>
-                                    <button type="button" class="btn btn-link font-14 h-auto">Delete</button>
-                                 </div>
-                              </div>
-                              <div class="attributeItem d-flex justify-content-between">
-                                 <div class="d-flex justify-content-between align-items-center w-75">
-                                    <div class="item-details d-flex gap-2 align-items-center">
-                                       <div class="item-image">
-                                          <img src="assets/images/product/sub_img_1.png" alt="">
-                                       </div>
-                                       <div class="attribute">
-                                          <p>Color: white</p>
-                                          <p>Size: M</p>
-                                       </div>
-                                    </div>
-                                    <p>10 X ৳250</p>
-                                    <p>৳2550</p>
-                                 </div>
-                                 <div class=" d-flex align-items-center gap-3">
-                                    <a href="#" class="text-primary font-14 fw-500">Edit</a>
-                                    <button type="button" class="btn btn-link font-14 h-auto">Delete</button>
-                                 </div>
-                              </div>
-                              <div class="attributeItem d-flex justify-content-between">
-                                 <div class="d-flex justify-content-between align-items-center w-75">
-                                    <div class="item-details d-flex gap-2 align-items-center">
-                                       <div class="item-image">
-                                          <img src="assets/images/product/sub_img_1.png" alt="">
-                                       </div>
-                                       <div class="attribute">
-                                          <p>Color: white</p>
-                                          <p>Size: M</p>
-                                       </div>
-                                    </div>
-                                    <p>10 X ৳250</p>
-                                    <p>৳2550</p>
-                                 </div>
-                                 <div class=" d-flex align-items-center gap-3">
-                                    <a href="#" class="text-primary font-14 fw-500">Edit</a>
-                                    <button type="button" class="btn btn-link font-14 h-auto">Delete</button>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="cartItem_summary w-75 d-flex justify-content-end align-items-center gap-5">
-                              <p class="text-black fw-500">65 Item</p>
-                              <p class="text-black fw-500">৳ 124,500</p>
-                           </div>
+                        </a>
+                        <div class="product_wishlist">
+                           <a href="#"><img src="assets/images/icon/product_wishlist.svg" alt=""
+                                 class="w-auto h-auto"></a>
                         </div>
                      </div>
-                     <div class="cartItemsSummary">
-                        <div class="orderItems_summary ">
-                           <h6 class="text-center">Order Summery</h6>
-                           <ul class="d-flex flex-column mt-3">
-                              <li>
-                                 <p class="font-16 text-black">Sub total(65 items)</p>
-                                 <p class="font-16 fw-600 text-black">124,500</p>
-                              </li>
-                              <li>
-                                 <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Apply coupon">
-                                    <button class="btn btn-primary btn-sm" type="button">Apply</button>
+                     <div class="product">
+                        <a href="productdetails.html">
+                           <div class="card">
+                              <div class="products-img">
+                                 <img src="assets/images/product/shoe_1.png" class="productImage" alt="">
+                              </div>
+                              <div class="card-body ">
+                                 <p class="productName">2024 Women's Spring Shirt 2024 Women's Spring </p>
+                                 <div class="d-flex gap-2 align-items-center mt-2 mb-2">
+                                    <h6 class="fw-600">1500</h6>
+                                    <del class="font-14 fw-400">1400</del>
                                  </div>
-                              </li>
-                              <li>
-                                 <p class="font-16 text-black">Discount</p>
-                                 <p class="font-16 fw-600 text-black">-৳4000</p>
-                              </li>
-                              <li>
-                                 <p class="font-16 text-black">Total</p>
-                                 <p class="font-16 fw-600 text-black">৳120,500</p>
-                              </li>
-                           </ul>
-                           <div class="delivery_charge mt-4 d-flex flex-column gap-2">
-                              <p class="font-16 fw-500 text-black">Shipping & Courier charge pay after delivery </p>
-                              <div class="d-flex align-items-center gap-2" data-bs-toggle="modal"
-                                 data-bs-target="#shipingCharge" style="cursor: pointer;">
-                                 <p class="font-16"> Shipping charge ৳650 - ৳1050 </p>
-                                 <img src="assets/images/icon/question_mark.svg" alt="" class="w-auto h-auto">
+                                 <div class="d-flex justify-content-between">
+                                    <div class="productReview d-flex gap-1 align-items-center">
+                                       <img src="assets/images/icon/review_fill.svg" alt="" class="w-auto h-auto">
+                                       <p class="font-12">2.5k review</p>
+                                    </div>
+                                    <div class="productOrder">
+                                       <p class="font-12">1.5k+ Orders</p>
+                                    </div>
+                                 </div>
                               </div>
                            </div>
+                        </a>
+                        <div class="product_wishlist">
+                           <a href="#"><img src="assets/images/icon/product_wishlist.svg" alt=""
+                                 class="w-auto h-auto"></a>
                         </div>
-                        <button class="btn btn-primary btn-md w-100">Process to checkout</button>
                      </div>
+                     <div class="product">
+                        <a href="productdetails.html">
+                           <div class="card">
+                              <div class="products-img">
+                                 <img src="assets/images/product/shoe_1.png" class="productImage" alt="">
+                              </div>
+                              <div class="card-body ">
+                                 <p class="productName">2024 Women's Spring Shirt 2024 Women's Spring </p>
+                                 <div class="d-flex gap-2 align-items-center mt-2 mb-2">
+                                    <h6 class="fw-600">1500</h6>
+                                    <del class="font-14 fw-400">1400</del>
+                                 </div>
+                                 <div class="d-flex justify-content-between">
+                                    <div class="productReview d-flex gap-1 align-items-center">
+                                       <img src="assets/images/icon/review_fill.svg" alt="" class="w-auto h-auto">
+                                       <p class="font-12">2.5k review</p>
+                                    </div>
+                                    <div class="productOrder">
+                                       <p class="font-12">1.5k+ Orders</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                        <div class="product_wishlist">
+                           <a href="#"><img src="assets/images/icon/product_wishlist.svg" alt=""
+                                 class="w-auto h-auto"></a>
+                        </div>
+                     </div>
+                     <div class="product">
+                        <a href="productdetails.html">
+                           <div class="card">
+                              <div class="products-img">
+                                 <img src="assets/images/product/shoe_1.png" class="productImage" alt="">
+                              </div>
+                              <div class="card-body ">
+                                 <p class="productName">2024 Women's Spring Shirt 2024 Women's Spring </p>
+                                 <div class="d-flex gap-2 align-items-center mt-2 mb-2">
+                                    <h6 class="fw-600">1500</h6>
+                                    <del class="font-14 fw-400">1400</del>
+                                 </div>
+                                 <div class="d-flex justify-content-between">
+                                    <div class="productReview d-flex gap-1 align-items-center">
+                                       <img src="assets/images/icon/review_fill.svg" alt="" class="w-auto h-auto">
+                                       <p class="font-12">2.5k review</p>
+                                    </div>
+                                    <div class="productOrder">
+                                       <p class="font-12">1.5k+ Orders</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                        <div class="product_wishlist">
+                           <a href="#"><img src="assets/images/icon/product_wishlist.svg" alt=""
+                                 class="w-auto h-auto"></a>
+                        </div>
+                     </div>
+                     <div class="product">
+                        <a href="productdetails.html">
+                           <div class="card">
+                              <div class="products-img">
+                                 <img src="assets/images/product/shoe_1.png" class="productImage" alt="">
+                              </div>
+                              <div class="card-body ">
+                                 <p class="productName">2024 Women's Spring Shirt 2024 Women's Spring </p>
+                                 <div class="d-flex gap-2 align-items-center mt-2 mb-2">
+                                    <h6 class="fw-600">1500</h6>
+                                    <del class="font-14 fw-400">1400</del>
+                                 </div>
+                                 <div class="d-flex justify-content-between">
+                                    <div class="productReview d-flex gap-1 align-items-center">
+                                       <img src="assets/images/icon/review_fill.svg" alt="" class="w-auto h-auto">
+                                       <p class="font-12">2.5k review</p>
+                                    </div>
+                                    <div class="productOrder">
+                                       <p class="font-12">1.5k+ Orders</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                        <div class="product_wishlist">
+                           <a href="#"><img src="assets/images/icon/product_wishlist.svg" alt=""
+                                 class="w-auto h-auto"></a>
+                        </div>
+                     </div>
+                     <div class="product">
+                        <a href="productdetails.html">
+                           <div class="card">
+                              <div class="products-img">
+                                 <img src="assets/images/product/shoe_1.png" class="productImage" alt="">
+                              </div>
+                              <div class="card-body ">
+                                 <p class="productName">2024 Women's Spring Shirt 2024 Women's Spring </p>
+                                 <div class="d-flex gap-2 align-items-center mt-2 mb-2">
+                                    <h6 class="fw-600">1500</h6>
+                                    <del class="font-14 fw-400">1400</del>
+                                 </div>
+                                 <div class="d-flex justify-content-between">
+                                    <div class="productReview d-flex gap-1 align-items-center">
+                                       <img src="assets/images/icon/review_fill.svg" alt="" class="w-auto h-auto">
+                                       <p class="font-12">2.5k review</p>
+                                    </div>
+                                    <div class="productOrder">
+                                       <p class="font-12">1.5k+ Orders</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                        <div class="product_wishlist">
+                           <a href="#"><img src="assets/images/icon/product_wishlist.svg" alt=""
+                                 class="w-auto h-auto"></a>
+                        </div>
+                     </div>
+                     <div class="product">
+                        <a href="productdetails.html">
+                           <div class="card">
+                              <div class="products-img">
+                                 <img src="assets/images/product/shoe_1.png" class="productImage" alt="">
+                              </div>
+                              <div class="card-body ">
+                                 <p class="productName">2024 Women's Spring Shirt 2024 Women's Spring </p>
+                                 <div class="d-flex gap-2 align-items-center mt-2 mb-2">
+                                    <h6 class="fw-600">1500</h6>
+                                    <del class="font-14 fw-400">1400</del>
+                                 </div>
+                                 <div class="d-flex justify-content-between">
+                                    <div class="productReview d-flex gap-1 align-items-center">
+                                       <img src="assets/images/icon/review_fill.svg" alt="" class="w-auto h-auto">
+                                       <p class="font-12">2.5k review</p>
+                                    </div>
+                                    <div class="productOrder">
+                                       <p class="font-12">1.5k+ Orders</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                        <div class="product_wishlist">
+                           <a href="#"><img src="assets/images/icon/product_wishlist.svg" alt=""
+                                 class="w-auto h-auto"></a>
+                        </div>
+                     </div>
+                     <div class="product">
+                        <a href="productdetails.html">
+                           <div class="card">
+                              <div class="products-img">
+                                 <img src="assets/images/product/shoe_1.png" class="productImage" alt="">
+                              </div>
+                              <div class="card-body ">
+                                 <p class="productName">2024 Women's Spring Shirt 2024 Women's Spring </p>
+                                 <div class="d-flex gap-2 align-items-center mt-2 mb-2">
+                                    <h6 class="fw-600">1500</h6>
+                                    <del class="font-14 fw-400">1400</del>
+                                 </div>
+                                 <div class="d-flex justify-content-between">
+                                    <div class="productReview d-flex gap-1 align-items-center">
+                                       <img src="assets/images/icon/review_fill.svg" alt="" class="w-auto h-auto">
+                                       <p class="font-12">2.5k review</p>
+                                    </div>
+                                    <div class="productOrder">
+                                       <p class="font-12">1.5k+ Orders</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                        <div class="product_wishlist">
+                           <a href="#"><img src="assets/images/icon/product_wishlist.svg" alt=""
+                                 class="w-auto h-auto"></a>
+                        </div>
+                     </div>
+                     <div class="product">
+                        <a href="productdetails.html">
+                           <div class="card">
+                              <div class="products-img">
+                                 <img src="assets/images/product/shoe_1.png" class="productImage" alt="">
+                              </div>
+                              <div class="card-body ">
+                                 <p class="productName">2024 Women's Spring Shirt 2024 Women's Spring </p>
+                                 <div class="d-flex gap-2 align-items-center mt-2 mb-2">
+                                    <h6 class="fw-600">1500</h6>
+                                    <del class="font-14 fw-400">1400</del>
+                                 </div>
+                                 <div class="d-flex justify-content-between">
+                                    <div class="productReview d-flex gap-1 align-items-center">
+                                       <img src="assets/images/icon/review_fill.svg" alt="" class="w-auto h-auto">
+                                       <p class="font-12">2.5k review</p>
+                                    </div>
+                                    <div class="productOrder">
+                                       <p class="font-12">1.5k+ Orders</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                        <div class="product_wishlist">
+                           <a href="#"><img src="assets/images/icon/product_wishlist.svg" alt=""
+                                 class="w-auto h-auto"></a>
+                        </div>
+                     </div>
+
+
                   </div>
+               </div>
+               <div class="load-more-category mt-4 d-flex align-items-center justify-content-center">
+                  <button class="btn btn-primary btn-md">Load more</button>
                </div>
             </div>
          </div>
@@ -751,67 +777,10 @@
          </div>
       </div>
 
-      <div class=" modal fade" id="editQty" tabindex="-1" aria-hidden="true">
-         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-               <div class="modal-header">
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-               </div>
-               <div class="modal-body">
-                  <div class="attributeItem d-flex flex-column">
-                     <div class="d-flex justify-content-between align-items-center w-100">
-                        <div class="item-details d-flex gap-2 align-items-center">
-                           <div class="item-image">
-                              <img src="assets/images/product/sub_img_1.png" alt="">
-                           </div>
-                           <div class="attribute">
-                              <p>Color: white</p>
-                              <p>Size: M</p>
-                           </div>
-                        </div>
-                        <div class="input-group" style="width: 120px;">
-                           <button class="btn btn-link btn-ex-sm decrement" type="button"><i
-                                 class="fa-solid fa-minus"></i></button>
-                           <input type="text" class="form-control itemQty" value="1">
-                           <button class="btn btn-link btn-ex-sm increment" type="button"><i
-                                 class="fa-solid fa-plus"></i></button>
-                        </div>
-                        <p>10 X ৳250</p>
-                        <p>৳2550</p>
-                     </div>
-                     <div class="d-flex gap-2 justify-content-end align-items-end mt-3">
-                        <a href="#"
-                           class="anchorBtn-secondary btn-ex-sm d-flex justify-content-center align-items-center">Cancel</a>
-                        <button class="btn btn-primary btn-ex-sm">Update</button>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
 
-      <div class=" modal fade" id="shipingCharge" tabindex="-1" aria-hidden="true">
-         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-               <div class="modal-header">
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-               </div>
-               <div class="modal-body">
-                  <h6 class="mb-2">International shipping charge : ৳650 - ৳1050</h6>
-                  <p>পণ্য বাংলাদেশে আসার পর পণ্যের ক্যাটাগরীর উপর নির্ভর করে চূড়ান্ত শিপিং চার্জ নির্ধারণ করা হবে।</p>
-
-                  <div class="d-flex justify-content-end align-items-end">
-                     <button type="button" class="btn btn-primary btn-ex-sm" data-bs-dismiss="modal"
-                        aria-label="Close">Ok</button>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-
+      <!-- auth modal -->
 
    </div>
-   <!-- auth modal -->
 
    <!-- bootstrap and jquery cdn link -->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

@@ -266,6 +266,16 @@
   color: var(--bs-primary-500);
 }
 
+.anchorBtn-secondary {
+  color: var(--bs-secondary-500);
+  background: transparent;
+  border: 1px solid var(--bs-secondary-500);
+  border-radius: 4px;
+}
+.anchorBtn-secondary:hover {
+  color: var(--bs-secondary-500);
+}
+
 /* badge */
 
 .badge {

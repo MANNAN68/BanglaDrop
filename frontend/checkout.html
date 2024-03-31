@@ -88,7 +88,7 @@
                <div class="rootcategories ">
                   <ul class=" d-flex flex-column">
                      <li class="category">
-                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#categorycanvas">
+                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#categorycanvas1">
                            <div class="d-flex align-items-center gap-2">
                               <img src="assets/images/sidebar/bag.svg" alt="">
                               <span>Bag</span>
@@ -97,7 +97,7 @@
                         </a>
                      </li>
                      <li class="category">
-                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#categorycanvas">
+                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#categorycanvas2">
                            <div class="d-flex align-items-center gap-2">
                               <img src="assets/images/sidebar/shoes.svg" alt="">
                               <span>Shoes</span>
@@ -140,8 +140,7 @@
       </aside>
 
       <!-- category items -->
-      <div class=" offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
-         id="categorycanvas">
+      <div class=" offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" id="categorycanvas1">
          <div class="categoriesLists">
             <div class="offcanvas-header">
                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><img
@@ -251,231 +250,388 @@
             </div>
          </div>
       </div>
+      <div class=" offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" id="categorycanvas2">
+         <div class="categoriesLists">
+            <div class="offcanvas-header">
+               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><img
+                     src="assets/images/sidebar/sidebarback.svg" alt="" class="w-auto h-auto"></button>
+
+               <div>
+                  <a href="#">
+                     <div class="d-flex align-items-center gap-2">
+                        <img src="assets/images/sidebar/shoes.svg" alt="">
+                        <span>shose</span>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="offcanvas-body">
+               <div class="vertical-menu mm-active">
+                  <div data-simplebar="init" class="h-100 mm-show simplebar-scrollable-y">
+                     <div class="simplebar-wrapper" style="margin: 0px;">
+                        <div class="simplebar-height-auto-observer-wrapper">
+                           <div class="simplebar-height-auto-observer"></div>
+                        </div>
+                        <div class="simplebar-mask">
+                           <div class="simplebar-offset">
+                              <div class="simplebar-content-wrapper" tabindex="0" role="region"
+                                 aria-label="scrollable content">
+                                 <div class="simplebar-content">
+                                    <!--- Sidemenu -->
+                                    <div id="sidebar-menu" class="mm-active">
+                                       <!-- Left Menu Start -->
+                                       <ul class="d-flex flex-column gap-2 metismenu mm-show" id="side-menu">
+
+                                          <li>
+                                             <a href="javascript: void(0);" class="has-arrow waves-effect"
+                                                aria-expanded="false">
+                                                <span>Ladies bags</span>
+                                             </a>
+                                             <ul class="sub-menu mm-collapse" aria-expanded="false"
+                                                style="height: 0px;">
+                                                <li>
+                                                   <a href="#" class=" waves-effect">
+                                                      <span>Clutch bag</span>
+                                                   </a>
+                                                </li>
+                                                <li>
+                                                   <a href="#" class=" waves-effect">
+                                                      <span>Shoulder bags</span>
+                                                   </a>
+                                                </li>
+                                             </ul>
+                                          </li>
+                                          <li>
+                                             <a href="javascript: void(0);" class="has-arrow waves-effect"
+                                                aria-expanded="false">
+                                                <span>Ladies bags</span>
+                                             </a>
+                                             <ul class="sub-menu mm-collapse" aria-expanded="false"
+                                                style="height: 0px;">
+                                                <li>
+                                                   <a href="#" class=" waves-effect">
+                                                      <span>Clutch bag</span>
+                                                   </a>
+                                                </li>
+                                                <li>
+                                                   <a href="#" class=" waves-effect">
+                                                      <span>Shoulder bags</span>
+                                                   </a>
+                                                </li>
+                                             </ul>
+                                          </li>
+                                          <li>
+                                             <a href="javascript: void(0);" class="has-arrow waves-effect"
+                                                aria-expanded="false">
+                                                <span>Ladies bags</span>
+                                             </a>
+                                             <ul class="sub-menu mm-collapse" aria-expanded="false"
+                                                style="height: 0px;">
+                                                <li>
+                                                   <a href="#" class=" waves-effect">
+                                                      <span>Clutch bag</span>
+                                                   </a>
+                                                </li>
+                                                <li>
+                                                   <a href="#" class=" waves-effect">
+                                                      <span>Shoulder bags</span>
+                                                   </a>
+                                                </li>
+                                             </ul>
+                                          </li>
+                                          <li>
+                                             <a href="javascript: void(0);" class="waves-effect" aria-expanded="false">
+                                                <span>Ladies bags</span>
+                                             </a>
+
+                                          </li>
+
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="simplebar-placeholder"></div>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
       <!-- category items -->
 
       <main>
          <div class="main-content">
             <div class="container-fluid">
-               <div class="cartPage ">
-                  <h4 class="fw-600">My Cart</h4>
-                  <div class="checkAll mt-4">
-                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="allItem">
-                        <label class="form-check-label" for="allItem">
-                           Select All
-                        </label>
-                     </div>
-                  </div>
+               <div class="checkoutPage ">
+                  <h4 class="fw-600">Checkout</h4>
+
                   <div class="d-flex gap-4 mt-3">
-                     <div class="cartItems d-flex flex-column gap-3">
-                        <div class="cartItem">
-                           <div class="item d-flex gap-2 align-items-center">
-                              <div class="selectItem">
-                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="item1">
+                     <div class="checkout_details">
+                        <div class="shippingAddress">
+                           <h5>Shipping address</h5>
+                           <div class="d-flex flex-column gap-2 mt-3">
+                              <div class="row ">
+                                 <div class="col-4 pe-3">
+                                    <p class="text-black fw-500">Name</p>
+                                 </div>
+                                 <div class="col-8">
+                                    <p>Md Abdul Mannan</p>
                                  </div>
                               </div>
-                              <div class="d-flex justify-content-between w-100 align-items-center">
-                                 <div class="item-details d-flex gap-2 align-items-center">
-                                    <div class="item-image">
-                                       <img src="assets/images/product/sub_img_1.png" alt="">
-                                    </div>
-                                    <div class="item-name">
-                                       <h6>Demi-season fashionable trend shirt, classic suit jacket, Korean style</h6>
-                                    </div>
+                              <div class="row ">
+                                 <div class="col-4 pe-3">
+                                    <p class="text-black fw-500">Address</p>
                                  </div>
-                                 <div class="actionBtn d-flex align-items-center justify-content-center">
-                                    <img src="assets/images/icon/trash_24.svg" alt="" class="w-auto h-auto">
+                                 <div class="col-8">
+                                    <p>44/2, Dhanmondi 2/A, Dhaka-1209 null 44/2, Dhanmondi 2/A, Dhaka-1209 null</p>
                                  </div>
                               </div>
+                              <div class="row ">
+                                 <div class="col-4 pe-3">
+                                    <p class="text-black fw-500">Phone</p>
+                                 </div>
+                                 <div class="col-8">
+                                    <p>01315565037</p>
+                                 </div>
+                              </div>
+                              <a href="shiping_address.html" class="btn btn-link mt-3 mb-4">Change
+                                 address </a>
+
                            </div>
-                           <div class="attributeItems d-flex flex-column">
-                              <div class="attributeItem d-flex justify-content-between">
-                                 <div class="d-flex justify-content-between align-items-center w-75">
-                                    <div class="item-details d-flex gap-2 align-items-center">
-                                       <div class="item-image">
-                                          <img src="assets/images/product/sub_img_1.png" alt="">
-                                       </div>
-                                       <div class="attribute">
-                                          <p>Color: white</p>
-                                          <p>Size: M</p>
-                                       </div>
+
+                           <div>
+                              <form action="">
+                                 <div class="form-group position-relative mb-3">
+                                    <label for="name" class="form-label">Name*</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Type your name">
+                                 </div>
+                                 <div class="form-group position-relative mb-3">
+                                    <label for="phone" class="form-label">Phone Number*</label>
+                                    <input type="text" class="form-control" id="phone" placeholder="Your phone number">
+                                 </div>
+
+                                 <div class="form-group position-relative mb-3">
+                                    <label for="name" class="form-label">Division*</label>
+                                    <div class="custom-select">
+                                       <select class="select3">
+                                          <option value="">Select</option>
+                                          <option value="1">Dhaka</option>
+                                          <option value="2">Pabna</option>
+                                          <option value="3">Rajshahi</option>
+                                          <option value="7">Barishal</option>
+                                       </select>
                                     </div>
-                                    <p>10 X ৳250</p>
-                                    <p>৳2550</p>
                                  </div>
-                                 <div class=" d-flex align-items-center gap-3">
-                                    <button type="button" class="btn btn-link font-14 h-auto" data-bs-toggle="modal"
-                                       data-bs-target="#editQty">Edit</button>
-                                    <button type="button" class="btn btn-link font-14 h-auto">Delete</button>
-                                 </div>
-                              </div>
-                              <div class="attributeItem d-flex justify-content-between">
-                                 <div class="d-flex justify-content-between align-items-center w-75">
-                                    <div class="item-details d-flex gap-2 align-items-center">
-                                       <div class="item-image">
-                                          <img src="assets/images/product/sub_img_1.png" alt="">
-                                       </div>
-                                       <div class="attribute">
-                                          <p>Color: white</p>
-                                          <p>Size: M</p>
-                                       </div>
+                                 <div class="form-group position-relative mb-3">
+                                    <label for="name" class="form-label">District*</label>
+                                    <div class="custom-select">
+                                       <select class="select3">
+                                          <option value="">Select</option>
+                                          <option value="1">Dhaka</option>
+                                          <option value="2">Pabna</option>
+                                          <option value="3">Rajshahi</option>
+                                          <option value="7">Barishal</option>
+                                       </select>
                                     </div>
-                                    <p>10 X ৳250</p>
-                                    <p>৳2550</p>
                                  </div>
-                                 <div class=" d-flex align-items-center gap-3">
-                                    <a href="#" class="text-primary font-14 fw-500">Edit</a>
-                                    <button type="button" class="btn btn-link font-14 h-auto">Delete</button>
+                                 <div class="form-group position-relative mb-3">
+                                    <label for="name" class="form-label">Address*</label>
+                                    <textarea name="" class="form-control" id="" cols="1" rows="2"
+                                       placeholder="Your address"></textarea>
                                  </div>
-                              </div>
-                              <div class="attributeItem d-flex justify-content-between">
-                                 <div class="d-flex justify-content-between align-items-center w-75">
-                                    <div class="item-details d-flex gap-2 align-items-center">
-                                       <div class="item-image">
-                                          <img src="assets/images/product/sub_img_1.png" alt="">
-                                       </div>
-                                       <div class="attribute">
-                                          <p>Color: white</p>
-                                          <p>Size: M</p>
-                                       </div>
-                                    </div>
-                                    <p>10 X ৳250</p>
-                                    <p>৳2550</p>
+                                 <div class="form-group position-relative mb-3">
+                                    <label for="name" class="form-label">Note (Optional)</label>
+                                    <textarea name="" class="form-control" id="" cols="1" rows="2"
+                                       placeholder="Your address"></textarea>
                                  </div>
-                                 <div class=" d-flex align-items-center gap-3">
-                                    <a href="#" class="text-primary font-14 fw-500">Edit</a>
-                                    <button type="button" class="btn btn-link font-14 h-auto">Delete</button>
-                                 </div>
-                              </div>
-                              <div class="attributeItem d-flex justify-content-between">
-                                 <div class="d-flex justify-content-between align-items-center w-75">
-                                    <div class="item-details d-flex gap-2 align-items-center">
-                                       <div class="item-image">
-                                          <img src="assets/images/product/sub_img_1.png" alt="">
-                                       </div>
-                                       <div class="attribute">
-                                          <p>Color: white</p>
-                                          <p>Size: M</p>
-                                       </div>
-                                    </div>
-                                    <p>10 X ৳250</p>
-                                    <p>৳2550</p>
-                                 </div>
-                                 <div class=" d-flex align-items-center gap-3">
-                                    <button type="button" class="btn btn-link font-14 h-auto" data-bs-toggle="modal"
-                                       data-bs-target="#editQty">Edit</button>
-                                    <button type="button" class="btn btn-link font-14 h-auto">Delete</button>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="cartItem_summary w-75 d-flex justify-content-end align-items-center gap-5">
-                              <p class="text-black fw-500">65 Item</p>
-                              <p class="text-black fw-500">৳ 124,500</p>
+                              </form>
                            </div>
                         </div>
-                        <div class="cartItem">
-                           <div class="item d-flex gap-2 align-items-center">
-                              <div class="selectItem">
-                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="item1">
-                                 </div>
-                              </div>
-                              <div class="d-flex justify-content-between w-100 align-items-center">
-                                 <div class="item-details d-flex gap-2 align-items-center">
-                                    <div class="item-image">
-                                       <img src="assets/images/product/sub_img_1.png" alt="">
-                                    </div>
-                                    <div class="item-name">
-                                       <h6>Demi-season fashionable trend shirt, classic suit jacket, Korean style</h6>
-                                    </div>
-                                 </div>
-                                 <div class="actionBtn d-flex align-items-center justify-content-center">
-                                    <img src="assets/images/icon/trash_24.svg" alt="" class="w-auto h-auto">
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="attributeItems d-flex flex-column">
-                              <div class="attributeItem d-flex justify-content-between">
-                                 <div class="d-flex justify-content-between align-items-center w-75">
-                                    <div class="item-details d-flex gap-2 align-items-center">
-                                       <div class="item-image">
-                                          <img src="assets/images/product/sub_img_1.png" alt="">
-                                       </div>
-                                       <div class="attribute">
-                                          <p>Color: white</p>
-                                          <p>Size: M</p>
+                        <div class="order_details">
+                           <h6>Order Details</h6>
+                           <div class="d-flex gap-4 mt-3">
+                              <div class="cartItems d-flex flex-column gap-3">
+                                 <div class="cartItem">
+                                    <div class="item d-flex gap-2 align-items-center">
+                                       <div class="d-flex justify-content-between w-100 align-items-center">
+                                          <div class="item-details d-flex gap-2 align-items-center">
+                                             <div class="item-image">
+                                                <img src="assets/images/product/sub_img_1.png" alt="">
+                                             </div>
+                                             <div class="item-name">
+                                                <h6>Demi-season fashionable trend shirt, classic suit jacket, Korean
+                                                   style
+                                                </h6>
+                                             </div>
+                                          </div>
+
                                        </div>
                                     </div>
-                                    <p>10 X ৳250</p>
-                                    <p>৳2550</p>
-                                 </div>
-                                 <div class=" d-flex align-items-center gap-3">
-                                    <a href="#" class="text-primary font-14 fw-500">Edit</a>
-                                    <button type="button" class="btn btn-link font-14 h-auto">Delete</button>
-                                 </div>
-                              </div>
-                              <div class="attributeItem d-flex justify-content-between">
-                                 <div class="d-flex justify-content-between align-items-center w-75">
-                                    <div class="item-details d-flex gap-2 align-items-center">
-                                       <div class="item-image">
-                                          <img src="assets/images/product/sub_img_1.png" alt="">
+                                    <div class="attributeItems d-flex flex-column">
+                                       <div class="attributeItem d-flex justify-content-between">
+                                          <div class="d-flex justify-content-between align-items-center w-100">
+                                             <div class="item-details d-flex gap-2 align-items-center">
+                                                <div class="item-image">
+                                                   <img src="assets/images/product/sub_img_1.png" alt="">
+                                                </div>
+                                                <div class="attribute">
+                                                   <p>Color: white</p>
+                                                   <p>Size: M</p>
+                                                </div>
+                                             </div>
+                                             <p>10 X ৳250</p>
+                                             <p>৳2550</p>
+                                          </div>
+
                                        </div>
-                                       <div class="attribute">
-                                          <p>Color: white</p>
-                                          <p>Size: M</p>
+                                       <div class="attributeItem d-flex justify-content-between">
+                                          <div class="d-flex justify-content-between align-items-center w-100">
+                                             <div class="item-details d-flex gap-2 align-items-center">
+                                                <div class="item-image">
+                                                   <img src="assets/images/product/sub_img_1.png" alt="">
+                                                </div>
+                                                <div class="attribute">
+                                                   <p>Color: white</p>
+                                                   <p>Size: M</p>
+                                                </div>
+                                             </div>
+                                             <p>10 X ৳250</p>
+                                             <p>৳2550</p>
+                                          </div>
+
+                                       </div>
+                                       <div class="attributeItem d-flex justify-content-between">
+                                          <div class="d-flex justify-content-between align-items-center w-100">
+                                             <div class="item-details d-flex gap-2 align-items-center">
+                                                <div class="item-image">
+                                                   <img src="assets/images/product/sub_img_1.png" alt="">
+                                                </div>
+                                                <div class="attribute">
+                                                   <p>Color: white</p>
+                                                   <p>Size: M</p>
+                                                </div>
+                                             </div>
+                                             <p>10 X ৳250</p>
+                                             <p>৳2550</p>
+                                          </div>
+
+                                       </div>
+                                       <div class="attributeItem d-flex justify-content-between">
+                                          <div class="d-flex justify-content-between align-items-center w-100">
+                                             <div class="item-details d-flex gap-2 align-items-center">
+                                                <div class="item-image">
+                                                   <img src="assets/images/product/sub_img_1.png" alt="">
+                                                </div>
+                                                <div class="attribute">
+                                                   <p>Color: white</p>
+                                                   <p>Size: M</p>
+                                                </div>
+                                             </div>
+                                             <p>10 X ৳250</p>
+                                             <p>৳2550</p>
+                                          </div>
+
                                        </div>
                                     </div>
-                                    <p>10 X ৳250</p>
-                                    <p>৳2550</p>
+                                    <div
+                                       class="cartItem_summary w-100 d-flex justify-content-end align-items-center gap-5">
+                                       <p class="text-black fw-500">65 Item</p>
+                                       <p class="text-black fw-500">৳ 124,500</p>
+                                    </div>
                                  </div>
-                                 <div class=" d-flex align-items-center gap-3">
-                                    <a href="#" class="text-primary font-14 fw-500">Edit</a>
-                                    <button type="button" class="btn btn-link font-14 h-auto">Delete</button>
-                                 </div>
-                              </div>
-                              <div class="attributeItem d-flex justify-content-between">
-                                 <div class="d-flex justify-content-between align-items-center w-75">
-                                    <div class="item-details d-flex gap-2 align-items-center">
-                                       <div class="item-image">
-                                          <img src="assets/images/product/sub_img_1.png" alt="">
-                                       </div>
-                                       <div class="attribute">
-                                          <p>Color: white</p>
-                                          <p>Size: M</p>
+                                 <div class="cartItem">
+                                    <div class="item d-flex gap-2 align-items-center">
+                                       <div class="d-flex justify-content-between w-100 align-items-center">
+                                          <div class="item-details d-flex gap-2 align-items-center">
+                                             <div class="item-image">
+                                                <img src="assets/images/product/sub_img_1.png" alt="">
+                                             </div>
+                                             <div class="item-name">
+                                                <h6>Demi-season fashionable trend shirt, classic suit jacket, Korean
+                                                   style
+                                                </h6>
+                                             </div>
+                                          </div>
+
                                        </div>
                                     </div>
-                                    <p>10 X ৳250</p>
-                                    <p>৳2550</p>
-                                 </div>
-                                 <div class=" d-flex align-items-center gap-3">
-                                    <a href="#" class="text-primary font-14 fw-500">Edit</a>
-                                    <button type="button" class="btn btn-link font-14 h-auto">Delete</button>
-                                 </div>
-                              </div>
-                              <div class="attributeItem d-flex justify-content-between">
-                                 <div class="d-flex justify-content-between align-items-center w-75">
-                                    <div class="item-details d-flex gap-2 align-items-center">
-                                       <div class="item-image">
-                                          <img src="assets/images/product/sub_img_1.png" alt="">
+                                    <div class="attributeItems d-flex flex-column">
+                                       <div class="attributeItem d-flex justify-content-between">
+                                          <div class="d-flex justify-content-between align-items-center w-100">
+                                             <div class="item-details d-flex gap-2 align-items-center">
+                                                <div class="item-image">
+                                                   <img src="assets/images/product/sub_img_1.png" alt="">
+                                                </div>
+                                                <div class="attribute">
+                                                   <p>Color: white</p>
+                                                   <p>Size: M</p>
+                                                </div>
+                                             </div>
+                                             <p>10 X ৳250</p>
+                                             <p>৳2550</p>
+                                          </div>
+
                                        </div>
-                                       <div class="attribute">
-                                          <p>Color: white</p>
-                                          <p>Size: M</p>
+                                       <div class="attributeItem d-flex justify-content-between">
+                                          <div class="d-flex justify-content-between align-items-center w-100">
+                                             <div class="item-details d-flex gap-2 align-items-center">
+                                                <div class="item-image">
+                                                   <img src="assets/images/product/sub_img_1.png" alt="">
+                                                </div>
+                                                <div class="attribute">
+                                                   <p>Color: white</p>
+                                                   <p>Size: M</p>
+                                                </div>
+                                             </div>
+                                             <p>10 X ৳250</p>
+                                             <p>৳2550</p>
+                                          </div>
+
+                                       </div>
+                                       <div class="attributeItem d-flex justify-content-between">
+                                          <div class="d-flex justify-content-between align-items-center w-100">
+                                             <div class="item-details d-flex gap-2 align-items-center">
+                                                <div class="item-image">
+                                                   <img src="assets/images/product/sub_img_1.png" alt="">
+                                                </div>
+                                                <div class="attribute">
+                                                   <p>Color: white</p>
+                                                   <p>Size: M</p>
+                                                </div>
+                                             </div>
+                                             <p>10 X ৳250</p>
+                                             <p>৳2550</p>
+                                          </div>
+
+                                       </div>
+                                       <div class="attributeItem d-flex justify-content-between">
+                                          <div class="d-flex justify-content-between align-items-center w-100">
+                                             <div class="item-details d-flex gap-2 align-items-center">
+                                                <div class="item-image">
+                                                   <img src="assets/images/product/sub_img_1.png" alt="">
+                                                </div>
+                                                <div class="attribute">
+                                                   <p>Color: white</p>
+                                                   <p>Size: M</p>
+                                                </div>
+                                             </div>
+                                             <p>10 X ৳250</p>
+                                             <p>৳2550</p>
+                                          </div>
+
                                        </div>
                                     </div>
-                                    <p>10 X ৳250</p>
-                                    <p>৳2550</p>
-                                 </div>
-                                 <div class=" d-flex align-items-center gap-3">
-                                    <a href="#" class="text-primary font-14 fw-500">Edit</a>
-                                    <button type="button" class="btn btn-link font-14 h-auto">Delete</button>
+                                    <div
+                                       class="cartItem_summary w-100 d-flex justify-content-end align-items-center gap-5">
+                                       <p class="text-black fw-500">65 Item</p>
+                                       <p class="text-black fw-500">৳ 124,500</p>
+                                    </div>
                                  </div>
                               </div>
-                           </div>
-                           <div class="cartItem_summary w-75 d-flex justify-content-end align-items-center gap-5">
-                              <p class="text-black fw-500">65 Item</p>
-                              <p class="text-black fw-500">৳ 124,500</p>
+
                            </div>
                         </div>
                      </div>
@@ -486,12 +642,6 @@
                               <li>
                                  <p class="font-16 text-black">Sub total(65 items)</p>
                                  <p class="font-16 fw-600 text-black">124,500</p>
-                              </li>
-                              <li>
-                                 <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Apply coupon">
-                                    <button class="btn btn-primary btn-sm" type="button">Apply</button>
-                                 </div>
                               </li>
                               <li>
                                  <p class="font-16 text-black">Discount</p>
@@ -511,8 +661,9 @@
                               </div>
                            </div>
                         </div>
-                        <button class="btn btn-primary btn-md w-100">Process to checkout</button>
+                        <button class="btn btn-primary btn-md w-100">Place Oreder</button>
                      </div>
+
                   </div>
                </div>
             </div>
