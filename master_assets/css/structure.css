@@ -1,12 +1,11 @@
 /* Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Source+Sans+3:wght@400;500;600;700;800&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap");
 /* pre-define css code */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Onest", sans-serif;
 }
 html,
 body {
@@ -14,7 +13,7 @@ body {
   overflow-x: hidden;
   margin: 0px;
   padding: 0px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Onest", sans-serif;
 }
 
 .container,
@@ -174,7 +173,7 @@ h6 {
   margin: 0;
   padding: 0;
   color: var(--bs-neutral-900);
-  font-family: "Poppins", sans-serif;
+  font-family: "Onest", sans-serif;
 }
 
 /* h1 {
@@ -371,7 +370,9 @@ address {
 .font-48 {
   font-size: 3rem;
 }
-
+.font-20 {
+  font-size: 1.25rem;
+}
 .font-18 {
   font-size: 1.125rem;
 }

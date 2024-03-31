@@ -214,34 +214,6 @@ body {
 }
 
 /* table css */
-.table {
-  margin: 0;
-}
-.table .row {
-  justify-content: space-between;
-}
-.table .row .cell {
-  width: fit-content;
-  display: flex !important;
-  align-items: center;
-}
-
-.table .tbody .row,
-.table .thead .row {
-  border-bottom: 1px solid var(--bs-neutral-300);
-  background: none;
-  font-size: 14px;
-  color: var(--bs-neutral-900);
-}
-
-.table .tbody .row {
-  font-weight: 400;
-  padding: 14px 0;
-}
-
-.table .thead .row {
-  font-weight: 500;
-}
 
 .table .tbody .row .sl,
 .table .thead .row .sl {
