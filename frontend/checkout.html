@@ -371,9 +371,13 @@
                   <div class="d-flex gap-4 mt-3">
                      <div class="checkout_details">
                         <div class="shippingAddress">
-                           <h5>Shipping address</h5>
-                           <div class="d-flex flex-column gap-2 mt-3">
-                              <div class="row ">
+                           <!-- <div class="saveAddress d-flex flex-column gap-2  ">
+                              <div class="d-flex  justify-content-between">
+                                 <h5 class="mb-3">Shipping address</h5>
+                                 <a href="#" class="btn btn-link pe-3">Add
+                                    new</a>
+                              </div>
+                              <div class="row w-50">
                                  <div class="col-4 pe-3">
                                     <p class="text-black fw-500">Name</p>
                                  </div>
@@ -381,7 +385,7 @@
                                     <p>Md Abdul Mannan</p>
                                  </div>
                               </div>
-                              <div class="row ">
+                              <div class="row w-50">
                                  <div class="col-4 pe-3">
                                     <p class="text-black fw-500">Address</p>
                                  </div>
@@ -389,7 +393,7 @@
                                     <p>44/2, Dhanmondi 2/A, Dhaka-1209 null 44/2, Dhanmondi 2/A, Dhaka-1209 null</p>
                                  </div>
                               </div>
-                              <div class="row ">
+                              <div class="row w-50">
                                  <div class="col-4 pe-3">
                                     <p class="text-black fw-500">Phone</p>
                                  </div>
@@ -397,10 +401,16 @@
                                     <p>01315565037</p>
                                  </div>
                               </div>
-                              <a href="shiping_address.html" class="btn btn-link mt-3 mb-4">Change
-                                 address </a>
+                              <div class="row w-50">
+                                 <div class="col-4 pe-3">
 
-                           </div>
+                                 </div>
+                                 <div class="col-8">
+                                    <a href="#" class="btn btn-link mt-1 font-14 btn-d-w text-start">Change
+                                       address </a>
+                                 </div>
+                              </div>
+                           </div> -->
 
                            <div>
                               <form action="">
@@ -447,10 +457,19 @@
                                     <textarea name="" class="form-control" id="" cols="1" rows="2"
                                        placeholder="Your address"></textarea>
                                  </div>
+                                 <div class="form-group position-relative mb-3">
+                                    <div class="form-check">
+                                       <input class="form-check-input" type="checkbox" value="" id="addressSave">
+                                       <label class="form-check-label" for="addressSave">
+                                          Save address
+                                       </label>
+                                    </div>
+                                 </div>
+
                               </form>
                            </div>
                         </div>
-                        <div class="order_details">
+                        <div class="order_details mt-5">
                            <h6>Order Details</h6>
                            <div class="d-flex gap-4 mt-3">
                               <div class="cartItems d-flex flex-column gap-3">

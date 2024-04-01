@@ -359,6 +359,11 @@
   --bs-alert-color: var(--bs-white);
   --bs-alert-bg: var(--bs-primary-500);
 }
+.alert-secondary {
+  --bs-alert-color: var(--bs-white);
+  --bs-alert-bg: var(--bs-secondary-500);
+}
+
 .alert-success {
   --bs-alert-color: var(--bs-white);
   --bs-alert-bg: var(--bs-success-500);
@@ -390,6 +395,11 @@
   background: var(--bs-primary-50);
   color: var(--bs-primary-500);
 }
+.alert-secondary-50 {
+  background: #f4f3ff;
+  color: #5925dc;
+}
+
 .alert-success-50 {
   background: var(--bs-success-50);
   color: var(--bs-success-500);
